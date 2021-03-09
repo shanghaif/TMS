@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44E11423-8F0D-49DC-AFBA-35043623816B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.Monitor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\AxInterop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人设置\frmReReport.resx">
+      <DependentUpon>frmReReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="交接单信息\frmInterchangeOrder.resx">
+      <DependentUpon>frmInterchangeOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="交接单信息\frmInterOrderToSend.resx">
+      <DependentUpon>frmInterOrderToSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="保险管理\frmInsurance.resx">
+      <DependentUpon>frmInsurance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="保险管理\frmInsuranceDetail.resx">
+      <DependentUpon>frmInsuranceDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="保险管理\frmInsuranceEdit.resx">
+      <DependentUpon>frmInsuranceEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="内部运单查询\frmSearchBillInfoByBillNo.resx">
+      <DependentUpon>frmSearchBillInfoByBillNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="加盟报表\FrmBillStatusWeb2.resx">
+      <DependentUpon>FrmBillStatusWeb2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="加盟报表\FrmShortDetailStatusWeb.resx">
+      <DependentUpon>FrmShortDetailStatusWeb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户分析\FrmCustomerAnalyse.resx">
+      <DependentUpon>FrmCustomerAnalyse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="小额提付\frmPettypay.resx">
+      <DependentUpon>frmPettypay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="异常路由\frmErrorLine.resx">
+      <DependentUpon>frmErrorLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="支付信息表\frmPayInfos.resx">
+      <DependentUpon>frmPayInfos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="支付信息表\frmPayInfosAdd.resx">
+      <DependentUpon>frmPayInfosAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="整站提取库存\frmSelectZhenZhanKuCun.resx">
+      <DependentUpon>frmSelectZhenZhanKuCun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmLongDate.resx">
+      <DependentUpon>frmLongDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmLongDateAdd.resx">
+      <DependentUpon>frmLongDateAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmLongQualifiedRate.resx">
+      <DependentUpon>frmLongQualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmMiddleQualifiedRate.resx">
+      <DependentUpon>frmMiddleQualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmOperationAging.resx">
+      <DependentUpon>frmOperationAging.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmOperationAgingADD.resx">
+      <DependentUpon>frmOperationAgingADD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmOperationAgingUP.resx">
+      <DependentUpon>frmOperationAgingUP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmOutBaseRateControl.resx">
+      <DependentUpon>frmOutBaseRateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmScanfiedRate.resx">
+      <DependentUpon>frmScanfiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmSendQualifiedRate.resx">
+      <DependentUpon>frmSendQualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmShipmentQualifiedRate.resx">
+      <DependentUpon>frmShipmentQualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmShortDate.resx">
+      <DependentUpon>frmShortDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmShortDateAdd.resx">
+      <DependentUpon>frmShortDateAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmShort_QualifiedRate.resx">
+      <DependentUpon>frmShort_QualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="时效报表\frmSignQualifiedRate.resx">
+      <DependentUpon>frmSignQualifiedRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmAccountRecharge.resx">
+      <DependentUpon>frmAccountRecharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmAccountRechargeNew.resx">
+      <DependentUpon>frmAccountRechargeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmAddInventory.resx">
+      <DependentUpon>frmAddInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmAddWhiteList.resx">
+      <DependentUpon>frmAddWhiteList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmChargeApply.resx">
+      <DependentUpon>frmChargeApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmClaimApproval.resx">
+      <DependentUpon>frmClaimApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmClaimDetail.resx">
+      <DependentUpon>frmClaimDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmConfirmWithContent.resx">
+      <DependentUpon>frmConfirmWithContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmConfirmWithText.resx">
+      <DependentUpon>frmConfirmWithText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmDepartmentPrizePenalty.resx">
+      <DependentUpon>frmDepartmentPrizePenalty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmDepartmentPrizePenaltyADD.resx">
+      <DependentUpon>frmDepartmentPrizePenaltyADD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmDepartmentPrizePenaltyUP.resx">
+      <DependentUpon>frmDepartmentPrizePenaltyUP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmDriverDirect.resx">
+      <DependentUpon>frmDriverDirect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmGetBillDamage.resx">
+      <DependentUpon>frmGetBillDamage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmImageLookNew.resx">
+      <DependentUpon>frmImageLookNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmInventoryDetail.resx">
+      <DependentUpon>frmInventoryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmMinusStock.resx">
+      <DependentUpon>frmMinusStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmNotPayStart.resx">
+      <DependentUpon>frmNotPayStart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmOpenAccount.resx">
+      <DependentUpon>frmOpenAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmQrcode.resx">
+      <DependentUpon>frmQrcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmSearchPayInfo.resx">
+      <DependentUpon>frmSearchPayInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmSendToWeb.resx">
+      <DependentUpon>frmSendToWeb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmTransferWhite.resx">
+      <DependentUpon>frmTransferWhite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\FrmWalletAlterPwd.resx">
+      <DependentUpon>FrmWalletAlterPwd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmWayBillSearch.resx">
+      <DependentUpon>frmWayBillSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程监控\frmWebApplyList.resx">
+      <DependentUpon>frmWebApplyList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信管理\frmSmsMange_Auto.resx">
+      <DependentUpon>frmSmsMange_Auto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信管理\FrmupdateSMS.resx">
+      <DependentUpon>FrmupdateSMS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳明细查询\frmShortConnDetailSearch.resx">
+      <DependentUpon>frmShortConnDetailSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算统计表\frmSettlementStatistic.resx">
+      <DependentUpon>frmSettlementStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算统计表\frmSettlementValidation.resx">
+      <DependentUpon>frmSettlementValidation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算统计表\frmWebBalanceProfit.resx">
+      <DependentUpon>frmWebBalanceProfit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="网点线路议价\frmBargainingAdd.resx">
+      <DependentUpon>frmBargainingAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="网点线路议价\frmBargainingInfo.resx">
+      <DependentUpon>frmBargainingInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="网点设备维护\frmAddEquipRepair.resx">
+      <DependentUpon>frmAddEquipRepair.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="网点设备维护\frmWebEquipRepair.resx">
+      <DependentUpon>frmWebEquipRepair.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草稿箱\frmDrafsInfo.resx">
+      <DependentUpon>frmDrafsInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草稿箱\frmDrafts.resx">
+      <DependentUpon>frmDrafts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmAddGrouper.resx">
+      <DependentUpon>FrmAddGrouper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmAddOperMan.resx">
+      <DependentUpon>FrmAddOperMan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmDeleteByBillNoOrBatchNo.resx">
+      <DependentUpon>FrmDeleteByBillNoOrBatchNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmGoodsCountInput.resx">
+      <DependentUpon>FrmGoodsCountInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmGoodsCountManage.resx">
+      <DependentUpon>FrmGoodsCountManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmGoodsManageLog.resx">
+      <DependentUpon>FrmGoodsManageLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货量统计管理\FrmUpdateGoodsInfoByBillNo.resx">
+      <DependentUpon>FrmUpdateGoodsInfoByBillNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="辅助工具\FrmLG.resx">
+      <DependentUpon>FrmLG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运单管理\frmBillCancelRecord.resx">
+      <DependentUpon>frmBillCancelRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路监控\frmLinesMonitor.resx">
+      <DependentUpon>frmLinesMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货转二级明细查询\frmSendDetail.resx">
+      <DependentUpon>frmSendDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载补货记录\frmDepartureAddGoods.resx">
+      <DependentUpon>frmDepartureAddGoods.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载补货记录\frmDepartureDetailSearch.resx">
+      <DependentUpon>frmDepartureDetailSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配送APP配置管理\frmDriverUser.resx">
+      <DependentUpon>frmDriverUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配送APP配置管理\frmDriverUserADD.resx">
+      <DependentUpon>frmDriverUserADD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售报表\FrmBusinessWebDaily.resx">
+      <DependentUpon>FrmBusinessWebDaily.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售报表\FrmLineOperateWebDaily.resx">
+      <DependentUpon>FrmLineOperateWebDaily.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="个人设置\frmReReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人设置\frmReReport.Designer.cs">
+      <DependentUpon>frmReReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="交接单信息\frmInterchangeOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="交接单信息\frmInterchangeOrder.Designer.cs">
+      <DependentUpon>frmInterchangeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="交接单信息\frmInterOrderToSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="交接单信息\frmInterOrderToSend.designer.cs">
+      <DependentUpon>frmInterOrderToSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="保险管理\frmInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="保险管理\frmInsurance.Designer.cs">
+      <DependentUpon>frmInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="保险管理\frmInsuranceDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="保险管理\frmInsuranceDetail.designer.cs">
+      <DependentUpon>frmInsuranceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="保险管理\frmInsuranceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="保险管理\frmInsuranceEdit.Designer.cs">
+      <DependentUpon>frmInsuranceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="内部运单查询\frmSearchBillInfoByBillNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="内部运单查询\frmSearchBillInfoByBillNo.Designer.cs">
+      <DependentUpon>frmSearchBillInfoByBillNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="加盟报表\FrmBillStatusWeb2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="加盟报表\FrmBillStatusWeb2.Designer.cs">
+      <DependentUpon>FrmBillStatusWeb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="加盟报表\FrmShortDetailStatusWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="加盟报表\FrmShortDetailStatusWeb.Designer.cs">
+      <DependentUpon>FrmShortDetailStatusWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户分析\FrmCustomerAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户分析\FrmCustomerAnalyse.Designer.cs">
+      <DependentUpon>FrmCustomerAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="小额提付\frmPettypay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="小额提付\frmPettypay.Designer.cs">
+      <DependentUpon>frmPettypay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="异常路由\frmErrorLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="异常路由\frmErrorLine.Designer.cs">
+      <DependentUpon>frmErrorLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="支付信息表\frmPayInfos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="支付信息表\frmPayInfos.designer.cs">
+      <DependentUpon>frmPayInfos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="支付信息表\frmPayInfosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="支付信息表\frmPayInfosAdd.Designer.cs">
+      <DependentUpon>frmPayInfosAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="整站提取库存\frmSelectZhenZhanKuCun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="整站提取库存\frmSelectZhenZhanKuCun.Designer.cs">
+      <DependentUpon>frmSelectZhenZhanKuCun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日志监控\frmSmsMange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日志监控\frmSmsMange.Designer.cs">
+      <DependentUpon>frmSmsMange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAging.Designer.cs">
+      <DependentUpon>frmOperationAging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAgingADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAgingADD.Designer.cs">
+      <DependentUpon>frmOperationAgingADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAgingUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmOperationAgingUP.Designer.cs">
+      <DependentUpon>frmOperationAgingUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmSignQualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmSignQualifiedRate.Designer.cs">
+      <DependentUpon>frmSignQualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmAccountRechargeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmAccountRechargeNew.Designer.cs">
+      <DependentUpon>frmAccountRechargeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmAddWhiteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmAddWhiteList.Designer.cs">
+      <DependentUpon>frmAddWhiteList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmClaimDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmClaimDetail.Designer.cs">
+      <DependentUpon>frmClaimDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmLongDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmLongDate.designer.cs">
+      <DependentUpon>frmLongDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmLongDateAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmLongDateAdd.designer.cs">
+      <DependentUpon>frmLongDateAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmLongQualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmLongQualifiedRate.Designer.cs">
+      <DependentUpon>frmLongQualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmMiddleQualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmMiddleQualifiedRate.Designer.cs">
+      <DependentUpon>frmMiddleQualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmOutBaseRateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmOutBaseRateControl.Designer.cs">
+      <DependentUpon>frmOutBaseRateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmScanfiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmScanfiedRate.Designer.cs">
+      <DependentUpon>frmScanfiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmSendQualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmSendQualifiedRate.Designer.cs">
+      <DependentUpon>frmSendQualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmShipmentQualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmShipmentQualifiedRate.Designer.cs">
+      <DependentUpon>frmShipmentQualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmShortDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmShortDate.designer.cs">
+      <DependentUpon>frmShortDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmShortDateAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmShortDateAdd.designer.cs">
+      <DependentUpon>frmShortDateAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="时效报表\frmShort_QualifiedRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="时效报表\frmShort_QualifiedRate.Designer.cs">
+      <DependentUpon>frmShort_QualifiedRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmAccountRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmAccountRecharge.Designer.cs">
+      <DependentUpon>frmAccountRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmAddInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmAddInventory.Designer.cs">
+      <DependentUpon>frmAddInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmChargeApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmChargeApply.Designer.cs">
+      <DependentUpon>frmChargeApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmClaimApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmClaimApproval.Designer.cs">
+      <DependentUpon>frmClaimApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmConfirmWithContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmConfirmWithContent.Designer.cs">
+      <DependentUpon>frmConfirmWithContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmConfirmWithText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmConfirmWithText.Designer.cs">
+      <DependentUpon>frmConfirmWithText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenalty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenalty.Designer.cs">
+      <DependentUpon>frmDepartmentPrizePenalty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenaltyADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenaltyADD.Designer.cs">
+      <DependentUpon>frmDepartmentPrizePenaltyADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenaltyUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmDepartmentPrizePenaltyUP.Designer.cs">
+      <DependentUpon>frmDepartmentPrizePenaltyUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmDriverDirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmDriverDirect.designer.cs">
+      <DependentUpon>frmDriverDirect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmGetBillDamage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmGetBillDamage.Designer.cs">
+      <DependentUpon>frmGetBillDamage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmImageLookNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmImageLookNew.Designer.cs">
+      <DependentUpon>frmImageLookNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmInventoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmInventoryDetail.Designer.cs">
+      <DependentUpon>frmInventoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmMinusStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmMinusStock.Designer.cs">
+      <DependentUpon>frmMinusStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmNotPayStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmNotPayStart.Designer.cs">
+      <DependentUpon>frmNotPayStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmOpenAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmOpenAccount.designer.cs">
+      <DependentUpon>frmOpenAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmQrcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmQrcode.Designer.cs">
+      <DependentUpon>frmQrcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmSearchPayInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmSearchPayInfo.Designer.cs">
+      <DependentUpon>frmSearchPayInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmSendToWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmSendToWeb.designer.cs">
+      <DependentUpon>frmSendToWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmTransferWhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmTransferWhite.Designer.cs">
+      <DependentUpon>frmTransferWhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\FrmWalletAlterPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\FrmWalletAlterPwd.designer.cs">
+      <DependentUpon>FrmWalletAlterPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmWayBillSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmWayBillSearch.Designer.cs">
+      <DependentUpon>frmWayBillSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程监控\frmWebApplyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程监控\frmWebApplyList.Designer.cs">
+      <DependentUpon>frmWebApplyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信管理\frmSmsMange_Auto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信管理\frmSmsMange_Auto.Designer.cs">
+      <DependentUpon>frmSmsMange_Auto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信管理\FrmupdateSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信管理\FrmupdateSMS.Designer.cs">
+      <DependentUpon>FrmupdateSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳明细查询\frmShortConnDetailSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳明细查询\frmShortConnDetailSearch.Designer.cs">
+      <DependentUpon>frmShortConnDetailSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算统计表\frmSettlementStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算统计表\frmSettlementStatistic.Designer.cs">
+      <DependentUpon>frmSettlementStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算统计表\frmSettlementValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算统计表\frmSettlementValidation.designer.cs">
+      <DependentUpon>frmSettlementValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算统计表\frmWebBalanceProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算统计表\frmWebBalanceProfit.Designer.cs">
+      <DependentUpon>frmWebBalanceProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingAdd.Designer.cs">
+      <DependentUpon>frmBargainingAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingFJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingFJ.Designer.cs">
+      <DependentUpon>frmBargainingFJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainingInfo.Designer.cs">
+      <DependentUpon>frmBargainingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainningDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点线路议价\frmBargainningDialog.Designer.cs">
+      <DependentUpon>frmBargainningDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点设备维护\frmAddEquipRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点设备维护\frmAddEquipRepair.Designer.cs">
+      <DependentUpon>frmAddEquipRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="网点设备维护\frmWebEquipRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="网点设备维护\frmWebEquipRepair.Designer.cs">
+      <DependentUpon>frmWebEquipRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草稿箱\frmDrafsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草稿箱\frmDrafsInfo.Designer.cs">
+      <DependentUpon>frmDrafsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草稿箱\frmDrafts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草稿箱\frmDrafts.Designer.cs">
+      <DependentUpon>frmDrafts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmAddGrouper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmAddGrouper.Designer.cs">
+      <DependentUpon>FrmAddGrouper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmAddOperMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmAddOperMan.Designer.cs">
+      <DependentUpon>FrmAddOperMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmDeleteByBillNoOrBatchNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmDeleteByBillNoOrBatchNo.Designer.cs">
+      <DependentUpon>FrmDeleteByBillNoOrBatchNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsCountInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsCountInput.Designer.cs">
+      <DependentUpon>FrmGoodsCountInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsCountManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsCountManage.Designer.cs">
+      <DependentUpon>FrmGoodsCountManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsManageLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmGoodsManageLog.Designer.cs">
+      <DependentUpon>FrmGoodsManageLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货量统计管理\FrmUpdateGoodsInfoByBillNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货量统计管理\FrmUpdateGoodsInfoByBillNo.Designer.cs">
+      <DependentUpon>FrmUpdateGoodsInfoByBillNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="辅助工具\FrmLG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="辅助工具\FrmLG.Designer.cs">
+      <DependentUpon>FrmLG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运单管理\frmBillCancelRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运单管理\frmBillCancelRecord.designer.cs">
+      <DependentUpon>frmBillCancelRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路监控\frmLinesMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路监控\frmLinesMonitor.Designer.cs">
+      <DependentUpon>frmLinesMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货转二级明细查询\frmSendDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货转二级明细查询\frmSendDetail.Designer.cs">
+      <DependentUpon>frmSendDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载补货记录\frmDepartureAddGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载补货记录\frmDepartureAddGoods.Designer.cs">
+      <DependentUpon>frmDepartureAddGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载补货记录\frmDepartureDetailSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载补货记录\frmDepartureDetailSearch.Designer.cs">
+      <DependentUpon>frmDepartureDetailSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配送APP配置管理\frmDriverUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配送APP配置管理\frmDriverUser.Designer.cs">
+      <DependentUpon>frmDriverUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配送APP配置管理\frmDriverUserADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配送APP配置管理\frmDriverUserADD.Designer.cs">
+      <DependentUpon>frmDriverUserADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售报表\FrmBusinessWebDaily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="销售报表\FrmBusinessWebDaily.Designer.cs">
+      <DependentUpon>FrmBusinessWebDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售报表\FrmLineOperateWebDaily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="销售报表\FrmLineOperateWebDaily.Designer.cs">
+      <DependentUpon>FrmLineOperateWebDaily.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="gregn6Lib">
+      <Guid>{4018F953-1BFE-441E-8A04-DC8BA1FF060E}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+    <None Include="Resources\Action_Search.png" />
+    <Content Include="Resources\claim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="问题件\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

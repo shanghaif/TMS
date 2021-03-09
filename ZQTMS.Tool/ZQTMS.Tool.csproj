@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.Tool</RootNamespace>
+    <AssemblyName>ZQTMS.Tools</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DEncrypt\EncryptUtils.cs" />
+    <Compile Include="frmUpLoadFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpLoadFile.Designer.cs">
+      <DependentUpon>frmUpLoadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControl相关\GridViedMove.cs" />
+    <Compile Include="二维码\QrCodes.cs" />
+    <Compile Include="二维码\ScanerHook.cs" />
+    <Compile Include="图片\frmShowPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="图片\frmShowPic.designer.cs">
+      <DependentUpon>frmShowPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="地图相关\frmGPS.cs" />
+    <Compile Include="坐标两点距离\HarvenSin.cs" />
+    <Compile Include="工具条相关\BarMagagerOper.cs" />
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="常用操作\RepItemComboBox.cs" />
+    <Compile Include="常用操作\DataOper.cs" />
+    <Compile Include="常用操作\RepItemImageComboBox.cs" />
+    <Compile Include="字符串\StringSimilar.cs" />
+    <Compile Include="常用操作\RepItemCheckEdit.cs" />
+    <Compile Include="弹出消息框\IMsg.cs" />
+    <Compile Include="弹出消息框\MsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="弹出消息框\MsgForm.Designer.cs">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="弹出消息框\MsgLabel.cs" />
+    <Compile Include="汉化类\ToChn.cs" />
+    <Compile Include="汉化类\ToChnBar.cs" />
+    <Compile Include="汉化类\ToChnEditor.cs" />
+    <Compile Include="汉化类\ToChnGridControl.cs" />
+    <Compile Include="汉化类\ToChnXtraChart.cs" />
+    <Compile Include="汉化类\ToChnXtraNavBar.cs" />
+    <Compile Include="汉化类\ToChnXtraPrinting.cs" />
+    <Compile Include="汉化类\ToChnXtraReports.cs" />
+    <Compile Include="汉化类\ToChnXtraTreeList.cs" />
+    <Compile Include="汉化类\ToChnXtraVerticalGrid.cs" />
+    <Compile Include="Excel导入选择\w_import_select_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel导入选择\w_import_select_table.designer.cs">
+      <DependentUpon>w_import_select_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="进度条\w_progressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="进度条\w_progressBar.designer.cs">
+      <DependentUpon>w_progressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配置文件操作类\API.cs" />
+    <Compile Include="GridControl相关\FixColumn.cs" />
+    <Compile Include="压缩解压缩\CZip.cs" />
+    <Compile Include="常用操作\IP.cs" />
+    <Compile Include="弹出消息框\w_save_ok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="弹出消息框\w_save_ok.designer.cs">
+      <DependentUpon>w_save_ok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="电子秤\SerialPort.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="身份证和扫描\CardNo.cs" />
+    <Compile Include="GridControl相关\GridOper.cs" />
+    <Compile Include="GridControl相关\GridViewRowColor.cs" />
+    <Compile Include="弹出消息框\MsgBox.cs" />
+    <Compile Include="弹出消息框\ToolTip.cs" />
+    <Compile Include="显示格式\SetFormat.cs" />
+    <Compile Include="类型转换\ConvertType.cs" />
+    <Compile Include="表达式计算\FormulaExpress.cs" />
+    <Compile Include="Json\ConvertJson.cs" />
+    <Compile Include="图片\PicDeal.cs" />
+    <Compile Include="压缩解压缩\SharpZip.cs" />
+    <Compile Include="图片\ImageClass.cs" />
+    <Compile Include="图片\ImageDown.cs" />
+    <Compile Include="图片\ImageUpload.cs" />
+    <Compile Include="字符串\StringHelper.cs" />
+    <Compile Include="序列化\SerializeHelper.cs" />
+    <Compile Include="时间操作类\TimeHelper.cs" />
+    <Compile Include="正则表达式\RegexHelper.cs" />
+    <Compile Include="汉字转拼音\EcanConvertToCh.cs" />
+    <Compile Include="汉字转拼音\PinYin.cs" />
+    <Compile Include="菜单相关\PopMenu.cs" />
+    <Compile Include="配置文件操作类\Config.cs" />
+    <Compile Include="锐浪打印\frmRuiLangService.cs" />
+    <Compile Include="锐浪打印\frmSetPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锐浪打印\frmSetPrinter.designer.cs">
+      <DependentUpon>frmSetPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锐浪打印\frmPrintRuiLang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锐浪打印\frmPrintRuiLang.designer.cs">
+      <DependentUpon>frmPrintRuiLang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锐浪打印\w_Report_Designer6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锐浪打印\w_Report_Designer6.designer.cs">
+      <DependentUpon>w_Report_Designer6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="随机数类\RandomHelper.cs" />
+    <Compile Include="ResourceManager\AppMessage.cs" />
+    <Compile Include="ResourceManager\ResourceManager.cs" />
+    <Compile Include="ResourceManager\ResourceManagerWrapper.cs" />
+    <Compile Include="ResourceManager\Resources.cs" />
+    <Compile Include="文件操作类\DirFile.cs" />
+    <Compile Include="DEncrypt\DEncrypt.cs" />
+    <Compile Include="DEncrypt\DESEncrypt.cs" />
+    <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\RSACryption.cs" />
+    <Compile Include="文件操作类\FileOperate.cs" />
+    <Compile Include="随机数类\BaseRandom.cs" />
+    <Compile Include="随机数类\RandomOperate.cs" />
+    <Compile Include="配置文件操作类\INIFile.cs" />
+    <Compile Include="人民币转换\RMB.cs" />
+    <Compile Include="时间操作类\DateFormat.cs" />
+    <Compile Include="DEncrypt\Encrypt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="时间操作类\TimeParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="ResourceManager\Sample.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdes6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\AxInterop.grdes6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\AxInterop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Interop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="ZQTMS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZQTMS.Common\bin\x86\Release\ZQTMS.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpLoadFile.resx">
+      <DependentUpon>frmUpLoadFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="图片\frmShowPic.resx">
+      <DependentUpon>frmShowPic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="弹出消息框\MsgForm.resx">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="弹出消息框\w_save_ok.resx">
+      <DependentUpon>w_save_ok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel导入选择\w_import_select_table.resx">
+      <DependentUpon>w_import_select_table.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="进度条\w_progressBar.resx">
+      <DependentUpon>w_progressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锐浪打印\frmSetPrinter.resx">
+      <DependentUpon>frmSetPrinter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锐浪打印\frmPrintRuiLang.resx">
+      <DependentUpon>frmPrintRuiLang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锐浪打印\w_Report_Designer6.resx">
+      <DependentUpon>w_Report_Designer6.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="条形码\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,12 @@
+D:\源代码备份\ZQTMS.Lib\bin\Debug\ZQTMS.Lib.dll
+D:\源代码备份\ZQTMS.Lib\bin\Debug\ZQTMS.Lib.pdb
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ResolveAssemblyReference.cache
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.FileList.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.Properties.Resources.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.MyGridControl.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.UCLabelBox.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.UCLabelColor.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.UCLine.resources
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.csproj.GenerateResource.Cache
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.dll
+D:\源代码备份\ZQTMS.Lib\obj\Debug\ZQTMS.Lib.pdb

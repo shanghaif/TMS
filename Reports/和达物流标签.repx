@@ -1,0 +1,422 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\windows\assembly\GAC_MSIL\DevExpress.XtraReports.v9.3\9.3.2.0__b88d1754d700e49a\DevExpress.XtraReports.v9.3.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-CN</Localization>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRRichText Num;
+        private DevExpress.XtraReports.UI.XRRichText Package;
+        private DevExpress.XtraReports.UI.XRRichText BillNo;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox2;
+        private DevExpress.XtraReports.UI.XRRichText Varieties;
+        private DevExpress.XtraReports.UI.XRRichText TransferSite;
+        private DevExpress.XtraReports.UI.XRRichText TransferMode;
+        private DevExpress.XtraReports.UI.XRRichText StartSite;
+        private DevExpress.XtraReports.UI.XRRichText DestinationSite;
+        private DevExpress.XtraReports.UI.XRRichText ConsigneeName;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLabel label4;
+        private DevExpress.XtraReports.UI.XRLabel label5;
+        private DevExpress.XtraReports.UI.XRLine line1;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private System.Resources.ResourceManager _resources;
+        public xtraReport1() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAKAAAAAQAAAGhTeXN0ZW0uRHJhd" +
+                        "2luZy5CaXRtYXAsIFN5c3RlbS5EcmF3aW5nLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhb" +
+                        "CwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYVBBRFBBROXqvoERjXemPfihq6+oD/EtbQ365" +
+                        "xeYA+dZHTeMGF5AcQUIWtCtC2YiAgAAPQAAAA4BAACQAQAAAAAAANkBAABlAgAATQEAANcAAACIAAAA+" +
+                        "AMAADhCAGkAbABsAE4AbwAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmAFMAdAByAGkAbgBnA" +
+                        "AAAAABGQwBvAG4AcwBpAGcAbgBlAGUATgBhAG0AZQAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAd" +
+                        "ABmAFMAdAByAGkAbgBnACsCAABKRABlAHMAdABpAG4AYQB0AGkAbwBuAFMAaQB0AGUALgBTAGUAcgBpA" +
+                        "GEAbABpAHoAYQBiAGwAZQBSAHQAZgBTAHQAcgBpAG4AZwBWBAAAMk4AdQBtAC4AUwBlAHIAaQBhAGwAa" +
+                        "QB6AGEAYgBsAGUAUgB0AGYAUwB0AHIAaQBuAGcAkQYAADpQAGEAYwBrAGEAZwBlAC4AUwBlAHIAaQBhA" +
+                        "GwAaQB6AGEAYgBsAGUAUgB0AGYAUwB0AHIAaQBuAGcApAgAAD5TAHQAYQByAHQAUwBpAHQAZQAuAFMAZ" +
+                        "QByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmAFMAdAByAGkAbgBnAL8KAABEVAByAGEAbgBzAGYAZQByA" +
+                        "E0AbwBkAGUALgBTAGUAcgBpAGEAbABpAHoAYQBiAGwAZQBSAHQAZgBTAHQAcgBpAG4AZwD6DAAARFQAc" +
+                        "gBhAG4AcwBmAGUAcgBTAGkAdABlAC4AUwBlAHIAaQBhAGwAaQB6AGEAYgBsAGUAUgB0AGYAUwB0AHIAa" +
+                        "QBuAGcASQ8AAD5WAGEAcgBpAGUAdABpAGUAcwAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmA" +
+                        "FMAdAByAGkAbgBnAIQRAAAicABpAGMAdAB1AHIAZQBCAG8AeAAyAC4ASQBtAGEAZwBlAJsTAAABqARld" +
+                        "0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd0JwQUdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR" +
+                        "1lBYndCdUFIUUFkQUJpQUd3QURRQUtBSHNBWEFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd" +
+                        "0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEUUFLQUhzQVhBQm1BREVBSUFET0FLSUF5QUR0QU5FQXhRQzZBT" +
+                        "m9BT3dCOUFBMEFDZ0I5QUEwQUNnQjdBQTBBQ2dCY0FHTUFid0JzQUc4QWNnQjBBR0lBYkFBTkFBb0FPd" +
+                        "0FOQUFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd0FkUUJsQURBQU93QU5BQ" +
+                        "W9BWEFCeUFHVUFaQUF3QUZ3QVp3QnlBR1VBWlFCdUFEQUFYQUJpQUd3QWRRQmxBRElBTlFBMUFEc0FEU" +
+                        "UFLQUgwQURRQUtBSHNBWEFCekFHVUFZd0IwQUdRQVhBQndBR0VBY2dCa0FGd0FjQUJzQUdFQWFRQnVBR" +
+                        "ndBY1FCc0FIc0FYQUJtQURFQVhBQmpBR1lBTVFBZ0FGd0FkUUF0QURJQU9BQTNBRElBTUFBL0FGd0FkU" +
+                        "UF5QURFQU13QXpBRE1BUHdCY0FIVUFNZ0F4QURRQU9RQTFBRDhBZlFCY0FIQUFZUUJ5QUgwQURRQUtBS" +
+                        "DBBRFFBS0FBPT0BqARld0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd0JwQUdNQWNBQm5BRGtBTXdBMkFBM" +
+                        "EFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3QURRQUtBSHNBWEFCbUFEQUFJQUJVQUdrQWJRQ" +
+                        "mxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEUUFLQUhzQVhBQm1BREVBSUFET0FLS" +
+                        "UF5QUR0QU5FQXhRQzZBTm9BT3dCOUFBMEFDZ0I5QUEwQUNnQjdBQTBBQ2dCY0FHTUFid0JzQUc4QWNnQ" +
+                        "jBBR0lBYkFBTkFBb0FPd0FOQUFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd" +
+                        "0FkUUJsQURBQU93QU5BQW9BWEFCeUFHVUFaQUF3QUZ3QVp3QnlBR1VBWlFCdUFEQUFYQUJpQUd3QWRRQ" +
+                        "mxBRElBTlFBMUFEc0FEUUFLQUgwQURRQUtBSHNBWEFCekFHVUFZd0IwQUdRQVhBQndBR0VBY2dCa0FGd" +
+                        "0FjQUJzQUdFQWFRQnVBRndBY1FCc0FIc0FYQUJtQURFQVhBQmpBR1lBTVFBZ0FGd0FkUUF5QURVQU9RQ" +
+                        "XhBREFBUHdCY0FIVUFMUUF5QURrQU5BQXdBREVBUHdCY0FIVUFNZ0F3QURFQU5RQTBBRDhBZlFCY0FIQ" +
+                        "UFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BuARld0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd0JwQUdNQ" +
+                        "WNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3QURRQUtBSHNBWEFCb" +
+                        "UFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEUUFLQUhzQ" +
+                        "VhBQm1BREVBSUFET0FLSUF5QUR0QU5FQXhRQzZBTm9BT3dCOUFBMEFDZ0I5QUEwQUNnQjdBQTBBQ2dCY" +
+                        "0FHTUFid0JzQUc4QWNnQjBBR0lBYkFBTkFBb0FPd0FOQUFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQ" +
+                        "VpRQnVBREFBWEFCaUFHd0FkUUJsQURBQU93QU5BQW9BWEFCeUFHVUFaQUF3QUZ3QVp3QnlBR1VBWlFCd" +
+                        "UFEQUFYQUJpQUd3QWRRQmxBRElBTlFBMUFEc0FEUUFLQUgwQURRQUtBSHNBWEFCekFHVUFZd0IwQUdRQ" +
+                        "VhBQndBR0VBY2dCa0FGd0FjQUJzQUdFQWFRQnVBRndBY1FCc0FIc0FYQUJpQUZ3QVpnQXhBRndBWmdCe" +
+                        "kFETUFNZ0JjQUdNQVpnQXhBQ0FBWEFCMUFETUFNQUEwQURRQU5nQS9BRndBZFFBekFEQUFNd0EwQURBQ" +
+                        "VB3QmNBSFVBTXdBeEFEUUFOQUE1QUQ4QWZRQmNBSEFBWVFCeUFIMEFEUUFLQUgwQURRQUtBQT09AZAEZ" +
+                        "XdCY0FISUFkQUJtQURFQVhBQmhBRzRBY3dCcEFHTUFjQUJuQURrQU13QTJBQTBBQ2dCN0FBMEFDZ0JjQ" +
+                        "UdZQWJ3QnVBSFFBZEFCaUFHd0FEUUFLQUhzQVhBQm1BREFBSUFCVUFHa0FiUUJsQUhNQUlBQk9BR1VBZ" +
+                        "HdBZ0FGSUFid0J0QUdFQWJnQTdBSDBBRFFBS0FIc0FYQUJtQURFQUlBRE9BS0lBeUFEdEFORUF4UUM2Q" +
+                        "U5vQU93QjlBQTBBQ2dCOUFBMEFDZ0I3QUEwQUNnQmNBR01BYndCc0FHOEFjZ0IwQUdJQWJBQU5BQW9BT" +
+                        "3dBTkFBb0FYQUJ5QUdVQVpBQXdBRndBWndCeUFHVUFaUUJ1QURBQVhBQmlBR3dBZFFCbEFEQUFPd0FOQ" +
+                        "UFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd0FkUUJsQURJQU5RQTFBRHNBR" +
+                        "FFBS0FIMEFEUUFLQUhzQVhBQnpBR1VBWXdCMEFHUUFYQUJ3QUdFQWNnQmtBRndBY0FCc0FHRUFhUUJ1Q" +
+                        "UZ3QWNRQnNBSHNBWEFCbUFERUFYQUJqQUdZQU1RQWdBRndBZFFBeUFEQUFNZ0F4QURRQVB3QmNBSFVBT" +
+                        "WdBMUFEa0FOZ0E0QUQ4QWZRQmNBSEFBWVFCeUFIMEFEUUFLQUgwQURRQUtBQT09AZgEZXdCY0FISUFkQ" +
+                        "UJtQURFQVhBQmhBRzRBY3dCcEFHTUFjQUJuQURrQU13QTJBQTBBQ2dCN0FBMEFDZ0JjQUdZQWJ3QnVBS" +
+                        "FFBZEFCaUFHd0FEUUFLQUhzQVhBQm1BREFBSUFCVUFHa0FiUUJsQUhNQUlBQk9BR1VBZHdBZ0FGSUFid" +
+                        "0J0QUdFQWJnQTdBSDBBRFFBS0FIc0FYQUJtQURFQUlBRE9BS0lBeUFEdEFORUF4UUM2QU5vQU93QjlBQ" +
+                        "TBBQ2dCOUFBMEFDZ0I3QUEwQUNnQmNBR01BYndCc0FHOEFjZ0IwQUdJQWJBQU5BQW9BT3dBTkFBb0FYQ" +
+                        "UJ5QUdVQVpBQXdBRndBWndCeUFHVUFaUUJ1QURBQVhBQmlBR3dBZFFCbEFEQUFPd0FOQUFvQVhBQnlBR" +
+                        "1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd0FkUUJsQURJQU5RQTFBRHNBRFFBS0FIMEFEU" +
+                        "UFLQUhzQVhBQnpBR1VBWXdCMEFHUUFYQUJ3QUdFQWNnQmtBRndBY0FCc0FHRUFhUUJ1QUZ3QWNRQnNBS" +
+                        "HNBWEFCaUFGd0FaZ0F4QUZ3QVl3Qm1BREVBSUFCY0FIVUFNZ0F4QURJQU5RQXpBRDhBWEFCMUFDMEFNd" +
+                        "0F3QURVQU1nQXpBRDhBZlFCY0FIQUFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BuARld0JjQUhJQWRBQ" +
+                        "m1BREVBWEFCaEFHNEFjd0JwQUdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIU" +
+                        "UFkQUJpQUd3QURRQUtBSHNBWEFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3Q" +
+                        "nRBR0VBYmdBN0FIMEFEUUFLQUhzQVhBQm1BREVBSUFET0FLSUF5QUR0QU5FQXhRQzZBTm9BT3dCOUFBM" +
+                        "EFDZ0I5QUEwQUNnQjdBQTBBQ2dCY0FHTUFid0JzQUc4QWNnQjBBR0lBYkFBTkFBb0FPd0FOQUFvQVhBQ" +
+                        "nlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd0FkUUJsQURBQU93QU5BQW9BWEFCeUFHV" +
+                        "UFaQUF3QUZ3QVp3QnlBR1VBWlFCdUFEQUFYQUJpQUd3QWRRQmxBRElBTlFBMUFEc0FEUUFLQUgwQURRQ" +
+                        "UtBSHNBWEFCekFHVUFZd0IwQUdRQVhBQndBR0VBY2dCa0FGd0FjQUJzQUdFQWFRQnVBRndBY1FCc0FIc" +
+                        "0FYQUJpQUZ3QVpnQXhBRndBWmdCekFETUFNZ0JjQUdNQVpnQXhBQ0FBWEFCMUFESUFNZ0E1QURnQU53Q" +
+                        "S9BRndBZFFBeUFERUFOQUExQURjQVB3QmNBSFVBTXdBeEFEUUFOQUE1QUQ4QWZRQmNBSEFBWVFCeUFIM" +
+                        "EFEUUFLQUgwQURRQUtBQT09AcwEZXdCY0FISUFkQUJtQURFQVhBQmhBRzRBY3dCcEFHTUFjQUJuQURrQ" +
+                        "U13QTJBQTBBQ2dCN0FBMEFDZ0JjQUdZQWJ3QnVBSFFBZEFCaUFHd0FEUUFLQUhzQVhBQm1BREFBSUFCV" +
+                        "UFHa0FiUUJsQUhNQUlBQk9BR1VBZHdBZ0FGSUFid0J0QUdFQWJnQTdBSDBBRFFBS0FIc0FYQUJtQURFQ" +
+                        "UlBRE9BS0lBeUFEdEFORUF4UUM2QU5vQU93QjlBQTBBQ2dCOUFBMEFDZ0I3QUEwQUNnQmNBR01BYndCc" +
+                        "0FHOEFjZ0IwQUdJQWJBQU5BQW9BT3dBTkFBb0FYQUJ5QUdVQVpBQXdBRndBWndCeUFHVUFaUUJ1QURBQ" +
+                        "VhBQmlBR3dBZFFCbEFEQUFPd0FOQUFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCa" +
+                        "UFHd0FkUUJsQURJQU5RQTFBRHNBRFFBS0FIMEFEUUFLQUhzQVhBQnpBR1VBWXdCMEFHUUFYQUJ3QUdFQ" +
+                        "WNnQmtBRndBY0FCc0FHRUFhUUJ1QUZ3QWNRQnNBSHNBWEFCaUFGd0FaZ0F4QUZ3QVpnQnpBRE1BTUFCY" +
+                        "0FHTUFaZ0F4QUNBQVhBQjFBRElBTUFBeEFETUFNZ0EvQUZ3QWRRQXlBRFVBTlFBd0FEa0FQd0JjQUhVQ" +
+                        "U1nQTJBREFBTkFBeEFEOEFYQUIxQURJQU5BQXpBRE1BTlFBL0FIMEFYQUJ3QUdFQWNnQjlBQTBBQ2dCO" +
+                        "UFBMEFDZ0E9AbgEZXdCY0FISUFkQUJtQURFQVhBQmhBRzRBY3dCcEFHTUFjQUJuQURrQU13QTJBQTBBQ" +
+                        "2dCN0FBMEFDZ0JjQUdZQWJ3QnVBSFFBZEFCaUFHd0FEUUFLQUhzQVhBQm1BREFBSUFCVUFHa0FiUUJsQ" +
+                        "UhNQUlBQk9BR1VBZHdBZ0FGSUFid0J0QUdFQWJnQTdBSDBBRFFBS0FIc0FYQUJtQURFQUlBRE9BS0lBe" +
+                        "UFEdEFORUF4UUM2QU5vQU93QjlBQTBBQ2dCOUFBMEFDZ0I3QUEwQUNnQmNBR01BYndCc0FHOEFjZ0IwQ" +
+                        "UdJQWJBQU5BQW9BT3dBTkFBb0FYQUJ5QUdVQVpBQXdBRndBWndCeUFHVUFaUUJ1QURBQVhBQmlBR3dBZ" +
+                        "FFCbEFEQUFPd0FOQUFvQVhBQnlBR1VBWkFBd0FGd0Fad0J5QUdVQVpRQnVBREFBWEFCaUFHd0FkUUJsQ" +
+                        "URJQU5RQTFBRHNBRFFBS0FIMEFEUUFLQUhzQVhBQnpBR1VBWXdCMEFHUUFYQUJ3QUdFQWNnQmtBRndBY" +
+                        "0FCc0FHRUFhUUJ1QUZ3QWNRQnNBSHNBWEFCaUFGd0FaZ0F4QUZ3QVpnQnpBRE1BTWdCY0FHTUFaZ0F4Q" +
+                        "UNBQVhBQjFBRElBTUFBd0FERUFNd0EvQUZ3QWRRQXRBRElBT0FBNEFESUFNQUEvQUZ3QWRRQXpBREVBT" +
+                        "kFBMEFEa0FQd0I5QUZ3QWNBQmhBSElBZlFBTkFBb0FmUUFOQUFvQQGUBGV3QmNBSElBZEFCbUFERUFYQ" +
+                        "UJoQUc0QWN3QnBBR01BY0FCbkFEa0FNd0EyQUEwQUNnQjdBQTBBQ2dCY0FHWUFid0J1QUhRQWRBQmlBR" +
+                        "3dBRFFBS0FIc0FYQUJtQURBQUlBQlVBR2tBYlFCbEFITUFJQUJPQUdVQWR3QWdBRklBYndCdEFHRUFiZ" +
+                        "0E3QUgwQURRQUtBSHNBWEFCbUFERUFJQURPQUtJQXlBRHRBTkVBeFFDNkFOb0FPd0I5QUEwQUNnQjlBQ" +
+                        "TBBQ2dCN0FBMEFDZ0JjQUdNQWJ3QnNBRzhBY2dCMEFHSUFiQUFOQUFvQU93QU5BQW9BWEFCeUFHVUFaQ" +
+                        "UF3QUZ3QVp3QnlBR1VBWlFCdUFEQUFYQUJpQUd3QWRRQmxBREFBT3dBTkFBb0FYQUJ5QUdVQVpBQXdBR" +
+                        "ndBWndCeUFHVUFaUUJ1QURBQVhBQmlBR3dBZFFCbEFESUFOUUExQURzQURRQUtBSDBBRFFBS0FIc0FYQ" +
+                        "UJ6QUdVQVl3QjBBR1FBWEFCd0FHRUFjZ0JrQUZ3QWNBQnNBR0VBYVFCdUFGd0FjUUJzQUhzQVhBQmlBR" +
+                        "ndBWmdBeEFGd0FZd0JtQURFQUlBQmNBSFVBTWdBeEFEWUFPUUEzQUQ4QVhBQjFBRElBTVFBMUFERUFOd" +
+                        "0EvQUgwQVhBQndBR0VBY2dCOUFBMEFDZ0I5QUEwQUNnQT1AAAEAAAD/////AQAAAAAAAAAMAgAAAFFTe" +
+                        "XN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva" +
+                        "2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAA" +
+                        "AAJAwAAAA8DAAAAdwMAAAL/2P/gABBKRklGAAEBAQBgAGAAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MC" +
+                        "wsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NG" +
+                        "DIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIA" +
+                        "BUAKQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDB" +
+                        "QUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1N" +
+                        "jc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanq" +
+                        "KmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBA" +
+                        "QEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxE" +
+                        "yIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZ" +
+                        "WZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS0" +
+                        "9TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APf6K811n4a69qes3l9B41v7eKeQu" +
+                        "kI34jB/hGHAwPpVH/hU/iL/AKHy/wD/ACJ/8coA9YrkPH2peKtIsbW+8N2kN1HC5a8iZC7snGNoHOOuc" +
+                        "c9PeuW/4VP4i/6Hy/8A/In/AMcqhrHgLUvD+nSahqfxGvbe3j/iPmZY9go8zJPsKAO58G/ELSPF8Qijb" +
+                        "7LqSjMlnKfm9yp/iH6juBXW18z+DvBWr+L9aN5az3EFjFPubU5AVckH+Hnl/wAcDua+jfsTf8/lz/30P" +
+                        "8KALdGaKKADNYXibwhpHi1LNNWjldbWQyIEkK5yMEHHUGiigDYtbaCytY7a1hSGCJQqRxrhVHoBUtFFA" +
+                        "H//2Qs=";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.Num = new DevExpress.XtraReports.UI.XRRichText();
+            this.Package = new DevExpress.XtraReports.UI.XRRichText();
+            this.BillNo = new DevExpress.XtraReports.UI.XRRichText();
+            this.pictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.Varieties = new DevExpress.XtraReports.UI.XRRichText();
+            this.TransferSite = new DevExpress.XtraReports.UI.XRRichText();
+            this.TransferMode = new DevExpress.XtraReports.UI.XRRichText();
+            this.StartSite = new DevExpress.XtraReports.UI.XRRichText();
+            this.DestinationSite = new DevExpress.XtraReports.UI.XRRichText();
+            this.ConsigneeName = new DevExpress.XtraReports.UI.XRRichText();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line1 = new DevExpress.XtraReports.UI.XRLine();
+            ((System.ComponentModel.ISupportInitialize)(this.Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Package)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BillNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Varieties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransferSite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransferMode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StartSite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationSite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsigneeName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.Dpi = 254F;
+            this.TopMargin.HeightF = 0F;
+            this.TopMargin.Name = "TopMargin";
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.Num,
+                        this.Package,
+                        this.BillNo,
+                        this.pictureBox2,
+                        this.Varieties,
+                        this.TransferSite,
+                        this.TransferMode,
+                        this.StartSite,
+                        this.DestinationSite,
+                        this.ConsigneeName,
+                        this.label1,
+                        this.label2,
+                        this.label3,
+                        this.label4,
+                        this.label5,
+                        this.line1});
+            this.Detail.Dpi = 254F;
+            this.Detail.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.Detail.HeightF = 508F;
+            this.Detail.Name = "Detail";
+            this.Detail.StylePriority.UseFont = false;
+            this.Detail.StylePriority.UseTextAlignment = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // Num
+            // 
+            this.Num.Dpi = 254F;
+            this.Num.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Num.LocationFloat = new DevExpress.Utils.PointFloat(576.7899F, 278.6869F);
+            this.Num.Name = "Num";
+            this.Num.SerializableRtfString = resources.GetString("Num.SerializableRtfString");
+            this.Num.SizeF = new System.Drawing.SizeF(151.5833F, 63.50009F);
+            this.Num.StylePriority.UseFont = false;
+            // 
+            // Package
+            // 
+            this.Package.Dpi = 254F;
+            this.Package.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Package.LocationFloat = new DevExpress.Utils.PointFloat(597.2292F, 408.9166F);
+            this.Package.Name = "Package";
+            this.Package.SerializableRtfString = resources.GetString("Package.SerializableRtfString");
+            this.Package.SizeF = new System.Drawing.SizeF(127.7707F, 52.91675F);
+            this.Package.StylePriority.UseFont = false;
+            // 
+            // BillNo
+            // 
+            this.BillNo.Dpi = 254F;
+            this.BillNo.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BillNo.LocationFloat = new DevExpress.Utils.PointFloat(360.5607F, 278.6868F);
+            this.BillNo.Name = "BillNo";
+            this.BillNo.SerializableRtfString = resources.GetString("BillNo.SerializableRtfString");
+            this.BillNo.SizeF = new System.Drawing.SizeF(195.0627F, 58.50003F);
+            this.BillNo.StylePriority.UseFont = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dpi = 254F;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(342.8542F, 205.186F);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.SizeF = new System.Drawing.SizeF(142.1042F, 63.5F);
+            // 
+            // Varieties
+            // 
+            this.Varieties.Dpi = 254F;
+            this.Varieties.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Varieties.LocationFloat = new DevExpress.Utils.PointFloat(597.2292F, 360.416F);
+            this.Varieties.Name = "Varieties";
+            this.Varieties.SerializableRtfString = resources.GetString("Varieties.SerializableRtfString");
+            this.Varieties.SizeF = new System.Drawing.SizeF(127.7708F, 59.08392F);
+            this.Varieties.StylePriority.UseFont = false;
+            // 
+            // TransferSite
+            // 
+            this.TransferSite.Dpi = 254F;
+            this.TransferSite.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TransferSite.LocationFloat = new DevExpress.Utils.PointFloat(320.9169F, 125.8108F);
+            this.TransferSite.Name = "TransferSite";
+            this.TransferSite.SerializableRtfString = resources.GetString("TransferSite.SerializableRtfString");
+            this.TransferSite.SizeF = new System.Drawing.SizeF(177.2708F, 79.37515F);
+            this.TransferSite.StylePriority.UseFont = false;
+            // 
+            // TransferMode
+            // 
+            this.TransferMode.Dpi = 254F;
+            this.TransferMode.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TransferMode.LocationFloat = new DevExpress.Utils.PointFloat(57.48099F, 294.5619F);
+            this.TransferMode.Name = "TransferMode";
+            this.TransferMode.SerializableRtfString = resources.GetString("TransferMode.SerializableRtfString");
+            this.TransferMode.SizeF = new System.Drawing.SizeF(227.5816F, 81.72919F);
+            this.TransferMode.StylePriority.UseFont = false;
+            // 
+            // StartSite
+            // 
+            this.StartSite.Dpi = 254F;
+            this.StartSite.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.StartSite.LocationFloat = new DevExpress.Utils.PointFloat(121.7083F, 181.3733F);
+            this.StartSite.Name = "StartSite";
+            this.StartSite.SerializableRtfString = resources.GetString("StartSite.SerializableRtfString");
+            this.StartSite.SizeF = new System.Drawing.SizeF(185.9792F, 87.31267F);
+            this.StartSite.StylePriority.UseFont = false;
+            // 
+            // DestinationSite
+            // 
+            this.DestinationSite.Dpi = 254F;
+            this.DestinationSite.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DestinationSite.LocationFloat = new DevExpress.Utils.PointFloat(514.0626F, 184.0194F);
+            this.DestinationSite.Name = "DestinationSite";
+            this.DestinationSite.SerializableRtfString = resources.GetString("DestinationSite.SerializableRtfString");
+            this.DestinationSite.SizeF = new System.Drawing.SizeF(214.3106F, 84.66663F);
+            this.DestinationSite.StylePriority.UseFont = false;
+            // 
+            // ConsigneeName
+            // 
+            this.ConsigneeName.Dpi = 254F;
+            this.ConsigneeName.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ConsigneeName.LocationFloat = new DevExpress.Utils.PointFloat(159.936F, 278.6868F);
+            this.ConsigneeName.Name = "ConsigneeName";
+            this.ConsigneeName.SerializableRtfString = resources.GetString("ConsigneeName.SerializableRtfString");
+            this.ConsigneeName.SizeF = new System.Drawing.SizeF(188.6267F, 58.50003F);
+            this.ConsigneeName.StylePriority.UseFont = false;
+            // 
+            // label1
+            // 
+            this.label1.Dpi = 254F;
+            this.label1.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(57.48099F, 360.4161F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label1.SizeF = new System.Drawing.SizeF(227.5817F, 63.50006F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.Text = "服务热线：";
+            // 
+            // label2
+            // 
+            this.label2.Dpi = 254F;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(57.48099F, 0F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label2.SizeF = new System.Drawing.SizeF(667.519F, 112.5816F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.Text = "和   达   物   流";
+            // 
+            // label3
+            // 
+            this.label3.Dpi = 254F;
+            this.label3.Font = new System.Drawing.Font("新宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(243.4149F, 387.4999F);
+            this.label3.Multiline = true;
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label3.SizeF = new System.Drawing.SizeF(304.2709F, 63.50006F);
+            this.label3.StylePriority.UseFont = false;
+            this.label3.StylePriority.UseTextAlignment = false;
+            this.label3.Text = "0769-82913379";
+            this.label3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Dpi = 254F;
+            this.label4.Font = new System.Drawing.Font("新宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(243.4149F, 360.4161F);
+            this.label4.Name = "label4";
+            this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label4.SizeF = new System.Drawing.SizeF(304.271F, 63.5F);
+            this.label4.StylePriority.UseFont = false;
+            this.label4.Text = "0769-82913380";
+            // 
+            // label5
+            // 
+            this.label5.Dpi = 254F;
+            this.label5.Font = new System.Drawing.Font("新宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(243.4149F, 419.4999F);
+            this.label5.Name = "label5";
+            this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label5.SizeF = new System.Drawing.SizeF(342.0849F, 63.5F);
+            this.label5.StylePriority.UseFont = false;
+            this.label5.Text = "0769-33357121(百茂)";
+            // 
+            // line1
+            // 
+            this.line1.Dpi = 254F;
+            this.line1.LineWidth = 3;
+            this.line1.LocationFloat = new DevExpress.Utils.PointFloat(555.6234F, 278.6868F);
+            this.line1.Name = "line1";
+            this.line1.SizeF = new System.Drawing.SizeF(21.16656F, 58.50006F);
+            // 
+            // xtraReport1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin});
+            this.Dpi = 254F;
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+            this.Name = "xtraReport1";
+            this.PageHeight = 500;
+            this.PageWidth = 750;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.ShowPrintStatusDialog = false;
+            this.SnapGridSize = 31.75F;
+            this.Version = "9.3";
+            ((System.ComponentModel.ISupportInitialize)(this.Num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Package)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BillNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Varieties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransferSite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransferMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StartSite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationSite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsigneeName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

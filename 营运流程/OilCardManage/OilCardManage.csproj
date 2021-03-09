@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BA58332-21AA-4ADB-A52A-818D266E0D88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.OilCardManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3.Design, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddOilPlants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOilPlants.Designer.cs">
+      <DependentUpon>frmAddOilPlants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeparture_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeparture_Select.Designer.cs">
+      <DependentUpon>frmDeparture_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardHXLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardHXLoad.designer.cs">
+      <DependentUpon>frmOilCardHXLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCard.designer.cs">
+      <DependentUpon>frmOilCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardAdd.designer.cs">
+      <DependentUpon>frmOilCardAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilplantsRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilplantsRegister.Designer.cs">
+      <DependentUpon>frmOilplantsRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddOilPlants.resx">
+      <DependentUpon>frmAddOilPlants.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeparture_Select.resx">
+      <DependentUpon>frmDeparture_Select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardHXLoad.resx">
+      <DependentUpon>frmOilCardHXLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCard.resx">
+      <DependentUpon>frmOilCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardAdd.resx">
+      <DependentUpon>frmOilCardAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilplantsRegister.resx">
+      <DependentUpon>frmOilplantsRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardRechargeAdd.resx">
+      <DependentUpon>frmOilCardRechargeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardRecharge.resx">
+      <DependentUpon>frmOilCardRecharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardAllot.resx">
+      <DependentUpon>frmOilCardAllot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardAllotAdd.resx">
+      <DependentUpon>frmOilCardAllotAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardAllotModify.resx">
+      <DependentUpon>frmOilCardAllotModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOilCardAllotHX.resx">
+      <DependentUpon>frmOilCardAllotHX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmOilCardRechargeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardRechargeAdd.designer.cs">
+      <DependentUpon>frmOilCardRechargeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardRecharge.designer.cs">
+      <DependentUpon>frmOilCardRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardAllot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardAllot.designer.cs">
+      <DependentUpon>frmOilCardAllot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardAllotAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardAllotAdd.designer.cs">
+      <DependentUpon>frmOilCardAllotAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardAllotModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardAllotModify.designer.cs">
+      <DependentUpon>frmOilCardAllotModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOilCardAllotHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOilCardAllotHX.designer.cs">
+      <DependentUpon>frmOilCardAllotHX.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

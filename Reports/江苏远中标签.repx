@@ -1,0 +1,203 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\windows\assembly\GAC_MSIL\DevExpress.XtraReports.v9.3\9.3.2.0__b88d1754d700e49a\DevExpress.XtraReports.v9.3.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-CN</Localization>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRRichText DestinationSite;
+        private DevExpress.XtraReports.UI.XRRichText ConsigneeName;
+        private DevExpress.XtraReports.UI.XRRichText BillNo;
+        private DevExpress.XtraReports.UI.XRRichText Num;
+        private DevExpress.XtraReports.UI.XRRichText Varieties;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private System.Resources.ResourceManager _resources;
+        public xtraReport1() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAFAAAAAAAAAFBBRFBBRFDl6r6BE" +
+                        "Y13pi1tDfpxBQha0K0LZg4BAAA9AAAAAAAAANcAAACIAAAALQIAADhCAGkAbABsAE4AbwAuAFMAZQByA" +
+                        "GkAYQBsAGkAegBhAGIAbABlAFIAdABmAFMAdAByAGkAbgBnAAAAAABGQwBvAG4AcwBpAGcAbgBlAGUAT" +
+                        "gBhAG0AZQAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmAFMAdAByAGkAbgBnACsCAABKRABlA" +
+                        "HMAdABpAG4AYQB0AGkAbwBuAFMAaQB0AGUALgBTAGUAcgBpAGEAbABpAHoAYQBiAGwAZQBSAHQAZgBTA" +
+                        "HQAcgBpAG4AZwBWBAAAMk4AdQBtAC4AUwBlAHIAaQBhAGwAaQB6AGEAYgBsAGUAUgB0AGYAUwB0AHIAa" +
+                        "QBuAGcAaQYAAD5WAGEAcgBpAGUAdABpAGUAcwAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmA" +
+                        "FMAdAByAGkAbgBnAHwIAAABqARld0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd0JwQUdNQWNBQm5BRGtBT" +
+                        "XdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3QURRQUtBSHNBWEFCbUFEQUFJQUJVQ" +
+                        "UdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEUUFLQUhzQVhBQm1BREVBS" +
+                        "UFEUUFNSUF5d0RPQU13QTVRQTdBSDBBRFFBS0FIMEFEUUFLQUhzQURRQUtBRndBWXdCdkFHd0Fid0J5Q" +
+                        "UhRQVlnQnNBQTBBQ2dBN0FBMEFDZ0JjQUhJQVpRQmtBREFBWEFCbkFISUFaUUJsQUc0QU1BQmNBR0lBY" +
+                        "kFCMUFHVUFNQUE3QUEwQUNnQmNBSElBWlFCa0FEQUFYQUJuQUhJQVpRQmxBRzRBTUFCY0FHSUFiQUIxQ" +
+                        "UdVQU1nQTFBRFVBT3dBTkFBb0FmUUFOQUFvQWV3QmNBSE1BWlFCakFIUUFaQUJjQUhBQVlRQnlBR1FBW" +
+                        "EFCd0FHd0FZUUJwQUc0QVhBQnhBR3dBZXdCY0FHSUFYQUJtQURFQVhBQmpBR1lBTVFBZ0FGd0FkUUF0Q" +
+                        "URJQU9BQTNBRElBTUFBL0FGd0FkUUF5QURFQU13QXpBRE1BUHdCY0FIVUFNZ0F4QURRQU9RQTFBRDhBZ" +
+                        "lFCY0FIQUFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BqARld0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd" +
+                        "0JwQUdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3QURRQUtBS" +
+                        "HNBWEFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEU" +
+                        "UFLQUhzQVhBQm1BREVBSUFEUUFNSUF5d0RPQU13QTVRQTdBSDBBRFFBS0FIMEFEUUFLQUhzQURRQUtBR" +
+                        "ndBWXdCdkFHd0Fid0J5QUhRQVlnQnNBQTBBQ2dBN0FBMEFDZ0JjQUhJQVpRQmtBREFBWEFCbkFISUFaU" +
+                        "UJsQUc0QU1BQmNBR0lBYkFCMUFHVUFNQUE3QUEwQUNnQmNBSElBWlFCa0FEQUFYQUJuQUhJQVpRQmxBR" +
+                        "zRBTUFCY0FHSUFiQUIxQUdVQU1nQTFBRFVBT3dBTkFBb0FmUUFOQUFvQWV3QmNBSE1BWlFCakFIUUFaQ" +
+                        "UJjQUhBQVlRQnlBR1FBWEFCd0FHd0FZUUJwQUc0QVhBQnhBR3dBZXdCY0FHSUFYQUJtQURFQVhBQmpBR" +
+                        "1lBTVFBZ0FGd0FkUUF5QURVQU9RQXhBREFBUHdCY0FIVUFMUUF5QURrQU5BQXdBREVBUHdCY0FIVUFNZ" +
+                        "0F3QURFQU5RQTBBRDhBZlFCY0FIQUFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BkARld0JjQUhJQWRBQ" +
+                        "m1BREVBWEFCaEFHNEFjd0JwQUdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIU" +
+                        "UFkQUJpQUd3QURRQUtBSHNBWEFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3Q" +
+                        "nRBR0VBYmdBN0FIMEFEUUFLQUhzQVhBQm1BREVBSUFEUUFNSUF5d0RPQU13QTVRQTdBSDBBRFFBS0FIM" +
+                        "EFEUUFLQUhzQURRQUtBRndBWXdCdkFHd0Fid0J5QUhRQVlnQnNBQTBBQ2dBN0FBMEFDZ0JjQUhJQVpRQ" +
+                        "mtBREFBWEFCbkFISUFaUUJsQUc0QU1BQmNBR0lBYkFCMUFHVUFNQUE3QUEwQUNnQmNBSElBWlFCa0FEQ" +
+                        "UFYQUJuQUhJQVpRQmxBRzRBTUFCY0FHSUFiQUIxQUdVQU1nQTFBRFVBT3dBTkFBb0FmUUFOQUFvQWV3Q" +
+                        "mNBSE1BWlFCakFIUUFaQUJjQUhBQVlRQnlBR1FBWEFCd0FHd0FZUUJwQUc0QVhBQnhBR3dBZXdCY0FHS" +
+                        "UFYQUJtQURFQVhBQmpBR1lBTVFBZ0FGd0FkUUF5QURFQU1BQTBBREFBUHdCY0FIVUFNd0F4QURRQU5BQ" +
+                        "TVBRDhBZlFCY0FIQUFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BkARld0JjQUhJQWRBQm1BREVBWEFCa" +
+                        "EFHNEFjd0JwQUdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3Q" +
+                        "URRQUtBSHNBWEFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN" +
+                        "0FIMEFEUUFLQUhzQVhBQm1BREVBSUFEUUFNSUF5d0RPQU13QTVRQTdBSDBBRFFBS0FIMEFEUUFLQUhzQ" +
+                        "URRQUtBRndBWXdCdkFHd0Fid0J5QUhRQVlnQnNBQTBBQ2dBN0FBMEFDZ0JjQUhJQVpRQmtBREFBWEFCb" +
+                        "kFISUFaUUJsQUc0QU1BQmNBR0lBYkFCMUFHVUFNQUE3QUEwQUNnQmNBSElBWlFCa0FEQUFYQUJuQUhJQ" +
+                        "VpRQmxBRzRBTUFCY0FHSUFiQUIxQUdVQU1nQTFBRFVBT3dBTkFBb0FmUUFOQUFvQWV3QmNBSE1BWlFCa" +
+                        "kFIUUFaQUJjQUhBQVlRQnlBR1FBWEFCd0FHd0FZUUJwQUc0QVhBQnhBR3dBZXdCY0FHSUFYQUJtQURFQ" +
+                        "VhBQmpBR1lBTVFBZ0FGd0FkUUF5QURBQU1nQXhBRFFBUHdCY0FIVUFNZ0ExQURrQU5nQTRBRDhBZlFCY" +
+                        "0FIQUFZUUJ5QUgwQURRQUtBSDBBRFFBS0FBPT0BkARld0JjQUhJQWRBQm1BREVBWEFCaEFHNEFjd0JwQ" +
+                        "UdNQWNBQm5BRGtBTXdBMkFBMEFDZ0I3QUEwQUNnQmNBR1lBYndCdUFIUUFkQUJpQUd3QURRQUtBSHNBW" +
+                        "EFCbUFEQUFJQUJVQUdrQWJRQmxBSE1BSUFCT0FHVUFkd0FnQUZJQWJ3QnRBR0VBYmdBN0FIMEFEUUFLQ" +
+                        "UhzQVhBQm1BREVBSUFEUUFNSUF5d0RPQU13QTVRQTdBSDBBRFFBS0FIMEFEUUFLQUhzQURRQUtBRndBW" +
+                        "XdCdkFHd0Fid0J5QUhRQVlnQnNBQTBBQ2dBN0FBMEFDZ0JjQUhJQVpRQmtBREFBWEFCbkFISUFaUUJsQ" +
+                        "Uc0QU1BQmNBR0lBYkFCMUFHVUFNQUE3QUEwQUNnQmNBSElBWlFCa0FEQUFYQUJuQUhJQVpRQmxBRzRBT" +
+                        "UFCY0FHSUFiQUIxQUdVQU1nQTFBRFVBT3dBTkFBb0FmUUFOQUFvQWV3QmNBSE1BWlFCakFIUUFaQUJjQ" +
+                        "UhBQVlRQnlBR1FBWEFCd0FHd0FZUUJwQUc0QVhBQnhBR3dBZXdCY0FHSUFYQUJtQURFQVhBQmpBR1lBT" +
+                        "VFBZ0FGd0FkUUF5QURFQU5nQTVBRGNBUHdCY0FIVUFNZ0F4QURVQU1RQTNBRDhBZlFCY0FIQUFZUUJ5Q" +
+                        "UgwQURRQUtBSDBBRFFBS0FBPT0=";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.DestinationSite = new DevExpress.XtraReports.UI.XRRichText();
+            this.ConsigneeName = new DevExpress.XtraReports.UI.XRRichText();
+            this.BillNo = new DevExpress.XtraReports.UI.XRRichText();
+            this.Num = new DevExpress.XtraReports.UI.XRRichText();
+            this.Varieties = new DevExpress.XtraReports.UI.XRRichText();
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationSite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsigneeName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BillNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Varieties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.Dpi = 254F;
+            this.TopMargin.HeightF = 0F;
+            this.TopMargin.Name = "TopMargin";
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.DestinationSite,
+                        this.ConsigneeName,
+                        this.BillNo,
+                        this.Num,
+                        this.Varieties});
+            this.Detail.Dpi = 254F;
+            this.Detail.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.Detail.HeightF = 508F;
+            this.Detail.Name = "Detail";
+            this.Detail.StylePriority.UseFont = false;
+            this.Detail.StylePriority.UseTextAlignment = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // DestinationSite
+            // 
+            this.DestinationSite.Dpi = 254F;
+            this.DestinationSite.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DestinationSite.LocationFloat = new DevExpress.Utils.PointFloat(478.1667F, 359.8333F);
+            this.DestinationSite.Name = "DestinationSite";
+            this.DestinationSite.SerializableRtfString = resources.GetString("DestinationSite.SerializableRtfString");
+            this.DestinationSite.SizeF = new System.Drawing.SizeF(246.8334F, 63.50011F);
+            this.DestinationSite.StylePriority.UseFont = false;
+            // 
+            // ConsigneeName
+            // 
+            this.ConsigneeName.Dpi = 254F;
+            this.ConsigneeName.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ConsigneeName.LocationFloat = new DevExpress.Utils.PointFloat(171.9774F, 359.8333F);
+            this.ConsigneeName.Name = "ConsigneeName";
+            this.ConsigneeName.SerializableRtfString = resources.GetString("ConsigneeName.SerializableRtfString");
+            this.ConsigneeName.SizeF = new System.Drawing.SizeF(151.5833F, 63.50009F);
+            this.ConsigneeName.StylePriority.UseFont = false;
+            // 
+            // BillNo
+            // 
+            this.BillNo.Dpi = 254F;
+            this.BillNo.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BillNo.LocationFloat = new DevExpress.Utils.PointFloat(478.1667F, 259.8744F);
+            this.BillNo.Name = "BillNo";
+            this.BillNo.SerializableRtfString = resources.GetString("BillNo.SerializableRtfString");
+            this.BillNo.SizeF = new System.Drawing.SizeF(246.8334F, 63.50011F);
+            this.BillNo.StylePriority.UseFont = false;
+            // 
+            // Num
+            // 
+            this.Num.Dpi = 254F;
+            this.Num.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Num.LocationFloat = new DevExpress.Utils.PointFloat(171.9774F, 259.8744F);
+            this.Num.Name = "Num";
+            this.Num.SerializableRtfString = resources.GetString("Num.SerializableRtfString");
+            this.Num.SizeF = new System.Drawing.SizeF(151.5833F, 63.50009F);
+            this.Num.StylePriority.UseFont = false;
+            // 
+            // Varieties
+            // 
+            this.Varieties.Dpi = 254F;
+            this.Varieties.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Varieties.LocationFloat = new DevExpress.Utils.PointFloat(171.9774F, 177.8535F);
+            this.Varieties.Name = "Varieties";
+            this.Varieties.SerializableRtfString = resources.GetString("Varieties.SerializableRtfString");
+            this.Varieties.SizeF = new System.Drawing.SizeF(151.5833F, 59.08392F);
+            this.Varieties.StylePriority.UseFont = false;
+            // 
+            // xtraReport1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin});
+            this.Dpi = 254F;
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+            this.Name = "xtraReport1";
+            this.PageHeight = 500;
+            this.PageWidth = 800;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.ShowPrintStatusDialog = false;
+            this.SnapGridSize = 31.75F;
+            this.Version = "9.3";
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationSite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsigneeName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BillNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Varieties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

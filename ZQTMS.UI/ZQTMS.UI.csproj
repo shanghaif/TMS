@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D01562CC-31A1-47B8-AA00-36750A76016C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdes6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v9.3.Core, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.OfficeSkins.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v9.3.UI, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.XtraRichEdit.v9.3\9.3.2.0__b88d1754d700e49a\DevExpress.XtraRichEdit.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="Interop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmComputerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComputerInfo.Designer.cs">
+      <DependentUpon>frmComputerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainNew.Designer.cs">
+      <DependentUpon>frmMainNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainToZQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainToZQ.Designer.cs">
+      <DependentUpon>frmMainToZQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReStart.Designer.cs">
+      <DependentUpon>frmReStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeb.designer.cs">
+      <DependentUpon>frmWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdUserPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdUserPass.Designer.cs">
+      <DependentUpon>frmUpdUserPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol.Designer.cs">
+      <DependentUpon>frmGridViewCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_SelectGuid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_SelectGuid.Designer.cs">
+      <DependentUpon>frmGridViewCol_SelectGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_View_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_View_Add.Designer.cs">
+      <DependentUpon>frmGridViewCol_View_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_View_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmGridViewCol_View_Select.Designer.cs">
+      <DependentUpon>frmGridViewCol_View_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmMenu.designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmRightGroupTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmRightGroupTree.designer.cs">
+      <DependentUpon>frmRightGroupTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT管理\frmWebPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT管理\frmWebPic.designer.cs">
+      <DependentUpon>frmWebPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmComputerInfo.resx">
+      <DependentUpon>frmComputerInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainNew.resx">
+      <DependentUpon>frmMainNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainToZQ.resx">
+      <DependentUpon>frmMainToZQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReStart.resx">
+      <DependentUpon>frmReStart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWeb.resx">
+      <DependentUpon>frmWeb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdUserPass.resx">
+      <DependentUpon>frmUpdUserPass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmGridViewCol.resx">
+      <DependentUpon>frmGridViewCol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmGridViewCol_SelectGuid.resx">
+      <DependentUpon>frmGridViewCol_SelectGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmGridViewCol_View_Add.resx">
+      <DependentUpon>frmGridViewCol_View_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmGridViewCol_View_Select.resx">
+      <DependentUpon>frmGridViewCol_View_Select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmRightGroupTree.resx">
+      <DependentUpon>frmRightGroupTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT管理\frmWebPic.resx">
+      <DependentUpon>frmWebPic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人中心\frmSetAuthorize.resx">
+      <DependentUpon>frmSetAuthorize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\ResourceMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="个人中心\frmSetAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人中心\frmSetAuthorize.Designer.cs">
+      <DependentUpon>frmSetAuthorize.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\找货.png" />
+    <None Include="Resources\受理开单.bmp" />
+    <None Include="Resources\受理开单.png" />
+    <None Include="Resources\%24this.BackgroundImageStore.jpg" />
+    <None Include="Resources\lADPDgQ9qgf6O9jNAljNA8A_960_600.jpg" />
+    <None Include="Resources\lADPDgQ9qkc4m8jNCcTND6A_4000_2500.jpg" />
+    <None Include="Resources\lADPDgQ9qkdEm7LNBOLNB9A_2000_1250.jpg" />
+    <None Include="Resources\lADPDgQ9qkdErYDNAljNA8A_960_600.jpg" />
+    <Content Include="Resources\油卡管理.jpg" />
+    <Content Include="Resource\2bc5a20b8afa7a7dc163aaa25e28c5d.jpg" />
+    <Content Include="Resource\favicon.ico" />
+    <None Include="Resources\网管中心.png" />
+    <None Include="Resources\资金管理.png" />
+    <None Include="Resources\运营中心.png" />
+    <None Include="Resources\运力资源.png" />
+    <None Include="Resources\用车管理.png" />
+    <None Include="Resources\营业报表.png" />
+    <None Include="Resources\系统管理.png" />
+    <None Include="Resources\网络订单.png" />
+    <None Include="Resources\审批流程.png" />
+    <None Include="Resources\前台收银.png" />
+    <None Include="Resources\其它费用.png" />
+    <None Include="Resources\客户中心.png" />
+    <None Include="Resources\基础资料.png" />
+    <None Include="Resources\回单管理.png" />
+    <None Include="Resources\财务管理.png" />
+    <None Include="Resources\个人中心.png" />
+    <None Include="Resource\cslogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

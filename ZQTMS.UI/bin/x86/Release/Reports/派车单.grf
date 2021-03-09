@@ -1,0 +1,629 @@
+﻿Object Report
+	Version='6.6.6.0'
+	Title='派车单'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Size=256
+		Height=21
+		LeftMargin=0
+		TopMargin=0
+		RightMargin=0
+		BottomMargin=0
+	End
+	Object DetailGrid
+		Object Font
+			Name='宋体'
+			Weight=400
+			Charset=134
+		End
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='申请时间'
+					Type=DateTime
+					Format='yy/M/d H:m:s'
+					DBFieldName='DeliTime'
+				End
+				Item
+					Name='预到时间'
+					Type=DateTime
+					Format='yy/M/d H:m:s'
+					DBFieldName='PreToTime'
+				End
+				Item
+					Name='计费重量'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeWeight'
+				End
+				Item
+					Name='计费体积'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeVolume'
+				End
+				Item
+					Name='派车费'
+					Type=Currency
+					Format='0.##;;#'
+					DBFieldName='VehFare'
+				End
+				Item
+					Name='制表人'
+					DBFieldName='DeliRegMan'
+				End
+				Item
+					Name='件数'
+					Type=Integer
+					Format='0;;#'
+					DBFieldName='Num'
+				End
+				Item
+					Name='派车单号'
+					DBFieldName='DeliCode'
+				End
+				Item
+					Name='需车部门'
+					DBFieldName='UserCarDepart'
+				End
+				Item
+					Name='车牌号'
+					DBFieldName='VehicleNum'
+				End
+				Item
+					Name='司机姓名'
+					DBFieldName='Driver'
+				End
+				Item
+					Name='司机电话'
+					DBFieldName='DriverPhone'
+				End
+				Item
+					Name='运单号'
+					DBFieldName='BillNo'
+				End
+				Item
+					Name='发货人'
+					DBFieldName='ConsignorName'
+				End
+				Item
+					Name='联系电话'
+					DBFieldName='DeliCusPhone'
+				End
+				Item
+					Name='提货地'
+					DBFieldName='LoadPlace'
+				End
+				Item
+					Name='公司名称'
+					DBFieldName='gsjc'
+				End
+				Item
+					Name='客户名称'
+					DBFieldName='DeliCusName'
+				End
+					End
+	End
+	Items Column
+		Item
+			Name='序号'
+			Width=0.978958
+		End
+		Item
+			Name='中转地'
+			Width=2.59292
+		End
+		Item
+			Name='到站'
+			Width=1.24354
+		End
+		Item
+			Name='品名'
+			Width=2.75167
+		End
+		Item
+			Name='编号件数'
+			Width=6.61458
+		End
+		Item
+			Name='件数'
+			Width=1.37583
+		End
+		Item
+			Name='计费重量'
+			Width=1.50813
+		End
+		Item
+			Name='计费体积'
+			Width=1.40229
+		End
+		Item
+			Name='包装'
+			Width=3.28083
+		End
+	End
+Object ColumnContent
+	Height=0.79375
+	Items ColumnContentCell
+		Item
+			Column='序号'
+			FreeCell=T
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox11'
+					Dock=Fill
+					Text='[#SystemVar(RowNo)#]'
+				End
+					End
+	End
+	Item
+		Column='中转地'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='运单号'
+	End
+	Item
+		Column='到站'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='客户名称'
+	End
+	Item
+		Column='品名'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='联系电话'
+	End
+	Item
+		Column='编号件数'
+		WordWrap=T
+		TextAlign=BottomLeft
+		DataField='提货地'
+	End
+	Item
+		Column='件数'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='件数'
+	End
+	Item
+		Column='计费重量'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='计费重量'
+	End
+	Item
+		Column='计费体积'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='计费体积'
+	End
+	Item
+		Column='包装'
+		WordWrap=T
+		TextAlign=TopLeft
+		DataField='预到时间'
+	End
+End
+End
+Object ColumnTitle
+	Height=0.687917
+	RepeatStyle=OnPage
+	Items ColumnTitleCell
+		Item
+			GroupTitle=F
+			Column='序号'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='序号'
+		End
+		Item
+			GroupTitle=F
+			Column='中转地'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='运单号'
+		End
+		Item
+			GroupTitle=F
+			Column='到站'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='发货人'
+		End
+		Item
+			GroupTitle=F
+			Column='品名'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='联系电话'
+		End
+		Item
+			GroupTitle=F
+			Column='编号件数'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='提货地址'
+		End
+		Item
+			GroupTitle=F
+			Column='件数'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='件数'
+		End
+		Item
+			GroupTitle=F
+			Column='计费重量'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='计费重量'
+		End
+		Item
+			GroupTitle=F
+			Column='计费体积'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='计费体积'
+		End
+		Item
+			GroupTitle=F
+			Column='包装'
+			WordWrap=T
+			TextAlign=MiddleCenter
+			Text='预到时间'
+		End
+	End
+End
+End
+Items ReportHeader
+	Item
+		Name='ReportHeader1'
+		Height=3.81
+		Items Control
+			Item
+				Type=FreeGrid
+				Name='FreeGrid3'
+				Center=Horizontal
+				Left=9.81604
+				Top=1.66688
+				Object Border
+					Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+					Object Pen
+						Color=White
+					End
+				End
+				ColumnCount=1
+				RowCount=1
+				ShowColLine=F
+				Items FreeGridColumn
+					Item[1]
+						Width=2.09021
+					End
+							End
+			Items FreeGridRow
+					End
+		Items FreeGridCell
+			End
+End
+Item
+	Type=FieldBox
+	Name='FieldBox52'
+	Left=4.39208
+	Top=0.767292
+	Width=5.21229
+	Height=0.79375
+	Object Font
+		Name='宋体'
+		Size=202500,0
+		Bold=T
+		Charset=134
+	End
+	TextAlign=MiddleRight
+	DataField='公司名称'
+End
+Item
+	Type=StaticBox
+	Name='StaticBox26'
+	Left=9.60438
+	Top=0.767292
+	Width=7.59354
+	Height=0.79375
+	Object Font
+		Name='宋体'
+		Size=202500,0
+		Bold=T
+		Charset=134
+	End
+	Text='用车申请单'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox4'
+	Left=7.01146
+	Top=1.74625
+	Width=1.98438
+	Height=0.608542
+	Text='派车单号：'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox1'
+	Left=1.8
+	Top=1.77271
+	Width=4.20688
+	Height=0.608542
+	DataField='申请时间'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox8'
+	Left=13.2027
+	Top=1.74625
+	Width=1.98438
+	Height=0.608542
+	Text='需车部门：'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox54'
+	Left=15.3988
+	Top=1.74625
+	Width=3.59833
+	Height=0.608542
+	DataField='需车部门'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox6'
+	Top=2.56646
+	Width=1.40229
+	Height=0.582083
+	Text='车牌号：'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox4'
+	Left=1.79917
+	Top=2.56646
+	Width=3.41313
+	Height=0.582083
+	DataField='车牌号'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox9'
+	Left=7.01146
+	Top=2.56646
+	Width=1.98438
+	Height=0.582083
+	Text='司机姓名：'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox10'
+	Left=13.2
+	Top=2.56646
+	Width=1.98
+	Height=0.58
+	Text='司机电话：'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox55'
+	Left=8.81
+	Top=2.56646
+	Width=2.59292
+	Height=0.582083
+	DataField='司机姓名'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox56'
+	Left=15.4
+	Top=2.56646
+	Width=3.62479
+	Height=0.582083
+	DataField='司机电话'
+End
+Item
+	Type=MemoBox
+	Name='MemoBox2'
+	Top=1.74625
+	Width=2.01083
+	Height=0.608542
+	Text='申请时间：'
+End
+Item
+	Type=FieldBox
+	Name='FieldBox58'
+	Left=8.81062
+	Top=1.74625
+	Width=3.38667
+	Height=0.608542
+	DataField='派车单号'
+End
+End
+RepeatOnPage=T
+End
+End
+Items ReportFooter
+	Item
+		Name='ReportFooter1'
+		Height=0.79375
+		Items Control
+			Item
+				Type=SummaryBox
+				Name='SummaryBox2'
+				AlignColumn='计费重量'
+				Left=15.531
+				Width=1.56104
+				Height=0.608542
+				Object Border
+					Styles=[DrawLeft|DrawBottom]
+				End
+				TextAlign=MiddleCenter
+				DataField='计费重量'
+				Format='0.##;;#'
+			End
+			Item
+				Type=SummaryBox
+				Name='SummaryBox3'
+				AlignColumn='计费体积'
+				Left=17.0392
+				Width=1.45521
+				Height=0.608542
+				Object Border
+					Styles=[DrawLeft|DrawBottom]
+				End
+				TextAlign=MiddleCenter
+				DataField='计费体积'
+				Format='0.##;;#'
+			End
+			Item
+				Type=SummaryBox
+				Name='SummaryBox7'
+				AlignColumn='件数'
+				Left=14.1552
+				Width=1.40229
+				Height=0.582083
+				Object Border
+					Styles=[DrawLeft|DrawRight|DrawBottom]
+				End
+				TextAlign=MiddleCenter
+				DataField='件数'
+				Format='0;;#'
+			End
+			Item
+				Type=SummaryBox
+				Name='SummaryBox8'
+				AlignColumn='序号'
+				AlignColumnEx='编号件数'
+				Left=-0.0264583
+				Width=14.2346
+				Height=0.61
+				Object Border
+					Styles=[DrawLeft|DrawBottom]
+				End
+				TextAlign=MiddleCenter
+				DataField='运单号'
+				SummaryFun=Count
+				Format='共0票'
+			End
+			Item
+				Type=StaticBox
+				Name='StaticBox27'
+				AlignColumn='包装'
+				Left=18.4415
+				Width=3.30729
+				Height=0.608542
+				Object Border
+					Styles=[DrawLeft|DrawRight|DrawBottom]
+				End
+			End
+			End
+End
+Item
+	Name='ReportFooter2'
+	CanGrow=T
+	Height=5.60917
+	Items Control
+		Item
+			Type=StaticBox
+			Name='StaticBox11'
+			Left=0.211667
+			Top=0.105833
+			Width=2.98979
+			Height=0.582083
+			Text='备注：'
+		End
+		Item
+			Type=StaticBox
+			Name='StaticBox12'
+			Left=0.211667
+			Top=1.03188
+			Width=1.79917
+			Height=0.582083
+			Text='司机签名：'
+		End
+		Item
+			Type=StaticBox
+			Name='StaticBox13'
+			Left=3.91583
+			Top=1.08479
+			Width=1.50813
+			Height=0.502708
+			Text='制表人：'
+		End
+		Item
+			Type=StaticBox
+			Name='StaticBox14'
+			Left=9.60438
+			Top=1.08479
+			Width=1.40229
+			Height=0.502708
+			Text='提货费：'
+		End
+		Item
+			Type=FieldBox
+			Name='FieldBox7'
+			Left=11.19
+			Top=1.15
+			Width=1.79917
+			Height=0.396875
+			DataField='派车费'
+		End
+		Item
+			Type=FieldBox
+			Name='FieldBox8'
+			Left=5.42396
+			Top=1.08479
+			Width=1.95792
+			Height=0.502708
+			DataField='制表人'
+		End
+		Item
+			Type=SubReport
+			Name='SubReport1'
+			Dock=Bottom
+			Center=Horizontal
+			Top=1.79917
+			Height=3.81
+		End
+		Item
+			Type=FieldBox
+			Name='FieldBox11'
+			Left=17.8065
+			Top=1.19063
+			Width=1.79917
+			Height=0.396875
+		End
+		Item
+			Type=StaticBox
+			Name='StaticBox17'
+			Left=15.0019
+			Top=1.19063
+			Width=2.80458
+			Height=0.396875
+			Text='部门经理签字：'
+		End
+		Item
+			Type=FieldBox
+			Name='FieldBox57'
+			Left=2.19604
+			Top=1.19063
+			Width=1.79917
+			Height=0.396875
+		End
+	End
+End
+End
+End

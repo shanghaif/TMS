@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72B2FF87-5914-4A9B-BC35-7A0A28B70C96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.PersonnelDepManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataWindow, Version=2.0.4600.0, Culture=neutral, PublicKeyToken=cc0f66dd9541b3da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\DataWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.UI\bin\x86\Release\DevExpress.BonusSkins.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevExpress.XtraCharts.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v9.3.UI, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevExpress.XtraCharts.v9.3.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.Tool\bin\x86\Release\DevExpress.XtraEditors.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevExpress.XtraPrinting.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevExpress.XtraReports.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v9.3.Design, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevExpress.XtraReports.v9.3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="KMS.UI.BuisinessManage, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.UI\bin\x86\Release\Plugin\KMS.UI.BuisinessManage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sybase.PowerBuilder.Db, Version=10.5.0.4600, Culture=neutral, PublicKeyToken=9131e8bacdad8fb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Sybase.PowerBuilder.Db.dll</HintPath>
+    </Reference>
+    <Reference Include="Sybase.PowerBuilder.DbExt, Version=10.5.0.4600, Culture=neutral, PublicKeyToken=9131e8bacdad8fb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Sybase.PowerBuilder.DbExt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_departmant.resx">
+      <DependentUpon>w_departmant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_fkpz.resx">
+      <DependentUpon>w_fkpz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_fkpz_add.resx">
+      <DependentUpon>w_fkpz_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_gs_standard.resx">
+      <DependentUpon>w_gs_standard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_select_departmant.resx">
+      <DependentUpon>w_select_departmant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_ygkq_modified.resx">
+      <DependentUpon>w_ygkq_modified.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_add.resx">
+      <DependentUpon>w_yg_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_gz_add.resx">
+      <DependentUpon>w_yg_gz_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_jc_add.resx">
+      <DependentUpon>w_yg_jc_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_kp_add.resx">
+      <DependentUpon>w_yg_kp_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_px_add.resx">
+      <DependentUpon>w_yg_px_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_qj_add.resx">
+      <DependentUpon>w_yg_qj_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_qs_add.resx">
+      <DependentUpon>w_yg_qs_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_total.resx">
+      <DependentUpon>w_yg_total.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_trun_add.resx">
+      <DependentUpon>w_yg_trun_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_tsl.resx">
+      <DependentUpon>w_yg_tsl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_work.resx">
+      <DependentUpon>w_yg_work.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_work_add.resx">
+      <DependentUpon>w_yg_work_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_yg_yye_add.resx">
+      <DependentUpon>w_yg_yye_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_员工情况汇总.resx">
+      <DependentUpon>w_员工情况汇总.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_员工考勤.resx">
+      <DependentUpon>w_员工考勤.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_考核职务设置_add.resx">
+      <DependentUpon>w_考核职务设置_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_考核项目定义.resx">
+      <DependentUpon>w_考核项目定义.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_职位考核设置.resx">
+      <DependentUpon>w_职位考核设置.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_职位考核设置_add.resx">
+      <DependentUpon>w_职位考核设置_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事行政\w_职务管理.resx">
+      <DependentUpon>w_职务管理.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="办公系统\w_navigation_page.resx">
+      <DependentUpon>w_navigation_page.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="办公系统\w_oa_file.resx">
+      <DependentUpon>w_oa_file.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="办公系统\w_oa_file_add.resx">
+      <DependentUpon>w_oa_file_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="办公系统\w_oa_file_type.resx">
+      <DependentUpon>w_oa_file_type.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="人事行政\w_departmant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_departmant.designer.cs">
+      <DependentUpon>w_departmant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_fkpz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_fkpz.designer.cs">
+      <DependentUpon>w_fkpz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_fkpz_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_fkpz_add.designer.cs">
+      <DependentUpon>w_fkpz_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_gs_standard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_gs_standard.designer.cs">
+      <DependentUpon>w_gs_standard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_select_departmant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_select_departmant.designer.cs">
+      <DependentUpon>w_select_departmant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_ygkq_modified.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_ygkq_modified.designer.cs">
+      <DependentUpon>w_ygkq_modified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_add.designer.cs">
+      <DependentUpon>w_yg_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_gz_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_gz_add.designer.cs">
+      <DependentUpon>w_yg_gz_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_jc_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_jc_add.designer.cs">
+      <DependentUpon>w_yg_jc_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_kp_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_kp_add.designer.cs">
+      <DependentUpon>w_yg_kp_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_px_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_px_add.designer.cs">
+      <DependentUpon>w_yg_px_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_qj_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_qj_add.designer.cs">
+      <DependentUpon>w_yg_qj_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_qs_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_qs_add.designer.cs">
+      <DependentUpon>w_yg_qs_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_total.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_total.designer.cs">
+      <DependentUpon>w_yg_total.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_trun_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_trun_add.designer.cs">
+      <DependentUpon>w_yg_trun_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_tsl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_tsl.designer.cs">
+      <DependentUpon>w_yg_tsl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_work.designer.cs">
+      <DependentUpon>w_yg_work.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_work_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_work_add.designer.cs">
+      <DependentUpon>w_yg_work_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_yg_yye_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_yg_yye_add.designer.cs">
+      <DependentUpon>w_yg_yye_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_员工情况汇总.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_员工情况汇总.designer.cs">
+      <DependentUpon>w_员工情况汇总.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_员工考勤.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_员工考勤.designer.cs">
+      <DependentUpon>w_员工考勤.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_考核职务设置_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_考核职务设置_add.designer.cs">
+      <DependentUpon>w_考核职务设置_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_考核项目定义.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_考核项目定义.designer.cs">
+      <DependentUpon>w_考核项目定义.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_职位考核设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_职位考核设置.designer.cs">
+      <DependentUpon>w_职位考核设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_职位考核设置_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_职位考核设置_add.designer.cs">
+      <DependentUpon>w_职位考核设置_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事行政\w_职务管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事行政\w_职务管理.designer.cs">
+      <DependentUpon>w_职务管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="办公系统\w_navigation_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="办公系统\w_navigation_page.Designer.cs">
+      <DependentUpon>w_navigation_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file.designer.cs">
+      <DependentUpon>w_oa_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file_add.designer.cs">
+      <DependentUpon>w_oa_file_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="办公系统\w_oa_file_type.designer.cs">
+      <DependentUpon>w_oa_file_type.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.UI\ZQTMS.UI.csproj">
+      <Project>{D01562CC-31A1-47B8-AA00-36750A76016C}</Project>
+      <Name>ZQTMS.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuisinessManage\BuisinessManage.csproj">
+      <Project>{B035DA66-E56F-4A4F-983B-1AAED33CE3C8}</Project>
+      <Name>BuisinessManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanceManage\FinanceManage.csproj">
+      <Project>{1E54687A-60AA-4553-B564-ED4AD68F505B}</Project>
+      <Name>FinanceManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReceiptManage\ReceiptManage.csproj">
+      <Project>{84931105-5589-4DD5-B8F3-2879C3AF10E6}</Project>
+      <Name>ReceiptManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123456.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

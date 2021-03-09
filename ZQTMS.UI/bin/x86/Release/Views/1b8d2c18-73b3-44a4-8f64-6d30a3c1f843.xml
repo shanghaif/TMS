@@ -1,0 +1,494 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="Columns" iskey="true" value="75">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">49</property>
+      <property name="Name">gridColumn25</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Name">colLoadWeb</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">49</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#}</property>
+        <property name="FieldName">Num</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colNum</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">102</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#}</property>
+        <property name="FieldName">WebPCS</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colWebPCS</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccBigcarOther</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccBigcarOther</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colTakeDept</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccBigcarTotal</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccBigcarTotal</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">DriverTakePay</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colDriverTakePay</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccTakeCar</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccTakeCar</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccCollectPremium</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccCollectPremium</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">NowPayDriver</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colNowPayDriver</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">ToPayDriver</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colToPayDriver</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">BackPayDriver</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colBackPayDriver</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccFuelCard</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccFuelCard</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colFuelCardNO</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colNowPayVerifState</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="Name">colNowPayVerifMan</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colNowPayVerifDate</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccNowPayVerif</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccNowPayVerif</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colToPayVerifState</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="Name">colToPayVerifMan</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colLoadPeoples</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colBoxNO</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colBigCarDescr</property>
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccLine</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccLine</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colSendBillNO</property>
+    </property>
+    <property name="Item27" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colSendAddr</property>
+    </property>
+    <property name="Item28" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccShtBarge</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccShtBarge</property>
+    </property>
+    <property name="Item29" isnull="true" iskey="true">
+      <property name="Width">105</property>
+      <property name="Name">colShtBargeDept</property>
+    </property>
+    <property name="Item30" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccSomeLoad</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccSomeLoad</property>
+    </property>
+    <property name="Item31" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colUnloadAddr</property>
+    </property>
+    <property name="Item32" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colLoadArea</property>
+    </property>
+    <property name="Item33" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colFuelCardVerifState</property>
+    </property>
+    <property name="Item34" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="Name">colFuelCardVerifMan</property>
+    </property>
+    <property name="Item35" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colFuelCardVerifDate</property>
+    </property>
+    <property name="Item36" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccFuelCardVerif</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccFuelCardVerif</property>
+    </property>
+    <property name="Item37" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="Name">colLoadBusiDept</property>
+    </property>
+    <property name="Item38" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colLoadDept</property>
+    </property>
+    <property name="Item39" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccPremium</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccPremium</property>
+    </property>
+    <property name="Item40" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colInsuranceNO</property>
+    </property>
+    <property name="Item41" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colPrintMan</property>
+    </property>
+    <property name="Item42" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colPrintDate</property>
+    </property>
+    <property name="Item43" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colMiddleSite</property>
+    </property>
+    <property name="Item44" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Name">colAcceptBillDate</property>
+    </property>
+    <property name="Item45" isnull="true" iskey="true">
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+      <property name="Name">colAcceptBillMan</property>
+    </property>
+    <property name="Item46" isnull="true" iskey="true">
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Name">colAcceptSiteName</property>
+    </property>
+    <property name="Item47" isnull="true" iskey="true">
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Name">colAcceptWebName</property>
+    </property>
+    <property name="Item48" isnull="true" iskey="true">
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+      <property name="Width">102</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#}</property>
+        <property name="FieldName">RemainWebPCS</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colRemainWebPCS</property>
+    </property>
+    <property name="Item49" isnull="true" iskey="true">
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Width">49</property>
+      <property name="Name">colCarNO</property>
+    </property>
+    <property name="Item50" isnull="true" iskey="true">
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
+      <property name="Width">62</property>
+      <property name="Name">colCarrNO</property>
+    </property>
+    <property name="Item51" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colToPayVerifDate</property>
+    </property>
+    <property name="Item52" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccToPayVerif</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccToPayVerif</property>
+    </property>
+    <property name="Item53" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colBackPayVerifState</property>
+    </property>
+    <property name="Item54" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="Name">colBackPayVerifMan</property>
+    </property>
+    <property name="Item55" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Name">colBackPayVerifDate</property>
+    </property>
+    <property name="Item56" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccBackPayVerif</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccBackPayVerif</property>
+    </property>
+    <property name="Item57" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colFecthSite</property>
+    </property>
+    <property name="Item58" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccBigCarFecth</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccBigCarFecth</property>
+    </property>
+    <property name="Item59" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colFecthBillNO</property>
+    </property>
+    <property name="Item60" isnull="true" iskey="true">
+      <property name="Width">79</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">AccBigCarSend</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colAccBigCarSend</property>
+    </property>
+    <property name="Item61" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">ActWeight</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colActWeight</property>
+    </property>
+    <property name="Item62" isnull="true" iskey="true">
+      <property name="VisibleIndex">11</property>
+      <property name="Visible">true</property>
+      <property name="Width">62</property>
+      <property name="Name">colCreator</property>
+    </property>
+    <property name="Item63" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colDepartureBatch</property>
+    </property>
+    <property name="Item64" isnull="true" iskey="true">
+      <property name="Width">52</property>
+      <property name="Name">colBeginSite</property>
+    </property>
+    <property name="Item65" isnull="true" iskey="true">
+      <property name="VisibleIndex">12</property>
+      <property name="Visible">true</property>
+      <property name="Width">62</property>
+      <property name="Name">colEndSite</property>
+    </property>
+    <property name="Item66" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colExpArriveDate</property>
+    </property>
+    <property name="Item67" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:#.##}</property>
+        <property name="FieldName">LoadWeight</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colLoadWeight</property>
+    </property>
+    <property name="Item68" isnull="true" iskey="true">
+      <property name="VisibleIndex">13</property>
+      <property name="Visible">true</property>
+      <property name="Name">colDriverName</property>
+    </property>
+    <property name="Item69" isnull="true" iskey="true">
+      <property name="VisibleIndex">14</property>
+      <property name="Visible">true</property>
+      <property name="Name">colDriverPhone</property>
+    </property>
+    <property name="Item70" isnull="true" iskey="true">
+      <property name="VisibleIndex">15</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+      <property name="Name">colArriveOperMan</property>
+    </property>
+    <property name="Item71" isnull="true" iskey="true">
+      <property name="VisibleIndex">16</property>
+      <property name="Visible">true</property>
+      <property name="Width">62</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Count</property>
+        <property name="DisplayFormat">共{0}笔</property>
+        <property name="FieldName">BillNo</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colBillNo</property>
+    </property>
+    <property name="Item72" isnull="true" iskey="true">
+      <property name="VisibleIndex">17</property>
+      <property name="Visible">true</property>
+      <property name="Name">colBillDate</property>
+    </property>
+    <property name="Item73" isnull="true" iskey="true">
+      <property name="VisibleIndex">18</property>
+      <property name="Visible">true</property>
+      <property name="Name">colDepartureDate</property>
+    </property>
+    <property name="Item74" isnull="true" iskey="true">
+      <property name="VisibleIndex">19</property>
+      <property name="Visible">true</property>
+      <property name="Name">colContractNO</property>
+    </property>
+    <property name="Item75" isnull="true" iskey="true">
+      <property name="VisibleIndex">20</property>
+      <property name="Visible">true</property>
+      <property name="Name">colLoadSite</property>
+    </property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+    <property name="ColumnAutoWidth">false</property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

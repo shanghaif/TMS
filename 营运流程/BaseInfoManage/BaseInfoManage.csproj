@@ -1,0 +1,2478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52206E88-712A-4815-A46B-8A37E9A9C8BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.BaseInfoManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdes6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.Tool\bin\x86\Release\DevExpress.XtraTreeList.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="Interop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="sms, Version=2012.11.5.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\sms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线数据统计\frmCompanyCount.resx">
+      <DependentUpon>frmCompanyCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线管理\frmBasAccount.resx">
+      <DependentUpon>frmBasAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线管理\frmBasAccount_add.resx">
+      <DependentUpon>frmBasAccount_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线管理\w_pt_company.resx">
+      <DependentUpon>w_pt_company.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线管理\w_pt_company_add.resx">
+      <DependentUpon>w_pt_company_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDeliveryFeeAddNew.resx">
+      <DependentUpon>fmDeliveryFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDeliveryFeeNew.resx">
+      <DependentUpon>fmDeliveryFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDeliveryFeeUpNew.resx">
+      <DependentUpon>fmDeliveryFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDeliveryFeeUpNewKT.resx">
+      <DependentUpon>fmDeliveryFeeUpNewKT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDenominatedFee.resx">
+      <DependentUpon>fmDenominatedFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDenominatedFeeAddNew.resx">
+      <DependentUpon>fmDenominatedFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDenominatedFeeUpNew.resx">
+      <DependentUpon>fmDenominatedFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureAllotFeeAddNew.resx">
+      <DependentUpon>fmDepartureAllotFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureAllotFeeNew.resx">
+      <DependentUpon>fmDepartureAllotFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureAllotFeeUpNew.resx">
+      <DependentUpon>fmDepartureAllotFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureFee.resx">
+      <DependentUpon>fmDepartureFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureFeeAdd.resx">
+      <DependentUpon>fmDepartureFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureOptFeeAddNew.resx">
+      <DependentUpon>fmDepartureOptFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureOptFeeNew.resx">
+      <DependentUpon>fmDepartureOptFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmDepartureOptFeeUpNew.resx">
+      <DependentUpon>fmDepartureOptFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmMainlineFeeAddNew.resx">
+      <DependentUpon>fmMainlineFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmMainlineFeeNew.resx">
+      <DependentUpon>fmMainlineFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmMainlineFeeUpNew.resx">
+      <DependentUpon>fmMainlineFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmSurchargeFeeAddNew.resx">
+      <DependentUpon>fmSurchargeFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmSurchargeFeeNew.resx">
+      <DependentUpon>fmSurchargeFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmSurchargeFeeUpNew.resx">
+      <DependentUpon>fmSurchargeFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTerminalOptFeeAddNew.resx">
+      <DependentUpon>fmTerminalOptFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTerminalOptFeeNew.resx">
+      <DependentUpon>fmTerminalOptFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTerminalOptFeeUpNew.resx">
+      <DependentUpon>fmTerminalOptFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTransferFeeAddNew.resx">
+      <DependentUpon>fmTransferFeeAddNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTransferFeeNew.resx">
+      <DependentUpon>fmTransferFeeNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专线费用标准\fmTransferFeeUpNew.resx">
+      <DependentUpon>fmTransferFeeUpNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四级地址\frmBaseRegion.resx">
+      <DependentUpon>frmBaseRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DataStatisticsRignt.resx">
+      <DependentUpon>DataStatisticsRignt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DataStatisticsRignt_add.resx">
+      <DependentUpon>DataStatisticsRignt_add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAddPlatAccount.resx">
+      <DependentUpon>frmAddPlatAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToNumImport.resx">
+      <DependentUpon>frmAPFeeToNumImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToNumInfo.resx">
+      <DependentUpon>frmAPFeeToNumInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToNumInfoEdit.resx">
+      <DependentUpon>frmAPFeeToNumInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToWeightImport.resx">
+      <DependentUpon>frmAPFeeToWeightImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToWeightInfo.resx">
+      <DependentUpon>frmAPFeeToWeightInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPFeeToWeightInfoEdit.resx">
+      <DependentUpon>frmAPFeeToWeightInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToNumImport.resx">
+      <DependentUpon>frmAPSendFeeToNumImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToNumInfo.resx">
+      <DependentUpon>frmAPSendFeeToNumInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToNumInfoEdit.resx">
+      <DependentUpon>frmAPSendFeeToNumInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToWeightImport.resx">
+      <DependentUpon>frmAPSendFeeToWeightImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToWeightInfo.resx">
+      <DependentUpon>frmAPSendFeeToWeightInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmAPSendFeeToWeightInfoEdit.resx">
+      <DependentUpon>frmAPSendFeeToWeightInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARFeeToNumImport.resx">
+      <DependentUpon>frmARFeeToNumImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARFeeToNumInfo.resx">
+      <DependentUpon>frmARFeeToNumInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARFeeToNumInfoEdit.resx">
+      <DependentUpon>frmARFeeToNumInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARSendFeeToNumImport.resx">
+      <DependentUpon>frmARSendFeeToNumImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARSendFeeToNumInfo.resx">
+      <DependentUpon>frmARSendFeeToNumInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmARSendFeeToNumInfoEdit.resx">
+      <DependentUpon>frmARSendFeeToNumInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPFeeToVolume.resx">
+      <DependentUpon>frmBasAPFeeToVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPFeeToVolumeEdit.resx">
+      <DependentUpon>frmBasAPFeeToVolumeEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPFeeToVolumeImport1.resx">
+      <DependentUpon>frmBasAPFeeToVolumeImport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPR.resx">
+      <DependentUpon>frmBasAPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPSendFeeToVolume.resx">
+      <DependentUpon>frmBasAPSendFeeToVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPSendFeeToVolumeEdit.resx">
+      <DependentUpon>frmBasAPSendFeeToVolumeEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasAPSendFeeToVolumeImport1.resx">
+      <DependentUpon>frmBasAPSendFeeToVolumeImport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToVolume.resx">
+      <DependentUpon>frmBasARFeeToVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToVolumeAdd.resx">
+      <DependentUpon>frmBasARFeeToVolumeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToVolumeImport1.resx">
+      <DependentUpon>frmBasARFeeToVolumeImport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToWeight.resx">
+      <DependentUpon>frmBasARFeeToWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToWeightEdit.resx">
+      <DependentUpon>frmBasARFeeToWeightEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARFeeToWeightImport.resx">
+      <DependentUpon>frmBasARFeeToWeightImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToVolume.resx">
+      <DependentUpon>frmBasARSendFeeToVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToVolumeAdd.resx">
+      <DependentUpon>frmBasARSendFeeToVolumeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToVolumeImport1.resx">
+      <DependentUpon>frmBasARSendFeeToVolumeImport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToWeight.resx">
+      <DependentUpon>frmBasARSendFeeToWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToWeightEdit.resx">
+      <DependentUpon>frmBasARSendFeeToWeightEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToWeightImport.resx">
+      <DependentUpon>frmBasARSendFeeToWeightImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmBasARSendFeeToWeightImport1.resx">
+      <DependentUpon>frmBasARSendFeeToWeightImport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmCostManage.resx">
+      <DependentUpon>frmCostManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmCostManageAdd.resx">
+      <DependentUpon>frmCostManageAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmCostManageUp.resx">
+      <DependentUpon>frmCostManageUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmDePartAdd.resx">
+      <DependentUpon>frmDePartAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmDepartManage.resx">
+      <DependentUpon>frmDepartManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmEmployeeAdd.resx">
+      <DependentUpon>frmEmployeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmEmployeeManage.resx">
+      <DependentUpon>frmEmployeeManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmFeeToConnectInfo.resx">
+      <DependentUpon>frmFeeToConnectInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmFeeToConnectInfoEdit.resx">
+      <DependentUpon>frmFeeToConnectInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmLinesConfiguration.resx">
+      <DependentUpon>frmLinesConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmLinesConfigurationAdd.resx">
+      <DependentUpon>frmLinesConfigurationAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmPlatAccount.resx">
+      <DependentUpon>frmPlatAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmStartWebSet.resx">
+      <DependentUpon>frmStartWebSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmStationBaseInfo.resx">
+      <DependentUpon>frmStationBaseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmStationBaseInfoAdd.resx">
+      <DependentUpon>frmStationBaseInfoAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmsysRoleDataInfo.resx">
+      <DependentUpon>frmsysRoleDataInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmsysRoleDataInfo_And.resx">
+      <DependentUpon>frmsysRoleDataInfo_And.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmsysRoleDataInfo_AndClone.resx">
+      <DependentUpon>frmsysRoleDataInfo_AndClone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmUserAdd.resx">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmUserManage.resx">
+      <DependentUpon>frmUserManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmWebAdd.resx">
+      <DependentUpon>frmWebAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmWebConrastAdd.resx">
+      <DependentUpon>frmWebConrastAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmWebContrast.resx">
+      <DependentUpon>frmWebContrast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\frmWebManage.resx">
+      <DependentUpon>frmWebManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmAddCarrierUnit.resx">
+      <DependentUpon>frmAddCarrierUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmAddCars.resx">
+      <DependentUpon>frmAddCars.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmAddCusData.resx">
+      <DependentUpon>frmAddCusData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmAddRecCustData.resx">
+      <DependentUpon>frmAddRecCustData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCarrierUnit.resx">
+      <DependentUpon>frmCarrierUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCarrierUnitImport.resx">
+      <DependentUpon>frmCarrierUnitImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCars.resx">
+      <DependentUpon>frmCars.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCarsImport.resx">
+      <DependentUpon>frmCarsImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCusData.resx">
+      <DependentUpon>frmCusData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmCusDataImport.resx">
+      <DependentUpon>frmCusDataImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmMinChargeAdd.resx">
+      <DependentUpon>frmMinChargeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmMinCharges.resx">
+      <DependentUpon>frmMinCharges.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmMinCostChargeUp.resx">
+      <DependentUpon>frmMinCostChargeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmNotCusData.resx">
+      <DependentUpon>frmNotCusData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmRecCustData.resx">
+      <DependentUpon>frmRecCustData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmRecCustDataImport.resx">
+      <DependentUpon>frmRecCustDataImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户资料\frmSenderFreightPrice.resx">
+      <DependentUpon>frmSenderFreightPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmBasCustContract.resx">
+      <DependentUpon>frmBasCustContract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmBasCustContractUP.resx">
+      <DependentUpon>frmBasCustContractUP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmBasCustContract_detail.resx">
+      <DependentUpon>frmBasCustContract_detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmCustomerYsCount.resx">
+      <DependentUpon>frmCustomerYsCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmMonthWebNameEdit.resx">
+      <DependentUpon>frmMonthWebNameEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmWebAdd_NEW.resx">
+      <DependentUpon>frmWebAdd_NEW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="应收帐客户档案\frmWebManage_NEW.resx">
+      <DependentUpon>frmWebManage_NEW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操作日志\frmOperLog.resx">
+      <DependentUpon>frmOperLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\frmRightGroup.resx">
+      <DependentUpon>frmRightGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\frmRightGroupAdd.resx">
+      <DependentUpon>frmRightGroupAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="欠款管控\AddfrmArrearsControll.resx">
+      <DependentUpon>AddfrmArrearsControll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="欠款管控\frmArrearsControl.resx">
+      <DependentUpon>frmArrearsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSendSms.resx">
+      <DependentUpon>frmSendSms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSmsAdd.resx">
+      <DependentUpon>frmSmsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSmsCustomerAdd.resx">
+      <DependentUpon>frmSmsCustomerAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSmsInfo.resx">
+      <DependentUpon>frmSmsInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSmsInfoAdd.resx">
+      <DependentUpon>frmSmsInfoAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信平台\frmSmsSend.resx">
+      <DependentUpon>frmSmsSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳路由限制\frmShortroute.resx">
+      <DependentUpon>frmShortroute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳路由限制\frmShortrouteAdd.resx">
+      <DependentUpon>frmShortrouteAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillAllot_ByBill.resx">
+      <DependentUpon>p_BillAllot_ByBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillDetail.resx">
+      <DependentUpon>p_BillDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillIn.resx">
+      <DependentUpon>p_BillIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillInLog.resx">
+      <DependentUpon>p_BillInLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillOut.resx">
+      <DependentUpon>p_BillOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillOutLog.resx">
+      <DependentUpon>p_BillOutLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\p_BillStock.resx">
+      <DependentUpon>p_BillStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数设置\frmSysParamSetting.resx">
+      <DependentUpon>frmSysParamSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\DirectDriverFee.resx">
+      <DependentUpon>DirectDriverFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\DirectDriverFeeAdd.resx">
+      <DependentUpon>DirectDriverFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmbasTerminalOutFee.resx">
+      <DependentUpon>fmbasTerminalOutFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmbasTerminalOutFeeAdd.resx">
+      <DependentUpon>fmbasTerminalOutFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDeliveryFee.resx">
+      <DependentUpon>fmDeliveryFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDeliveryFeeAdd.resx">
+      <DependentUpon>fmDeliveryFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDeliveryFeeUp.resx">
+      <DependentUpon>fmDeliveryFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureAllotFee.resx">
+      <DependentUpon>fmDepartureAllotFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureAllotFeeAdd.resx">
+      <DependentUpon>fmDepartureAllotFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureAllotFeeUp.resx">
+      <DependentUpon>fmDepartureAllotFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureOptFee.resx">
+      <DependentUpon>fmDepartureOptFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureOptFeeAdd.resx">
+      <DependentUpon>fmDepartureOptFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDepartureOptFeeUp.resx">
+      <DependentUpon>fmDepartureOptFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDirectSendFee.resx">
+      <DependentUpon>fmDirectSendFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmDirectSendFeeAdd.resx">
+      <DependentUpon>fmDirectSendFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmHKFee.resx">
+      <DependentUpon>fmHKFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmHKFeeUp.resx">
+      <DependentUpon>fmHKFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmMainlineFee.resx">
+      <DependentUpon>fmMainlineFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmMainlineFeeAdd.resx">
+      <DependentUpon>fmMainlineFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmMainlineFeeUp.resx">
+      <DependentUpon>fmMainlineFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmSurchargeFee.resx">
+      <DependentUpon>fmSurchargeFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmSurchargeFeeAdd.resx">
+      <DependentUpon>fmSurchargeFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmSurchargeFeeUp.resx">
+      <DependentUpon>fmSurchargeFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalAllotFee.resx">
+      <DependentUpon>fmTerminalAllotFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalAllotFeeAdd.resx">
+      <DependentUpon>fmTerminalAllotFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalAllotFeeUp.resx">
+      <DependentUpon>fmTerminalAllotFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalOptFee.resx">
+      <DependentUpon>fmTerminalOptFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalOptFeeAdd.resx">
+      <DependentUpon>fmTerminalOptFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTerminalOptFeeUp.resx">
+      <DependentUpon>fmTerminalOptFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTransferFee.resx">
+      <DependentUpon>fmTransferFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTransferFeeAdd.resx">
+      <DependentUpon>fmTransferFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\fmTransferFeeUp.resx">
+      <DependentUpon>fmTransferFeeUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\frmFreightFee.resx">
+      <DependentUpon>frmFreightFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\frmFreightFeeAdd.resx">
+      <DependentUpon>frmFreightFeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算标准\frmFreightFeeUP.resx">
+      <DependentUpon>frmFreightFeeUP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\formmain.resx">
+      <DependentUpon>formmain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\frmDriverImageFileUp.resx">
+      <DependentUpon>frmDriverImageFileUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\frmDriverImgShow.resx">
+      <DependentUpon>frmDriverImgShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_add_pj.resx">
+      <DependentUpon>w_add_pj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_baoyang_dengji.resx">
+      <DependentUpon>w_baoyang_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_bao_dengji.resx">
+      <DependentUpon>w_bao_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_by_project_list.resx">
+      <DependentUpon>w_by_project_list.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_cheliang_dengji.resx">
+      <DependentUpon>w_cheliang_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_feiyong_dengji.resx">
+      <DependentUpon>w_feiyong_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_fy_project_list.resx">
+      <DependentUpon>w_fy_project_list.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_gongying_info.resx">
+      <DependentUpon>w_gongying_info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_gongying_record.resx">
+      <DependentUpon>w_gongying_record.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_jiayou_dengji.resx">
+      <DependentUpon>w_jiayou_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_ry_typelist.resx">
+      <DependentUpon>w_ry_typelist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_tyre_dengji.resx">
+      <DependentUpon>w_tyre_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_tyre_manage.resx">
+      <DependentUpon>w_tyre_manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_by_dj.resx">
+      <DependentUpon>w_update_by_dj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_dengji.resx">
+      <DependentUpon>w_update_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_fy_dj.resx">
+      <DependentUpon>w_update_fy_dj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_jy_dj.resx">
+      <DependentUpon>w_update_jy_dj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_pj.resx">
+      <DependentUpon>w_update_pj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_update_tyre.resx">
+      <DependentUpon>w_update_tyre.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_vehicleno_info.resx">
+      <DependentUpon>w_vehicleno_info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_weixiu_dengji.resx">
+      <DependentUpon>w_weixiu_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\w_xiu_dengji.resx">
+      <DependentUpon>w_xiu_dengji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\xfChauffer.resx">
+      <DependentUpon>xfChauffer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\xfChaufferInfo.resx">
+      <DependentUpon>xfChaufferInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmAreaDivideBatchUpt.resx">
+      <DependentUpon>frmAreaDivideBatchUpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmAreaDivideUpt.resx">
+      <DependentUpon>frmAreaDivideUpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmBasMiddleSiteUpdate.resx">
+      <DependentUpon>frmBasMiddleSiteUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmbasMiddleSite_Add.resx">
+      <DependentUpon>frmbasMiddleSite_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmbasMiddleSite_Update.resx">
+      <DependentUpon>frmbasMiddleSite_Update.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmBasSite_Add.resx">
+      <DependentUpon>frmBasSite_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmBasWeb_Add.resx">
+      <DependentUpon>frmBasWeb_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmMiddleRouteAdd.resx">
+      <DependentUpon>frmMiddleRouteAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmMiddleSendRoute.resx">
+      <DependentUpon>frmMiddleSendRoute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmMiddleSiteUp.resx">
+      <DependentUpon>frmMiddleSiteUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmOrgUnit.resx">
+      <DependentUpon>frmOrgUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmOrgUnitShort.resx">
+      <DependentUpon>frmOrgUnitShort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmOrgUnitShort_Manage.resx">
+      <DependentUpon>frmOrgUnitShort_Manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmOrgUnit_Add.resx">
+      <DependentUpon>frmOrgUnit_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmPanel.resx">
+      <DependentUpon>frmPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmRepaiDevicerNo.resx">
+      <DependentUpon>frmRepaiDevicerNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmShortlineSite.resx">
+      <DependentUpon>frmShortlineSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运作架构\frmShortlineSiteAdd.resx">
+      <DependentUpon>frmShortlineSiteAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddArea.resx">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddCause.resx">
+      <DependentUpon>frmAddCause.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddDePart.resx">
+      <DependentUpon>frmAddDePart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddJob.resx">
+      <DependentUpon>frmAddJob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddTitle.resx">
+      <DependentUpon>frmAddTitle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmAddUsers.resx">
+      <DependentUpon>frmAddUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmOrgStru.resx">
+      <DependentUpon>frmOrgStru.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营线路\frmUsersValidate.resx">
+      <DependentUpon>frmUsersValidate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="专线数据统计\frmCompanyCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线数据统计\frmCompanyCount.Designer.cs">
+      <DependentUpon>frmCompanyCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线管理\frmBasAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线管理\frmBasAccount.Designer.cs">
+      <DependentUpon>frmBasAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线管理\frmBasAccount_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线管理\frmBasAccount_add.Designer.cs">
+      <DependentUpon>frmBasAccount_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线管理\w_pt_company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线管理\w_pt_company.designer.cs">
+      <DependentUpon>w_pt_company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线管理\w_pt_company_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线管理\w_pt_company_add.designer.cs">
+      <DependentUpon>w_pt_company_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeAddNew.designer.cs">
+      <DependentUpon>fmDeliveryFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeNew.designer.cs">
+      <DependentUpon>fmDeliveryFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeUpNew.designer.cs">
+      <DependentUpon>fmDeliveryFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeUpNewKT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDeliveryFeeUpNewKT.designer.cs">
+      <DependentUpon>fmDeliveryFeeUpNewKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFee.designer.cs">
+      <DependentUpon>fmDenominatedFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFeeAddNew.designer.cs">
+      <DependentUpon>fmDenominatedFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDenominatedFeeUpNew.designer.cs">
+      <DependentUpon>fmDenominatedFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeAddNew.designer.cs">
+      <DependentUpon>fmDepartureAllotFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeNew.designer.cs">
+      <DependentUpon>fmDepartureAllotFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureAllotFeeUpNew.designer.cs">
+      <DependentUpon>fmDepartureAllotFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureFee.designer.cs">
+      <DependentUpon>fmDepartureFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureFeeAdd.designer.cs">
+      <DependentUpon>fmDepartureFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeAddNew.designer.cs">
+      <DependentUpon>fmDepartureOptFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeNew.designer.cs">
+      <DependentUpon>fmDepartureOptFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmDepartureOptFeeUpNew.designer.cs">
+      <DependentUpon>fmDepartureOptFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeAddNew.designer.cs">
+      <DependentUpon>fmMainlineFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeNew.designer.cs">
+      <DependentUpon>fmMainlineFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmMainlineFeeUpNew.designer.cs">
+      <DependentUpon>fmMainlineFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeAddNew.designer.cs">
+      <DependentUpon>fmSurchargeFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeNew.designer.cs">
+      <DependentUpon>fmSurchargeFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmSurchargeFeeUpNew.designer.cs">
+      <DependentUpon>fmSurchargeFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeAddNew.designer.cs">
+      <DependentUpon>fmTerminalOptFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeNew.designer.cs">
+      <DependentUpon>fmTerminalOptFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTerminalOptFeeUpNew.designer.cs">
+      <DependentUpon>fmTerminalOptFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeAddNew.designer.cs">
+      <DependentUpon>fmTransferFeeAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeNew.designer.cs">
+      <DependentUpon>fmTransferFeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeUpNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专线费用标准\fmTransferFeeUpNew.designer.cs">
+      <DependentUpon>fmTransferFeeUpNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四级地址\frmBaseRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四级地址\frmBaseRegion.Designer.cs">
+      <DependentUpon>frmBaseRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DataStatisticsRignt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DataStatisticsRignt.Designer.cs">
+      <DependentUpon>DataStatisticsRignt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DataStatisticsRignt_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DataStatisticsRignt_add.Designer.cs">
+      <DependentUpon>DataStatisticsRignt_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAddPlatAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAddPlatAccount.Designer.cs">
+      <DependentUpon>frmAddPlatAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumImport.Designer.cs">
+      <DependentUpon>frmAPFeeToNumImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumInfo.Designer.cs">
+      <DependentUpon>frmAPFeeToNumInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToNumInfoEdit.Designer.cs">
+      <DependentUpon>frmAPFeeToNumInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightImport.Designer.cs">
+      <DependentUpon>frmAPFeeToWeightImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightInfo.Designer.cs">
+      <DependentUpon>frmAPFeeToWeightInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPFeeToWeightInfoEdit.Designer.cs">
+      <DependentUpon>frmAPFeeToWeightInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumImport.Designer.cs">
+      <DependentUpon>frmAPSendFeeToNumImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumInfo.Designer.cs">
+      <DependentUpon>frmAPSendFeeToNumInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToNumInfoEdit.Designer.cs">
+      <DependentUpon>frmAPSendFeeToNumInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightImport.Designer.cs">
+      <DependentUpon>frmAPSendFeeToWeightImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightInfo.Designer.cs">
+      <DependentUpon>frmAPSendFeeToWeightInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmAPSendFeeToWeightInfoEdit.Designer.cs">
+      <DependentUpon>frmAPSendFeeToWeightInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumImport.Designer.cs">
+      <DependentUpon>frmARFeeToNumImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumInfo.Designer.cs">
+      <DependentUpon>frmARFeeToNumInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARFeeToNumInfoEdit.Designer.cs">
+      <DependentUpon>frmARFeeToNumInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumImport.Designer.cs">
+      <DependentUpon>frmARSendFeeToNumImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumInfo.Designer.cs">
+      <DependentUpon>frmARSendFeeToNumInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmARSendFeeToNumInfoEdit.Designer.cs">
+      <DependentUpon>frmARSendFeeToNumInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolume.Designer.cs">
+      <DependentUpon>frmBasAPFeeToVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolumeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolumeEdit.Designer.cs">
+      <DependentUpon>frmBasAPFeeToVolumeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolumeImport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPFeeToVolumeImport1.Designer.cs">
+      <DependentUpon>frmBasAPFeeToVolumeImport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPR.Designer.cs">
+      <DependentUpon>frmBasAPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolume.Designer.cs">
+      <DependentUpon>frmBasAPSendFeeToVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolumeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolumeEdit.Designer.cs">
+      <DependentUpon>frmBasAPSendFeeToVolumeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolumeImport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasAPSendFeeToVolumeImport1.Designer.cs">
+      <DependentUpon>frmBasAPSendFeeToVolumeImport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolume.Designer.cs">
+      <DependentUpon>frmBasARFeeToVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolumeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolumeAdd.Designer.cs">
+      <DependentUpon>frmBasARFeeToVolumeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolumeImport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToVolumeImport1.Designer.cs">
+      <DependentUpon>frmBasARFeeToVolumeImport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeight.Designer.cs">
+      <DependentUpon>frmBasARFeeToWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeightEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeightEdit.Designer.cs">
+      <DependentUpon>frmBasARFeeToWeightEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeightImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARFeeToWeightImport.Designer.cs">
+      <DependentUpon>frmBasARFeeToWeightImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolume.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolumeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolumeAdd.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToVolumeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolumeImport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToVolumeImport1.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToVolumeImport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeight.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightEdit.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToWeightEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightImport.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToWeightImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightImport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmBasARSendFeeToWeightImport1.Designer.cs">
+      <DependentUpon>frmBasARSendFeeToWeightImport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmCostManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmCostManage.designer.cs">
+      <DependentUpon>frmCostManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmCostManageAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmCostManageAdd.designer.cs">
+      <DependentUpon>frmCostManageAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmCostManageUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmCostManageUp.designer.cs">
+      <DependentUpon>frmCostManageUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmDePartAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmDePartAdd.designer.cs">
+      <DependentUpon>frmDePartAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmDepartManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmDepartManage.designer.cs">
+      <DependentUpon>frmDepartManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmEmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmEmployeeAdd.designer.cs">
+      <DependentUpon>frmEmployeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmEmployeeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmEmployeeManage.designer.cs">
+      <DependentUpon>frmEmployeeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmFeeToConnectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmFeeToConnectInfo.Designer.cs">
+      <DependentUpon>frmFeeToConnectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmFeeToConnectInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmFeeToConnectInfoEdit.Designer.cs">
+      <DependentUpon>frmFeeToConnectInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmLinesConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmLinesConfiguration.Designer.cs">
+      <DependentUpon>frmLinesConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmLinesConfigurationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmLinesConfigurationAdd.Designer.cs">
+      <DependentUpon>frmLinesConfigurationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmPlatAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmPlatAccount.Designer.cs">
+      <DependentUpon>frmPlatAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmStartWebSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmStartWebSet.Designer.cs">
+      <DependentUpon>frmStartWebSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmStationBaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmStationBaseInfo.Designer.cs">
+      <DependentUpon>frmStationBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmStationBaseInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmStationBaseInfoAdd.Designer.cs">
+      <DependentUpon>frmStationBaseInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo.Designer.cs">
+      <DependentUpon>frmsysRoleDataInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo_And.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo_And.Designer.cs">
+      <DependentUpon>frmsysRoleDataInfo_And.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo_AndClone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmsysRoleDataInfo_AndClone.Designer.cs">
+      <DependentUpon>frmsysRoleDataInfo_AndClone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmUserAdd.designer.cs">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmUserManage.designer.cs">
+      <DependentUpon>frmUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmWebAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmWebAdd.designer.cs">
+      <DependentUpon>frmWebAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmWebConrastAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmWebConrastAdd.Designer.cs">
+      <DependentUpon>frmWebConrastAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmWebContrast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmWebContrast.Designer.cs">
+      <DependentUpon>frmWebContrast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\frmWebManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\frmWebManage.designer.cs">
+      <DependentUpon>frmWebManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmAddCarrierUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmAddCarrierUnit.designer.cs">
+      <DependentUpon>frmAddCarrierUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmAddCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmAddCars.designer.cs">
+      <DependentUpon>frmAddCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmAddCusData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmAddCusData.designer.cs">
+      <DependentUpon>frmAddCusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmAddRecCustData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmAddRecCustData.designer.cs">
+      <DependentUpon>frmAddRecCustData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCarrierUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCarrierUnit.designer.cs">
+      <DependentUpon>frmCarrierUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCarrierUnitImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCarrierUnitImport.Designer.cs">
+      <DependentUpon>frmCarrierUnitImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCars.designer.cs">
+      <DependentUpon>frmCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCarsImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCarsImport.Designer.cs">
+      <DependentUpon>frmCarsImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCusData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCusData.designer.cs">
+      <DependentUpon>frmCusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmCusDataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmCusDataImport.Designer.cs">
+      <DependentUpon>frmCusDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmMinChargeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmMinChargeAdd.Designer.cs">
+      <DependentUpon>frmMinChargeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmMinCharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmMinCharges.Designer.cs">
+      <DependentUpon>frmMinCharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmMinCostChargeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmMinCostChargeUp.Designer.cs">
+      <DependentUpon>frmMinCostChargeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmNotCusData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmNotCusData.Designer.cs">
+      <DependentUpon>frmNotCusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmRecCustData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmRecCustData.designer.cs">
+      <DependentUpon>frmRecCustData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmRecCustDataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmRecCustDataImport.Designer.cs">
+      <DependentUpon>frmRecCustDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户资料\frmSenderFreightPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户资料\frmSenderFreightPrice.Designer.cs">
+      <DependentUpon>frmSenderFreightPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContract.Designer.cs">
+      <DependentUpon>frmBasCustContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContractUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContractUP.designer.cs">
+      <DependentUpon>frmBasCustContractUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContract_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmBasCustContract_detail.Designer.cs">
+      <DependentUpon>frmBasCustContract_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmCustomerYsCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmCustomerYsCount.designer.cs">
+      <DependentUpon>frmCustomerYsCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmMonthWebNameEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmMonthWebNameEdit.Designer.cs">
+      <DependentUpon>frmMonthWebNameEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmWebAdd_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmWebAdd_NEW.designer.cs">
+      <DependentUpon>frmWebAdd_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmWebManage_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="应收帐客户档案\frmWebManage_NEW.designer.cs">
+      <DependentUpon>frmWebManage_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操作日志\frmOperLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操作日志\frmOperLog.designer.cs">
+      <DependentUpon>frmOperLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\frmRightGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\frmRightGroup.designer.cs">
+      <DependentUpon>frmRightGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\frmRightGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\frmRightGroupAdd.designer.cs">
+      <DependentUpon>frmRightGroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="欠款管控\AddfrmArrearsControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="欠款管控\AddfrmArrearsControll.Designer.cs">
+      <DependentUpon>AddfrmArrearsControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="欠款管控\frmArrearsControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="欠款管控\frmArrearsControl.Designer.cs">
+      <DependentUpon>frmArrearsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSendSms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSendSms.Designer.cs">
+      <DependentUpon>frmSendSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSmsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSmsAdd.Designer.cs">
+      <DependentUpon>frmSmsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSmsCustomerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSmsCustomerAdd.Designer.cs">
+      <DependentUpon>frmSmsCustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSmsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSmsInfo.Designer.cs">
+      <DependentUpon>frmSmsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSmsInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSmsInfoAdd.Designer.cs">
+      <DependentUpon>frmSmsInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信平台\frmSmsSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信平台\frmSmsSend.Designer.cs">
+      <DependentUpon>frmSmsSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳路由限制\frmShortroute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳路由限制\frmShortroute.Designer.cs">
+      <DependentUpon>frmShortroute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳路由限制\frmShortrouteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳路由限制\frmShortrouteAdd.Designer.cs">
+      <DependentUpon>frmShortrouteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillAllot_ByBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillAllot_ByBill.Designer.cs">
+      <DependentUpon>p_BillAllot_ByBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillDetail.Designer.cs">
+      <DependentUpon>p_BillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillIn.Designer.cs">
+      <DependentUpon>p_BillIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillInLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillInLog.Designer.cs">
+      <DependentUpon>p_BillInLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillOut.Designer.cs">
+      <DependentUpon>p_BillOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillOutLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillOutLog.Designer.cs">
+      <DependentUpon>p_BillOutLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\p_BillStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\p_BillStock.Designer.cs">
+      <DependentUpon>p_BillStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数设置\frmSysParamSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统参数设置\frmSysParamSetting.Designer.cs">
+      <DependentUpon>frmSysParamSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\DirectDriverFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\DirectDriverFee.designer.cs">
+      <DependentUpon>DirectDriverFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\DirectDriverFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\DirectDriverFeeAdd.designer.cs">
+      <DependentUpon>DirectDriverFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmbasTerminalOutFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmbasTerminalOutFee.Designer.cs">
+      <DependentUpon>fmbasTerminalOutFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmbasTerminalOutFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmbasTerminalOutFeeAdd.Designer.cs">
+      <DependentUpon>fmbasTerminalOutFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFee.designer.cs">
+      <DependentUpon>fmDeliveryFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFeeAdd.designer.cs">
+      <DependentUpon>fmDeliveryFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDeliveryFeeUp.designer.cs">
+      <DependentUpon>fmDeliveryFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFee.designer.cs">
+      <DependentUpon>fmDepartureAllotFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFeeAdd.designer.cs">
+      <DependentUpon>fmDepartureAllotFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureAllotFeeUp.designer.cs">
+      <DependentUpon>fmDepartureAllotFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFee.designer.cs">
+      <DependentUpon>fmDepartureOptFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFeeAdd.designer.cs">
+      <DependentUpon>fmDepartureOptFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDepartureOptFeeUp.designer.cs">
+      <DependentUpon>fmDepartureOptFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDirectSendFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDirectSendFee.designer.cs">
+      <DependentUpon>fmDirectSendFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmDirectSendFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmDirectSendFeeAdd.designer.cs">
+      <DependentUpon>fmDirectSendFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmHKFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmHKFee.designer.cs">
+      <DependentUpon>fmHKFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmHKFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmHKFeeUp.designer.cs">
+      <DependentUpon>fmHKFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFee.designer.cs">
+      <DependentUpon>fmMainlineFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFeeAdd.designer.cs">
+      <DependentUpon>fmMainlineFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmMainlineFeeUp.designer.cs">
+      <DependentUpon>fmMainlineFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFee.designer.cs">
+      <DependentUpon>fmSurchargeFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFeeAdd.designer.cs">
+      <DependentUpon>fmSurchargeFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmSurchargeFeeUp.designer.cs">
+      <DependentUpon>fmSurchargeFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFee.designer.cs">
+      <DependentUpon>fmTerminalAllotFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFeeAdd.designer.cs">
+      <DependentUpon>fmTerminalAllotFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalAllotFeeUp.designer.cs">
+      <DependentUpon>fmTerminalAllotFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFee.designer.cs">
+      <DependentUpon>fmTerminalOptFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFeeAdd.designer.cs">
+      <DependentUpon>fmTerminalOptFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTerminalOptFeeUp.designer.cs">
+      <DependentUpon>fmTerminalOptFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFee.designer.cs">
+      <DependentUpon>fmTransferFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFeeAdd.designer.cs">
+      <DependentUpon>fmTransferFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFeeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\fmTransferFeeUp.designer.cs">
+      <DependentUpon>fmTransferFeeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFee.designer.cs">
+      <DependentUpon>frmFreightFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFeeAdd.designer.cs">
+      <DependentUpon>frmFreightFeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFeeUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算标准\frmFreightFeeUP.designer.cs">
+      <DependentUpon>frmFreightFeeUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\formmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\formmain.Designer.cs">
+      <DependentUpon>formmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\frmDriverImageFileUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\frmDriverImageFileUp.designer.cs">
+      <DependentUpon>frmDriverImageFileUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\frmDriverImgShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\frmDriverImgShow.Designer.cs">
+      <DependentUpon>frmDriverImgShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_add_pj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_add_pj.Designer.cs">
+      <DependentUpon>w_add_pj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_baoyang_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_baoyang_dengji.Designer.cs">
+      <DependentUpon>w_baoyang_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_bao_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_bao_dengji.Designer.cs">
+      <DependentUpon>w_bao_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_by_project_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_by_project_list.Designer.cs">
+      <DependentUpon>w_by_project_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_cheliang_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_cheliang_dengji.Designer.cs">
+      <DependentUpon>w_cheliang_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_feiyong_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_feiyong_dengji.Designer.cs">
+      <DependentUpon>w_feiyong_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_fy_project_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_fy_project_list.Designer.cs">
+      <DependentUpon>w_fy_project_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_gongying_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_gongying_info.Designer.cs">
+      <DependentUpon>w_gongying_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_gongying_record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_gongying_record.designer.cs">
+      <DependentUpon>w_gongying_record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_jiayou_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_jiayou_dengji.Designer.cs">
+      <DependentUpon>w_jiayou_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_ry_typelist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_ry_typelist.Designer.cs">
+      <DependentUpon>w_ry_typelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_tyre_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_tyre_dengji.Designer.cs">
+      <DependentUpon>w_tyre_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_tyre_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_tyre_manage.Designer.cs">
+      <DependentUpon>w_tyre_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_by_dj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_by_dj.Designer.cs">
+      <DependentUpon>w_update_by_dj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_dengji.Designer.cs">
+      <DependentUpon>w_update_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_fy_dj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_fy_dj.Designer.cs">
+      <DependentUpon>w_update_fy_dj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_jy_dj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_jy_dj.Designer.cs">
+      <DependentUpon>w_update_jy_dj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_pj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_pj.Designer.cs">
+      <DependentUpon>w_update_pj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_update_tyre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_update_tyre.Designer.cs">
+      <DependentUpon>w_update_tyre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_vehicleno_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_vehicleno_info.Designer.cs">
+      <DependentUpon>w_vehicleno_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_weixiu_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_weixiu_dengji.Designer.cs">
+      <DependentUpon>w_weixiu_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\w_xiu_dengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\w_xiu_dengji.Designer.cs">
+      <DependentUpon>w_xiu_dengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\xfChauffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\xfChauffer.Designer.cs">
+      <DependentUpon>xfChauffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\xfChaufferInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\xfChaufferInfo.Designer.cs">
+      <DependentUpon>xfChaufferInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmAreaDivideBatchUpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmAreaDivideBatchUpt.designer.cs">
+      <DependentUpon>frmAreaDivideBatchUpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmAreaDivideUpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmAreaDivideUpt.designer.cs">
+      <DependentUpon>frmAreaDivideUpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmBasMiddleSiteUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmBasMiddleSiteUpdate.Designer.cs">
+      <DependentUpon>frmBasMiddleSiteUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmbasMiddleSite_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmbasMiddleSite_Add.designer.cs">
+      <DependentUpon>frmbasMiddleSite_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmbasMiddleSite_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmbasMiddleSite_Update.Designer.cs">
+      <DependentUpon>frmbasMiddleSite_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmBasSite_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmBasSite_Add.designer.cs">
+      <DependentUpon>frmBasSite_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmBasWeb_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmBasWeb_Add.designer.cs">
+      <DependentUpon>frmBasWeb_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleRouteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleRouteAdd.Designer.cs">
+      <DependentUpon>frmMiddleRouteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleSendRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleSendRoute.Designer.cs">
+      <DependentUpon>frmMiddleSendRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleSiteUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmMiddleSiteUp.designer.cs">
+      <DependentUpon>frmMiddleSiteUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnit.designer.cs">
+      <DependentUpon>frmOrgUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnitShort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnitShort.Designer.cs">
+      <DependentUpon>frmOrgUnitShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnitShort_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnitShort_Manage.Designer.cs">
+      <DependentUpon>frmOrgUnitShort_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnit_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmOrgUnit_Add.designer.cs">
+      <DependentUpon>frmOrgUnit_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmPanel.Designer.cs">
+      <DependentUpon>frmPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmRepaiDevicerNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmRepaiDevicerNo.Designer.cs">
+      <DependentUpon>frmRepaiDevicerNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmShortlineSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmShortlineSite.designer.cs">
+      <DependentUpon>frmShortlineSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运作架构\frmShortlineSiteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运作架构\frmShortlineSiteAdd.designer.cs">
+      <DependentUpon>frmShortlineSiteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddArea.designer.cs">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddCause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddCause.designer.cs">
+      <DependentUpon>frmAddCause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddDePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddDePart.designer.cs">
+      <DependentUpon>frmAddDePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddEmployee.designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddJob.designer.cs">
+      <DependentUpon>frmAddJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddTitle.designer.cs">
+      <DependentUpon>frmAddTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmAddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmAddUsers.designer.cs">
+      <DependentUpon>frmAddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmOrgStru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmOrgStru.designer.cs">
+      <DependentUpon>frmOrgStru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmUsers.designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营线路\frmUsersValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营线路\frmUsersValidate.designer.cs">
+      <DependentUpon>frmUsersValidate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_16x16 %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

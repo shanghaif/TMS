@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C565759D-13FB-4582-85A5-3E2986496460}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.JMBusinessManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdes6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\AxInterop.grdes6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\AxInterop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.UI\bin\x86\Release\DevExpress.XtraPrinting.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KMS.UI\bin\x86\Release\DevExpress.XtraReports.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Interop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货库存\JMfmArrivedStock.resx">
+      <DependentUpon>JMfmArrivedStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货确认\JMfmArrivalConfirm.resx">
+      <DependentUpon>JMfmArrivalConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货确认\JMfmArrivalShowDetail.resx">
+      <DependentUpon>JMfmArrivalShowDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货确认\JMfrmAppointmentSend.resx">
+      <DependentUpon>JMfrmAppointmentSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货确认\JMfrmArrivalCount.resx">
+      <DependentUpon>JMfrmArrivalCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货确认\JMfrmSendDetailForConfirm.resx">
+      <DependentUpon>JMfrmSendDetailForConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到货通知\JMfmArrivedMonitor.resx">
+      <DependentUpon>JMfmArrivedMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前台收银\JMfrmPrintRuiLangWithCondition.resx">
+      <DependentUpon>JMfrmPrintRuiLangWithCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="加盟商送货成本表\JMfrmSendCostInfo.resx">
+      <DependentUpon>JMfrmSendCostInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发货库存\JMfrmSendCity.resx">
+      <DependentUpon>JMfrmSendCity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发货库存\JMFrmSendCityRecord.resx">
+      <DependentUpon>JMFrmSendCityRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发货库存\JMfrmSendDeparture.resx">
+      <DependentUpon>JMfrmSendDeparture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发货库存\JMfrmSendInventory.resx">
+      <DependentUpon>JMfrmSendInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发货库存\JMfrmWebStock.resx">
+      <DependentUpon>JMfrmWebStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单取消\JMfrmReceiptCancel.resx">
+      <DependentUpon>JMfrmReceiptCancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单寄出\JMfrmReceiptSend.resx">
+      <DependentUpon>JMfrmReceiptSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户取单\JMfrmReceiptGet.resx">
+      <DependentUpon>JMfrmReceiptGet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfmDeliveryFee.resx">
+      <DependentUpon>JMfmDeliveryFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfrmPrintLabelDev.resx">
+      <DependentUpon>JMfrmPrintLabelDev.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfmCustContract.resx">
+      <DependentUpon>JMfmCustContract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfmMainlineFee.resx">
+      <DependentUpon>JMfmMainlineFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfmSurchargeFee.resx">
+      <DependentUpon>JMfmSurchargeFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfmTransferFee.resx">
+      <DependentUpon>JMfmTransferFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfrmChangesApply.resx">
+      <DependentUpon>JMfrmChangesApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfrmPrintLabel.resx">
+      <DependentUpon>JMfrmPrintLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfrmRecentPrice.resx">
+      <DependentUpon>JMfrmRecentPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMfrmWayBillAdd.resx">
+      <DependentUpon>JMfrmWayBillAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开单界面\JMWayBillRecord.resx">
+      <DependentUpon>JMWayBillRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="异常登记\JMfmBadBill.resx">
+      <DependentUpon>JMfmBadBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="异常登记\JMfmBadBillDeal.resx">
+      <DependentUpon>JMfmBadBillDeal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="派车申请\JMBillDeliveryDetail.resx">
+      <DependentUpon>JMBillDeliveryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="派车申请\JMfrmBillDelivery.resx">
+      <DependentUpon>JMfrmBillDelivery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="派车申请\JMfrmBillDeliveryAdd.resx">
+      <DependentUpon>JMfrmBillDeliveryAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短信记录\frmShortMessageView.resx">
+      <DependentUpon>frmShortMessageView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳界面\JMfrmAddShortconnect.resx">
+      <DependentUpon>JMfrmAddShortconnect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳界面\JMfrmRecShortConn.resx">
+      <DependentUpon>JMfrmRecShortConn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳界面\JMfrmShortConnDelList.resx">
+      <DependentUpon>JMfrmShortConnDelList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳界面\JMfrmShortConnInbound.resx">
+      <DependentUpon>JMfrmShortConnInbound.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="短驳界面\JMfrmShortConnOutbound.resx">
+      <DependentUpon>JMfrmShortConnOutbound.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmBatchFetchSign.resx">
+      <DependentUpon>JMfrmBatchFetchSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmBatchMidSign.resx">
+      <DependentUpon>JMfrmBatchMidSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmBatchSendSign.resx">
+      <DependentUpon>JMfrmBatchSendSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmFetchSign.resx">
+      <DependentUpon>JMfrmFetchSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmFetchSignList.resx">
+      <DependentUpon>JMfrmFetchSignList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmFetchStock.resx">
+      <DependentUpon>JMfrmFetchStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmMiddleSign.resx">
+      <DependentUpon>JMfrmMiddleSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmMiddleSignList.resx">
+      <DependentUpon>JMfrmMiddleSignList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmReturnGoos.resx">
+      <DependentUpon>JMfrmReturnGoos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmReturnGoosList.resx">
+      <DependentUpon>JMfrmReturnGoosList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmSendSign.resx">
+      <DependentUpon>JMfrmSendSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmSendSignList.resx">
+      <DependentUpon>JMfrmSendSignList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户自提\JMfrmShowInfo.resx">
+      <DependentUpon>JMfrmShowInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="签单上传\JMfmFileUpload.resx">
+      <DependentUpon>JMfmFileUpload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="签单上传\JMfmReceiptImgManage.resx">
+      <DependentUpon>JMfmReceiptImgManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\frmBuKouAdd.resx">
+      <DependentUpon>frmBuKouAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\frmBuKouRecord.resx">
+      <DependentUpon>frmBuKouRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmAccDetail.resx">
+      <DependentUpon>JMfrmAccDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmAddSettlementAccount.resx">
+      <DependentUpon>JMfrmAddSettlementAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmChargeApply.resx">
+      <DependentUpon>JMfrmChargeApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmChargeApplyAdd.resx">
+      <DependentUpon>JMfrmChargeApplyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmCreditAccount.resx">
+      <DependentUpon>JMfrmCreditAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmCreditAccountAdd.resx">
+      <DependentUpon>JMfrmCreditAccountAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmFileUpload_CenterAcc.resx">
+      <DependentUpon>JMfrmFileUpload_CenterAcc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmPayManageList.resx">
+      <DependentUpon>JMfrmPayManageList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmSetAccount.resx">
+      <DependentUpon>JMfrmSetAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmSettleCenterAccList.resx">
+      <DependentUpon>JMfrmSettleCenterAccList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmSettlementAccount.resx">
+      <DependentUpon>JMfrmSettlementAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmWithdrowCashApply.resx">
+      <DependentUpon>JMfrmWithdrowCashApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="结算中心\JMfrmwithdrowCashApplyAdd.resx">
+      <DependentUpon>JMfrmwithdrowCashApplyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMfrmSendDetail.resx">
+      <DependentUpon>JMfrmSendDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMfrmSendLoad.resx">
+      <DependentUpon>JMfrmSendLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMfrmSendRecord.resx">
+      <DependentUpon>JMfrmSendRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMw_md_accept_record_cancel.resx">
+      <DependentUpon>JMw_md_accept_record_cancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMw_sendback_cancel.resx">
+      <DependentUpon>JMw_sendback_cancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送货上门\JMw_sendback_load.resx">
+      <DependentUpon>JMw_sendback_load.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmDeparture.resx">
+      <DependentUpon>JMfrmDeparture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmDepartureAdd.resx">
+      <DependentUpon>JMfrmDepartureAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmDepartureMody.resx">
+      <DependentUpon>JMfrmDepartureMody.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmScanBillMan.resx">
+      <DependentUpon>JMfrmScanBillMan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmScanStatistics.resx">
+      <DependentUpon>JMfrmScanStatistics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长途配载\JMfrmSelectPrintDepartureList.resx">
+      <DependentUpon>JMfrmSelectPrintDepartureList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="到货库存\JMfmArrivedStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货库存\JMfmArrivedStock.designer.cs">
+      <DependentUpon>JMfmArrivedStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货确认\JMfmArrivalConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货确认\JMfmArrivalConfirm.Designer.cs">
+      <DependentUpon>JMfmArrivalConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货确认\JMfmArrivalShowDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货确认\JMfmArrivalShowDetail.designer.cs">
+      <DependentUpon>JMfmArrivalShowDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货确认\JMfrmAppointmentSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货确认\JMfrmAppointmentSend.Designer.cs">
+      <DependentUpon>JMfrmAppointmentSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货确认\JMfrmArrivalCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货确认\JMfrmArrivalCount.designer.cs">
+      <DependentUpon>JMfrmArrivalCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货确认\JMfrmSendDetailForConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货确认\JMfrmSendDetailForConfirm.designer.cs">
+      <DependentUpon>JMfrmSendDetailForConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到货通知\JMfmArrivedMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到货通知\JMfmArrivedMonitor.designer.cs">
+      <DependentUpon>JMfmArrivedMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="前台收银\JMfrmPrintRuiLangWithCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前台收银\JMfrmPrintRuiLangWithCondition.designer.cs">
+      <DependentUpon>JMfrmPrintRuiLangWithCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="加盟商送货成本表\JMfrmSendCostInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="加盟商送货成本表\JMfrmSendCostInfo.Designer.cs">
+      <DependentUpon>JMfrmSendCostInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendCity.Designer.cs">
+      <DependentUpon>JMfrmSendCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发货库存\JMFrmSendCityRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发货库存\JMFrmSendCityRecord.designer.cs">
+      <DependentUpon>JMFrmSendCityRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendDeparture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendDeparture.designer.cs">
+      <DependentUpon>JMfrmSendDeparture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发货库存\JMfrmSendInventory.Designer.cs">
+      <DependentUpon>JMfrmSendInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发货库存\JMfrmWebStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发货库存\JMfrmWebStock.Designer.cs">
+      <DependentUpon>JMfrmWebStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单取消\JMfrmReceiptCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单取消\JMfrmReceiptCancel.Designer.cs">
+      <DependentUpon>JMfrmReceiptCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单寄出\JMfrmReceiptSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单寄出\JMfrmReceiptSend.designer.cs">
+      <DependentUpon>JMfrmReceiptSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户取单\JMfrmReceiptGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户取单\JMfrmReceiptGet.designer.cs">
+      <DependentUpon>JMfrmReceiptGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfmDeliveryFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfmDeliveryFee.designer.cs">
+      <DependentUpon>JMfmDeliveryFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfrmPrintLabelDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfrmPrintLabelDev.designer.cs">
+      <DependentUpon>JMfrmPrintLabelDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfmCustContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfmCustContract.designer.cs">
+      <DependentUpon>JMfmCustContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfmMainlineFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfmMainlineFee.designer.cs">
+      <DependentUpon>JMfmMainlineFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfmSurchargeFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfmSurchargeFee.designer.cs">
+      <DependentUpon>JMfmSurchargeFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfmTransferFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfmTransferFee.designer.cs">
+      <DependentUpon>JMfmTransferFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfrmChangesApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfrmChangesApply.Designer.cs">
+      <DependentUpon>JMfrmChangesApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfrmPrintLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfrmPrintLabel.designer.cs">
+      <DependentUpon>JMfrmPrintLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfrmRecentPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfrmRecentPrice.Designer.cs">
+      <DependentUpon>JMfrmRecentPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMfrmWayBillAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMfrmWayBillAdd.designer.cs">
+      <DependentUpon>JMfrmWayBillAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开单界面\JMWayBillRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开单界面\JMWayBillRecord.Designer.cs">
+      <DependentUpon>JMWayBillRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="异常登记\JMfmBadBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="异常登记\JMfmBadBill.designer.cs">
+      <DependentUpon>JMfmBadBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="异常登记\JMfmBadBillDeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="异常登记\JMfmBadBillDeal.Designer.cs">
+      <DependentUpon>JMfmBadBillDeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="派车申请\JMBillDeliveryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="派车申请\JMBillDeliveryDetail.Designer.cs">
+      <DependentUpon>JMBillDeliveryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="派车申请\JMfrmBillDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="派车申请\JMfrmBillDelivery.Designer.cs">
+      <DependentUpon>JMfrmBillDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="派车申请\JMfrmBillDeliveryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="派车申请\JMfrmBillDeliveryAdd.Designer.cs">
+      <DependentUpon>JMfrmBillDeliveryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短信记录\frmShortMessageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短信记录\frmShortMessageView.Designer.cs">
+      <DependentUpon>frmShortMessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmAddShortconnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmAddShortconnect.designer.cs">
+      <DependentUpon>JMfrmAddShortconnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmRecShortConn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmRecShortConn.designer.cs">
+      <DependentUpon>JMfrmRecShortConn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnDelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnDelList.designer.cs">
+      <DependentUpon>JMfrmShortConnDelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnInbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnInbound.designer.cs">
+      <DependentUpon>JMfrmShortConnInbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnOutbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="短驳界面\JMfrmShortConnOutbound.designer.cs">
+      <DependentUpon>JMfrmShortConnOutbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchFetchSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchFetchSign.designer.cs">
+      <DependentUpon>JMfrmBatchFetchSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchMidSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchMidSign.designer.cs">
+      <DependentUpon>JMfrmBatchMidSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchSendSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmBatchSendSign.designer.cs">
+      <DependentUpon>JMfrmBatchSendSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchSign.designer.cs">
+      <DependentUpon>JMfrmFetchSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchSignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchSignList.designer.cs">
+      <DependentUpon>JMfrmFetchSignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmFetchStock.Designer.cs">
+      <DependentUpon>JMfrmFetchStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmMiddleSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmMiddleSign.designer.cs">
+      <DependentUpon>JMfrmMiddleSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmMiddleSignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmMiddleSignList.designer.cs">
+      <DependentUpon>JMfrmMiddleSignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmReturnGoos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmReturnGoos.designer.cs">
+      <DependentUpon>JMfrmReturnGoos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmReturnGoosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmReturnGoosList.designer.cs">
+      <DependentUpon>JMfrmReturnGoosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmSendSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmSendSign.designer.cs">
+      <DependentUpon>JMfrmSendSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmSendSignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmSendSignList.Designer.cs">
+      <DependentUpon>JMfrmSendSignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户自提\JMfrmShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户自提\JMfrmShowInfo.designer.cs">
+      <DependentUpon>JMfrmShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="签单上传\JMfmFileUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="签单上传\JMfmFileUpload.designer.cs">
+      <DependentUpon>JMfmFileUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="签单上传\JMfmReceiptImgManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="签单上传\JMfmReceiptImgManage.designer.cs">
+      <DependentUpon>JMfmReceiptImgManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\frmBuKouAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\frmBuKouAdd.Designer.cs">
+      <DependentUpon>frmBuKouAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\frmBuKouRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\frmBuKouRecord.designer.cs">
+      <DependentUpon>frmBuKouRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmAccDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmAccDetail.Designer.cs">
+      <DependentUpon>JMfrmAccDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmAddSettlementAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmAddSettlementAccount.Designer.cs">
+      <DependentUpon>JMfrmAddSettlementAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmChargeApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmChargeApply.Designer.cs">
+      <DependentUpon>JMfrmChargeApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmChargeApplyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmChargeApplyAdd.Designer.cs">
+      <DependentUpon>JMfrmChargeApplyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmCreditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmCreditAccount.Designer.cs">
+      <DependentUpon>JMfrmCreditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmCreditAccountAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmCreditAccountAdd.Designer.cs">
+      <DependentUpon>JMfrmCreditAccountAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmFileUpload_CenterAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmFileUpload_CenterAcc.Designer.cs">
+      <DependentUpon>JMfrmFileUpload_CenterAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmPayManageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmPayManageList.designer.cs">
+      <DependentUpon>JMfrmPayManageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSetAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSetAccount.designer.cs">
+      <DependentUpon>JMfrmSetAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSettleCenterAccList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSettleCenterAccList.Designer.cs">
+      <DependentUpon>JMfrmSettleCenterAccList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSettlementAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmSettlementAccount.Designer.cs">
+      <DependentUpon>JMfrmSettlementAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmWithdrowCashApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmWithdrowCashApply.Designer.cs">
+      <DependentUpon>JMfrmWithdrowCashApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="结算中心\JMfrmwithdrowCashApplyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="结算中心\JMfrmwithdrowCashApplyAdd.Designer.cs">
+      <DependentUpon>JMfrmwithdrowCashApplyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendDetail.designer.cs">
+      <DependentUpon>JMfrmSendDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendLoad.designer.cs">
+      <DependentUpon>JMfrmSendLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMfrmSendRecord.designer.cs">
+      <DependentUpon>JMfrmSendRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMw_md_accept_record_cancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMw_md_accept_record_cancel.Designer.cs">
+      <DependentUpon>JMw_md_accept_record_cancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMw_sendback_cancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMw_sendback_cancel.Designer.cs">
+      <DependentUpon>JMw_sendback_cancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送货上门\JMw_sendback_load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送货上门\JMw_sendback_load.Designer.cs">
+      <DependentUpon>JMw_sendback_load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDeparture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDeparture.Designer.cs">
+      <DependentUpon>JMfrmDeparture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDepartureAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDepartureAdd.Designer.cs">
+      <DependentUpon>JMfrmDepartureAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDepartureMody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmDepartureMody.designer.cs">
+      <DependentUpon>JMfrmDepartureMody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmScanBillMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmScanBillMan.designer.cs">
+      <DependentUpon>JMfrmScanBillMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmScanStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmScanStatistics.designer.cs">
+      <DependentUpon>JMfrmScanStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长途配载\JMfrmSelectPrintDepartureList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长途配载\JMfrmSelectPrintDepartureList.designer.cs">
+      <DependentUpon>JMfrmSelectPrintDepartureList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check01c.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

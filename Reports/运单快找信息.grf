@@ -1,0 +1,5802 @@
+﻿Object Report
+	Version='6.0.0.6'
+	Title='运单快找'
+	Author='蓝桥软件'
+	Description='快找'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Size=256
+		Width=16.8
+		Height=25.8
+		Oriention=Landscape
+		LeftMargin=0
+		TopMargin=1
+		RightMargin=0
+		BottomMargin=0
+		PrintOffsetX=1
+	End
+	Object DetailGrid
+		Object Recordset
+			Items Field
+				Item
+					Name='流水号'
+					Type=Integer
+					DBFieldName='BillId'
+				End
+				Item
+					Name='运费异动'
+					DBFieldName='FeeChange'
+				End
+				Item
+					Name='收银状态'
+					DBFieldName='CashierState'
+				End
+				Item
+					Name='运单号'
+					DBFieldName='BillNo'
+				End
+				Item
+					Name='整车申请号'
+					DBFieldName='VehicleNo'
+				End
+				Item
+					Name='开单日期'
+					Type=DateTime
+					Format='yyyy/MM/dd HH:mm:ss'
+					DBFieldName='BillDate'
+				End
+				Item
+					Name='运单状态'
+					Type=Integer
+					DBFieldName='BillState'
+				End
+				Item
+					Name='操作重量'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='OptWeight'
+				End
+				Item
+					Name='始发站'
+					DBFieldName='StartSite'
+				End
+				Item
+					Name='交接方式'
+					DBFieldName='TransferMode'
+				End
+				Item
+					Name='到站'
+					DBFieldName='DestinationSite'
+				End
+				Item
+					Name='中转地'
+					DBFieldName='TransferSite'
+				End
+				Item
+					Name='运输线路'
+					DBFieldName='TransitLines'
+				End
+				Item
+					Name='运输方式'
+					DBFieldName='TransitMode'
+				End
+				Item
+					Name='客户单号'
+					DBFieldName='CusOderNo'
+				End
+				Item
+					Name='收货人手机'
+					DBFieldName='ConsigneeCellPhone'
+				End
+				Item
+					Name='收货人座机'
+					DBFieldName='ConsigneePhone'
+				End
+				Item
+					Name='收货联系人'
+					DBFieldName='ConsigneeName'
+				End
+				Item
+					Name='收货公司名称'
+					DBFieldName='ConsigneeCompany'
+				End
+				Item
+					Name='目的网点'
+					DBFieldName='PickGoodsSite'
+				End
+				Item
+					Name='收货省'
+					DBFieldName='ReceivProvince'
+				End
+				Item
+					Name='收货市'
+					DBFieldName='ReceivCity'
+				End
+				Item
+					Name='收货区'
+					DBFieldName='ReceivArea'
+				End
+				Item
+					Name='收货街道'
+					DBFieldName='ReceivStreet'
+				End
+				Item
+					Name='收货详细地址'
+					DBFieldName='ReceivAddress'
+				End
+				Item
+					Name='发货人手机'
+					DBFieldName='ConsignorCellPhone'
+				End
+				Item
+					Name='发货人座机'
+					DBFieldName='ConsignorPhone'
+				End
+				Item
+					Name='发货联系人'
+					DBFieldName='ConsignorName'
+				End
+				Item
+					Name='发货公司名称'
+					DBFieldName='ConsignorCompany'
+				End
+				Item
+					Name='接货方式'
+					DBFieldName='ReceivMode'
+				End
+				Item
+					Name='客户编号'
+					DBFieldName='CusNo'
+				End
+				Item
+					Name='客户类型'
+					DBFieldName='CusType'
+				End
+				Item
+					Name='计价类型'
+					DBFieldName='ValuationType'
+				End
+				Item
+					Name='接货单号'
+					DBFieldName='ReceivOrderNo'
+				End
+				Item
+					Name='业务员'
+					DBFieldName='Salesman'
+				End
+				Item
+					Name='异形货物'
+					Type=Integer
+					DBFieldName='AlienGoods'
+				End
+				Item
+					Name='货物单据'
+					Type=Integer
+					DBFieldName='GoodsVoucher'
+				End
+				Item
+					Name='贵重货物'
+					Type=Integer
+					DBFieldName='PreciousGoods'
+				End
+				Item
+					Name='是否控货'
+					Type=Integer
+					DBFieldName='NoticeState'
+				End
+				Item
+					Name='货物类型'
+					DBFieldName='GoodsType'
+				End
+				Item
+					Name='品名'
+					DBFieldName='Varieties'
+				End
+				Item
+					Name='品名1'
+					DBFieldName='Varieties1'
+				End
+				Item
+					Name='件数'
+					Type=Integer
+					DBFieldName='Num'
+				End
+				Item
+					Name='件数1'
+					Type=Integer
+					DBFieldName='Num1'
+				End
+				Item
+					Name='剩余件数'
+					Type=Integer
+					DBFieldName='LeftNum'
+				End
+				Item
+					Name='计费重量'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeWeight'
+				End
+				Item
+					Name='计费重量1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeWeight1'
+				End
+				Item
+					Name='计费体积'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeVolume'
+				End
+				Item
+					Name='计费体积1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FeeVolume1'
+				End
+				Item
+					Name='重量'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Weight'
+				End
+				Item
+					Name='重量1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Weight1'
+				End
+				Item
+					Name='体积'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Volume'
+				End
+				Item
+					Name='体积1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Volume1'
+				End
+				Item
+					Name='重量单价'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='WeightPrice'
+				End
+				Item
+					Name='重量单价1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='WeightPrice1'
+				End
+				Item
+					Name='体积单价'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='VolumePrice'
+				End
+				Item
+					Name='体积单价1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='VolumePrice1'
+				End
+				Item
+					Name='费用类型'
+					DBFieldName='FeeType'
+				End
+				Item
+					Name='费用类型1'
+					DBFieldName='FeeType1'
+				End
+				Item
+					Name='运费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Freight'
+				End
+				Item
+					Name='运费1'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Freight1'
+				End
+				Item
+					Name='送货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DeliFee'
+				End
+				Item
+					Name='接货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ReceivFee'
+				End
+				Item
+					Name='声明价值'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DeclareValue'
+				End
+				Item
+					Name='保价费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='SupportValue'
+				End
+				Item
+					Name='费率'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Rate'
+				End
+				Item
+					Name='税金'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Tax'
+				End
+				Item
+					Name='信息费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='InformationFee'
+				End
+				Item
+					Name='工本费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Expense'
+				End
+				Item
+					Name='等通知放货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='NoticeFee'
+				End
+				Item
+					Name='折扣折让'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DiscountTransfer'
+				End
+				Item
+					Name='代收货款'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='CollectionPay'
+				End
+				Item
+					Name='代收手续费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='AgentFee'
+				End
+				Item
+					Name='燃油费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FuelFee'
+				End
+				Item
+					Name='上楼费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='UpstairFee'
+				End
+				Item
+					Name='装卸费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='HandleFee'
+				End
+				Item
+					Name='叉车费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ForkliftFee'
+				End
+				Item
+					Name='进仓费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='StorageFee'
+				End
+				Item
+					Name='报关费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='CustomsFee'
+				End
+				Item
+					Name='包装费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='PackagFee'
+				End
+				Item
+					Name='代打木架费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FrameFee'
+				End
+				Item
+					Name='改单费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ChangeFee'
+				End
+				Item
+					Name='其它费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='OtherFee'
+				End
+				Item
+					Name='是否开发票'
+					Type=Integer
+					DBFieldName='IsInvoice'
+				End
+				Item
+					Name='回单费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ReceiptFee'
+				End
+				Item
+					Name='回单要求'
+					DBFieldName='ReceiptCondition'
+				End
+				Item
+					Name='总运费合计'
+					Type=Float
+					Format='0;;#'
+					DBFieldName='FreightAmount'
+				End
+				Item
+					Name='实收运费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ActualFreight'
+				End
+				Item
+					Name='优惠卷号'
+					DBFieldName='CouponsNo'
+				End
+				Item
+					Name='优惠金额'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='CouponsAmount'
+				End
+				Item
+					Name='付款方式'
+					DBFieldName='PaymentMode'
+				End
+				Item
+					Name='付款金额'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='PaymentAmout'
+				End
+				Item
+					Name='支付方式'
+					DBFieldName='PayMode'
+				End
+				Item
+					Name='现付'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='NowPay'
+				End
+				Item
+					Name='提付'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FetchPay'
+				End
+				Item
+					Name='月结'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MonthPay'
+				End
+				Item
+					Name='短欠'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ShortOwePay'
+				End
+				Item
+					Name='货到前付'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='BefArrivalPay'
+				End
+				Item
+					Name='备注'
+					DBFieldName='BillRemark'
+				End
+				Item
+					Name='网络平台'
+					DBFieldName='WebPlatform'
+				End
+				Item
+					Name='网络订单号'
+					DBFieldName='WebBillNo'
+				End
+				Item
+					Name='事业部'
+					DBFieldName='CauseName'
+				End
+				Item
+					Name='大区'
+					DBFieldName='AreaName'
+				End
+				Item
+					Name='收款人'
+					DBFieldName='SignMan'
+				End
+				Item
+					Name='签收时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='SignTime'
+				End
+				Item
+					Name='签收人证件'
+					DBFieldName='SignPapers'
+				End
+				Item
+					Name='签收备注'
+					DBFieldName='SignRemark'
+				End
+				Item
+					Name='短驳目的地'
+					DBFieldName='SCDesSite'
+				End
+				Item
+					Name='短驳目的网点'
+					DBFieldName='SCDesWeb'
+				End
+				Item
+					Name='终端转送目的地'
+					DBFieldName='TermtranSite'
+				End
+				Item
+					Name='终端转送目的网点'
+					DBFieldName='TermtranWeb'
+				End
+				Item
+					Name='配载站点'
+					DBFieldName='LoadSite'
+				End
+				Item
+					Name='配载网点'
+					DBFieldName='LoadWeb'
+				End
+				Item
+					Name='发车批次'
+					DBFieldName='StartBatch'
+				End
+				Item
+					Name='司机姓名'
+					DBFieldName='DriverName'
+				End
+				Item
+					Name='发车车号'
+					DBFieldName='CarNO'
+				End
+				Item
+					Name='发车时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='WebDate'
+				End
+				Item
+					Name='送货车号'
+					DBFieldName='SendVehNo'
+				End
+				Item
+					Name='送货司机'
+					DBFieldName='SendDriver'
+				End
+				Item
+					Name='送货时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='SendTime'
+				End
+				Item
+					Name='其它费用合计'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='OtherTotalFee'
+				End
+				Item
+					Name='开单费用合计'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='BillTotalFee'
+				End
+				Item
+					Name='开单人'
+					DBFieldName='BillMan'
+				End
+				Item
+					Name='开单网点'
+					DBFieldName='BegWeb'
+				End
+				Item
+					Name='提付转月结'
+					Type=Integer
+					DBFieldName='FetchToMonth'
+				End
+				Item
+					Name='中转费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='AccMiddlePay'
+				End
+				Item
+					Name='包装'
+					DBFieldName='Package'
+				End
+				Item
+					Name='包装1'
+					DBFieldName='Package1'
+				End
+				Item
+					Name='中转时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='MiddleDate'
+				End
+				Item
+					Name='送货剩余件数'
+					Type=Integer
+					DBFieldName='sendremainqty'
+				End
+				Item
+					Name='实际送货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ActualSendFee'
+				End
+				Item
+					Name='回单状态'
+					DBFieldName='ReceiptState'
+				End
+				Item
+					Name='修改备注'
+					DBFieldName='ModifyRemark'
+				End
+				Item
+					Name='中转包装费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MiddlePackageFee'
+				End
+				Item
+					Name='中转装卸费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MiddleHandleFee'
+				End
+				Item
+					Name='中转叉车费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MiddleForkliftFee'
+				End
+				Item
+					Name='中转其它费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MiddleOtherFee'
+				End
+				Item
+					Name='中转承运公司'
+					DBFieldName='MiddleCarrier'
+				End
+				Item
+					Name='中转单号'
+					DBFieldName='MiddleBillNo'
+				End
+				Item
+					Name='中转提货地址'
+					DBFieldName='MiddleFetchAddress'
+				End
+				Item
+					Name='中转费付款状态'
+					Type=Integer
+					DBFieldName='MiddleFeePaymentState'
+				End
+				Item
+					Name='中转发站电话'
+					DBFieldName='MiddleStartSitePhone'
+				End
+				Item
+					Name='中转到站电话'
+					DBFieldName='MiddleEndSitePhone'
+				End
+				Item
+					Name='中转经办人'
+					DBFieldName='MiddleOperator'
+				End
+				Item
+					Name='中转备注'
+					DBFieldName='MiddleRemark'
+				End
+				Item
+					Name='中转其它费说明'
+					DBFieldName='MiddleOtherReason'
+				End
+				Item
+					Name='中转批次'
+					DBFieldName='MiddleBatch'
+				End
+				Item
+					Name='中转站点'
+					DBFieldName='MiddleSiteName'
+				End
+				Item
+					Name='中转网点'
+					DBFieldName='MiddleWebName'
+				End
+				Item
+					Name='中转类型'
+					Type=Integer
+					DBFieldName='MiddleType'
+				End
+				Item
+					Name='中转事业部'
+					DBFieldName='MiddleCauseName'
+				End
+				Item
+					Name='中转大区'
+					DBFieldName='MiddleAreaName'
+				End
+				Item
+					Name='中转部门'
+					DBFieldName='MiddleDepName'
+				End
+				Item
+					Name='中转费核销状态'
+					Type=Integer
+					DBFieldName='AccMiddlePayState'
+				End
+				Item
+					Name='中转费余额'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='AccMiddlePayLeft'
+				End
+				Item
+					Name='中转前的状态'
+					Type=Integer
+					DBFieldName='MiddleState'
+				End
+				Item
+					Name='预到时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='PossiblArrivalTime'
+				End
+				Item
+					Name='中转到达时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='ArrivalTime'
+				End
+				Item
+					Name='中转发运时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='MiddleSendTime'
+				End
+				Item
+					Name='中转跟踪结束'
+					Type=Integer
+					DBFieldName='MiddleTraceState'
+				End
+				Item
+					Name='到货状态'
+					Type=Integer
+					DBFieldName='ArrivedState'
+				End
+				Item
+					Name='异动增加金额'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ChangeAddFee'
+				End
+				Item
+					Name='预约送货内容'
+					DBFieldName='BespeakContent'
+				End
+				Item
+					Name='仓储费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='WarehouseFee'
+				End
+				Item
+					Name='预约送货时间'
+					Format='yyyy/MM/dd'
+					Length=10
+					DBFieldName='BespeakTime'
+				End
+				Item
+					Name='结算干线费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MainlineFee'
+				End
+				Item
+					Name='结算送货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DeliveryFee'
+				End
+				Item
+					Name='结算中转费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='TransferFee'
+				End
+				Item
+					Name='结算始发操作费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DepartureOptFee'
+				End
+				Item
+					Name='结算终端操作费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='TerminalOptFee'
+				End
+				Item
+					Name='结算终端分拨费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='TerminalAllotFee'
+				End
+				Item
+					Name='结算始发分拨费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='DepartureAllotFee'
+				End
+				Item
+					Name='认证'
+					Type=Float
+					Format='0;;#'
+					DBFieldName='Accept'
+				End
+				Item
+					Name='是否回单'
+					Type=Integer
+					DBFieldName='IsReceiptFee'
+				End
+				Item
+					Name='是否保价'
+					Type=Integer
+					DBFieldName='IsSupportValue'
+				End
+				Item
+					Name='是否代收'
+					Type=Integer
+					DBFieldName='IsAgentFee'
+				End
+				Item
+					Name='是否包装'
+					Type=Integer
+					DBFieldName='IsPackagFee'
+				End
+				Item
+					Name='是否收其它费'
+					Type=Integer
+					DBFieldName='IsOtherFee'
+				End
+				Item
+					Name='是否装卸'
+					Type=Integer
+					DBFieldName='IsHandleFee'
+				End
+				Item
+					Name='是否进仓'
+					Type=Integer
+					DBFieldName='IsStorageFee'
+				End
+				Item
+					Name='是否仓储'
+					Type=Integer
+					DBFieldName='IsWarehouseFee'
+				End
+				Item
+					Name='是否叉车'
+					Type=Integer
+					DBFieldName='IsForkliftFee'
+				End
+				Item
+					Name='是否改单'
+					Type=Integer
+					DBFieldName='IsChangeFee'
+				End
+				Item
+					Name='是否上楼'
+					Type=Integer
+					DBFieldName='IsUpstairFee'
+				End
+				Item
+					Name='是否报关'
+					Type=Integer
+					DBFieldName='IsCustomsFee'
+				End
+				Item
+					Name='是否代打木架'
+					Type=Integer
+					DBFieldName='IsFrameFee'
+				End
+				Item
+					Name='结算回单费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ReceiptFee_C'
+				End
+				Item
+					Name='结算控货费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='NoticeFee_C'
+				End
+				Item
+					Name='结算保价费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='SupportValue_C'
+				End
+				Item
+					Name='结算包装费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='PackagFee_C'
+				End
+				Item
+					Name='结算其它费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='OtherFee_C'
+				End
+				Item
+					Name='结算装卸费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='HandleFee_C'
+				End
+				Item
+					Name='结算进仓费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='StorageFee_C'
+				End
+				Item
+					Name='结算仓储费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='WarehouseFee_C'
+				End
+				Item
+					Name='结算叉车费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ForkliftFee_C'
+				End
+				Item
+					Name='结算税金'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Tax_C'
+				End
+				Item
+					Name='结算改单费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='ChangeFee_C'
+				End
+				Item
+					Name='结算上楼费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='UpstairFee_C'
+				End
+				Item
+					Name='结算报关费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='CustomsFee_C'
+				End
+				Item
+					Name='结算代打木架费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FrameFee_C'
+				End
+				Item
+					Name='结算工本费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='Expense_C'
+				End
+				Item
+					Name='结算燃油费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='FuelFee_C'
+				End
+				Item
+					Name='结算信息费'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='InformationFee_C'
+				End
+				Item
+					Name='提货地址'
+					DBFieldName='PickGoodsSite_all'
+				End
+				Item
+					Name='签收代理人'
+					DBFieldName='AgentMan'
+				End
+				Item
+					Name='签收经办人'
+					DBFieldName='SignOperator'
+				End
+				Item
+					Name='签收类型'
+					DBFieldName='SignType'
+				End
+				Item
+					Name='签收人身份证'
+					DBFieldName='SignManCardID'
+				End
+				Item
+					Name='代理人身份证'
+					DBFieldName='AgentCardId'
+				End
+				Item
+					Name='结算重量'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='OperationWeight'
+				End
+				Item
+					Name='出车时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='DispatchTime'
+				End
+				Item
+					Name='短驳时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='SCDate'
+				End
+				Item
+					Name='配载时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='WebDate'
+				End
+				Item
+					Name='到货时间'
+					Type=DateTime
+					Format='yyyy-MM-dd HH:mm'
+					DBFieldName='AcceptBillDate'
+				End
+				Item
+					Name='转送回扣'
+					Type=Float
+					Format='0.##;;#'
+					DBFieldName='MiddleBackFee'
+				End
+				Item
+					Name='中转提付确认'
+					DBFieldName='MiddleConfirmState'
+				End
+				Item
+					Name='转送费'
+					Type=Currency
+					Format='0.##;;#'
+					DBFieldName='MiddleSendFee'
+				End
+				Item
+					Name='异动类型'
+					DBFieldName='changeType'
+				End
+				Item
+					Name='支付类型'
+					DBFieldName='PartyType'
+				End
+				Item
+					Name='支付金额'
+					Type=Float
+					Format='0.00;;#'
+					DBFieldName='PartyAmount'
+				End
+				Item
+					Name='结算异动费'
+					DBFieldName='AmountMoney'
+				End
+				Item
+					Name='回单付'
+					DBFieldName='ReceiptPay'
+				End
+				Item
+					Name='欠付'
+					DBFieldName='OwePay'
+				End
+				Item
+					Name='兑现时间'
+					Type=DateTime
+					Format='yyyy/MM/dd HH:mm:ss'
+					DBFieldName='EndDate'
+				End
+			End
+		End
+		Object ColumnContent
+			Height=0
+		End
+		Object ColumnTitle
+			Height=0
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			CanShrink=T
+			BackColor=00E9E9E9
+			Height=15.7956
+			FormatScript='  '
+			Object Font
+				Name='新宋体'
+				Size=90000,0
+				Weight=400
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=FreeGrid
+					Name='FreeGrid1'
+					BackColor=White
+					Left=0.15875
+					Top=0.608542
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+						Object Pen
+							Color=00ADBF88
+						End
+					End
+					ColumnCount=14
+					RowCount=19
+					Items FreeGridColumn
+						Item[1]
+							Width=2.03729
+						End
+						Item[2]
+							Width=2.14313
+						End
+						Item[3]
+							Width=2.03729
+						End
+						Item[4]
+							Width=1.98438
+						End
+						Item[5]
+							Width=1.95792
+						End
+						Item[6]
+							Width=1.5875
+						End
+						Item[7]
+							Width=1.74625
+						End
+						Item[8]
+							Width=1.87854
+						End
+						Item[9]
+							Width=1.42875
+						End
+						Item[10]
+							Width=1.5875
+						End
+						Item[11]
+							Width=1.69333
+						End
+						Item[12]
+							Width=0
+						End
+						Item[13]
+							Width=1.56104
+						End
+						Item[14]
+							Width=4.36563
+						End
+					End
+					Items FreeGridRow
+						Item[1]
+							Height=0.608542
+						End
+						Item[3]
+							Height=0.608542
+						End
+						Item[4]
+							Height=0.608542
+						End
+						Item[5]
+							Height=0.608542
+						End
+						Item[7]
+							Height=0.15875
+						End
+						Item[8]
+							Height=0.661458
+						End
+						Item[9]
+							Height=0.661458
+						End
+						Item[10]
+							Height=0.687917
+						End
+						Item[11]
+							Height=0.661458
+						End
+						Item[12]
+							Height=0.635
+						End
+						Item[13]
+							Height=0.661458
+						End
+						Item[14]
+							Height=0.661458
+						End
+						Item[15]
+							Height=0.687917
+						End
+						Item[16]
+							Height=0.687917
+						End
+						Item[18]
+							Height=1.48167
+						End
+						Item[19]
+							Height=0.15875
+						End
+					End
+					Items FreeGridCell
+						Item[1,1]
+							BackColor=00E0E0E0
+							Text='始发站'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox1'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='始发站'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,3]
+							BackColor=00E0E0E0
+							Text='目的站'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox152'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='到站'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[1,7]
+							BackColor=00E0E0E0
+							Text='开单网点'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox4'
+									ForeColor=003300FF
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='开单网点'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[1,11]
+							BackColor=00E0E0E0
+							FreeCell=T
+							Items Control
+								Item
+									Type=StaticBox
+									Name='StaticBox2'
+									Dock=Fill
+									Text='目的网点'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,12]
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,13]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox106'
+									BackColor=00F0F0F0
+									ForeColor=003300FF
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='目的网点'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[2,1]
+							BackColor=00E0E0E0
+							Text='运输方式'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox8'
+									ForeColor=Blue
+									Dock=Fill
+									DataField='运输方式'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,3]
+							BackColor=00E0E0E0
+							Text='运行区间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox153'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='运输线路'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[2,7]
+							BackColor=00E0E0E0
+							Text='客户单号'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox10'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='客户单号'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[2,11]
+							BackColor=00E0E0E0
+							Text='业务员'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox11'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='业务员'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[3,1]
+							BackColor=00E0E0E0
+							Text='发货联系人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox12'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='发货联系人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,3]
+							BackColor=00E0E0E0
+							Text='发货公司名称'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox154'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='发货公司名称'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[3,7]
+							BackColor=00E0E0E0
+							Text='发货人手机'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox14'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='发货人手机'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[3,11]
+							BackColor=00E0E0E0
+							Text='客户编号'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox15'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='客户编号'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[4,1]
+							BackColor=00E0E0E0
+							Text='收货联系人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox16'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='收货联系人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,3]
+							BackColor=00E0E0E0
+							Text='收货公司名称'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox155'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='收货公司名称'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[4,7]
+							BackColor=00E0E0E0
+							Text='收货人手机'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox18'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='收货人手机'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[4,11]
+							BackColor=00E0E0E0
+							Text='接货方式'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox19'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='接货方式'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[5,1]
+							BackColor=00E0E0E0
+							Text='收货地址'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox20'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='收货详细地址'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=5
+						End
+						Item[5,7]
+							BackColor=00E0E0E0
+							Text='整车申请号'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox22'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='整车申请号'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[5,11]
+							BackColor=00E0E0E0
+							Text='接货单号'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox25'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='接货单号'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[6,1]
+							BackColor=00E0E0E0
+							Text='目的提货地址'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[6,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox21'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='提货地址'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=5
+						End
+						Item[6,7]
+							BackColor=00E0E0E0
+							Text='兑现时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[6,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox22'
+									ForeColor=003300FF
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='兑现时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[6,11]
+							BackColor=00E0E0E0
+							Text='制单人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[6,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox24'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='开单人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[7,1]
+							BackColor=00FD7440
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00CED9B7
+								End
+							End
+							ColSpan=14
+						End
+						Item[8,1]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='品名'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,2]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='件数'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,3]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='剩余件数'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,4]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='包装'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,5]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='计费重量'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,6]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='计费体积'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,7]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='重量'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,8]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='体积'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,9]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='计费类型'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,10]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='操作重量'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,11]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='结算重量'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,12]
+							TextAlign=MiddleCenter
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,13]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='基本运费'
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[8,14]
+							BackColor=00E0E0E0
+							FreeCell=T
+							Items Control
+								Item
+									Type=StaticBox
+									Name='StaticBox8'
+									ForeColor=Red
+									Left=0.396875
+									Width=0.396875
+									Height=0.608542
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									Text='*'
+								End
+								Item
+									Type=StaticBox
+									Name='StaticBox9'
+									Left=0.79375
+									Width=2.61938
+									Height=0.608542
+									Text='应收合计'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Styles=[DrawTop|DrawRight|DrawBottom]
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,1]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox113'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='品名'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox27'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									GetDisplayTextScript='if(Sender.DisplayText>10000)\r\n  Sender.DisplayText=0\r\n\r\nif(Sender.DisplayText<0)\r\n  Sender.DisplayText=0\r\n\r\nif(Sender.DisplayText.length>6)\r\n  Sender.DisplayText=0\r\n'
+									DataField='件数'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,3]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox28'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									GetDisplayTextScript='if(Sender.DisplayText>10000)\r\n  Sender.DisplayText=0\r\n\r\nif(Sender.DisplayText<0)\r\n  Sender.DisplayText=0\r\n\r\nif(Sender.DisplayText.length>6)\r\n  Sender.DisplayText=0'
+									DataField='剩余件数'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox29'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='包装'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,5]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox30'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='计费重量'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox31'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='计费体积'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,7]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox32'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='重量'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox33'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='体积'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox34'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='费用类型'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,10]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox146'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='操作重量'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=2
+						End
+						Item[9,11]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox124'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='结算重量'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=2
+						End
+						Item[9,12]
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[9,13]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox125'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=120000,0
+										Bold=T
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='运费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=2
+						End
+						Item[9,14]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox126'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=157500,0
+										Bold=T
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='付款金额'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=2
+						End
+						Item[10,1]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox115'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='品名1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox116'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									GetDisplayTextScript='if(Sender.DisplayText>10000)\r\n  Sender.DisplayText=0\r\n\r\nif(Sender.DisplayText<0)\r\n  Sender.DisplayText=0\r\n\r\n\r\nif(Sender.DisplayText.length>6)\r\n  Sender.DisplayText=0'
+									DataField='件数1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,3]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox117'
+									ForeColor=Blue
+									Dock=Fill
+									TextAlign=MiddleCenter
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox118'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='包装1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,5]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox119'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='计费重量1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox120'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='计费体积1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,7]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox121'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='重量1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox122'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='体积1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox123'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='费用类型1'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[10,12]
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,1]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='回单要求'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,2]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='回单费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,3]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='声明价值'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,4]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='保价费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,5]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='代收货款'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,6]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='代收手续费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,7]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='信息费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,8]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='工本费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,9]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='燃油费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,10]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='税金'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,11]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='折扣折让'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[11,12]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='送货费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[11,14]
+							BackColor=00E0E0E0
+							FreeCell=T
+							Items Control
+								Item
+									Type=StaticBox
+									Name='StaticBox12'
+									Width=1.5875
+									Height=0.608542
+									Object Border
+										Styles=[DrawRight]
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									Text='支付方式'
+								End
+								Item
+									Type=StaticBox
+									Name='StaticBox13'
+									Left=1.5875
+									Width=1.61396
+									Height=0.608542
+									Object Border
+										Styles=[DrawRight]
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									Text='接货费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,1]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox39'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='回单要求'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox40'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='回单费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,3]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox41'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='声明价值'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox42'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='保价费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,5]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox43'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='代收货款'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox44'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='代收手续费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,7]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox45'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='信息费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox46'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='工本费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox47'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='燃油费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,10]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox48'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='税金'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,11]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox49'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='折扣折让'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[12,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox50'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='送货费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[12,14]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox112'
+									ForeColor=Blue
+									Dock=Left
+									Width=1.5875
+									Object Border
+										Styles=[DrawRight]
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='支付方式'
+								End
+								Item
+									Type=FieldBox
+									Name='FieldBox141'
+									ForeColor=Blue
+									Dock=Left
+									Left=1.5875
+									Width=1.48167
+									Object Border
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='接货费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,1]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='等通知放货费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,2]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='包装费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,3]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='代打木架费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,4]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='进仓费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,5]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='报关费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,6]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='仓储费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,7]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='装卸费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,8]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='上楼费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,9]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='叉车费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,10]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='转送费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,11]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='改单费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[13,12]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='其它费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[13,14]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='其它费用合计'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,1]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox51'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='等通知放货费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox52'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='包装费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,3]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox53'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='代打木架费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox54'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='进仓费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,5]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox55'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='报关费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox56'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='仓储费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,7]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox57'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='装卸费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox58'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='上楼费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox59'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='叉车费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,10]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox60'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='转送费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,11]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox61'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='改单费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[14,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox62'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='其它费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[14,14]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox111'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='其它费用合计'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,1]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='结算异动费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,2]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='回扣已返'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,3]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='要求控货'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,4]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='是否开发票'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,5]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='转送回扣'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,6]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='结算送货费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,7]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='结算中转费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,8]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='异动增加金额'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,9]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='异动类型'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,10]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='现付'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,11]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='提付'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,12]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,13]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='月结'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[15,14]
+							BackColor=00E0E0E0
+							FreeCell=T
+							Items Control
+								Item
+									Type=StaticBox
+									Name='StaticBox6'
+									BackColor=White
+									Width=1.5875
+									Height=0.608542
+									Object Border
+										Styles=[DrawRight]
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									TextAlign=MiddleCenter
+									Text='货到前付'
+								End
+								Item
+									Type=StaticBox
+									Name='StaticBox7'
+									BackColor=White
+									Left=1.5875
+									Width=1.61396
+									Height=0.608542
+									WordWrap=T
+									TextAlign=MiddleCenter
+									Text='付款方式'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,1]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox135'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='结算异动费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox134'
+									Dock=Fill
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,3]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox107'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=150000,0
+										Bold=T
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									GetDisplayTextScript=' if(Sender.DisplayText == 0)\r\n{\r\n    Sender.DisplayText ='×'; \r\n}\r\nelse\r\n{\r\n    Sender.DisplayText = '√'; \r\n}\r\n'
+									DataField='是否控货'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox66'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=150000,0
+										Bold=T
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									GetDisplayTextScript='if(Sender.DisplayText == 0)\r\n{\r\n    Sender.DisplayText ='×'; \r\n\r\n}\r\nelse\r\n{\r\n    Sender.DisplayText = '√'; \r\n} '
+									DataField='是否开发票'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,5]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox131'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='转送回扣'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox136'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='结算送货费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,7]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox130'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='结算中转费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox137'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='异动增加金额'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox129'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='异动类型'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,10]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox67'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='现付'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,11]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox128'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='提付'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[16,12]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox127'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='月结'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[16,14]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox102'
+									ForeColor=003300FF
+									Dock=Left
+									Width=1.5875
+									Object Border
+										Styles=[DrawRight]
+										Object Pen
+											Color=00ADBF88
+										End
+									End
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='货到前付'
+								End
+								Item
+									Type=FieldBox
+									Name='FieldBox101'
+									ForeColor=003300FF
+									Dock=Left
+									Left=1.5875
+									Width=1.82563
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='付款方式'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,1]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='回单付'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox156'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='回单付'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,3]
+							BackColor=00E0E0E0
+							TextAlign=MiddleCenter
+							Text='欠付'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,4]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox145'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									TextAlign=MiddleCenter
+									DataField='欠付'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,5]
+							Text='中转提付确认'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,6]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox161'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转提付确认'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[17,8]
+							TextAlign=MiddleCenter
+							Text='异动原因'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,9]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox160'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='运费异动'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[17,13]
+							Text='货物状态'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[17,14]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox159'
+									Dock=Fill
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[18,1]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleCenter
+							Text='备注'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[18,2]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox73'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									WordWrap=T
+									DataField='备注'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=5
+						End
+						Item[18,7]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							Text='修改备注'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[18,8]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox138'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									WordWrap=T
+									DataField='修改备注'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=6
+						End
+						Item[18,14]
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[19,1]
+							BackColor=00FD7440
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00CED9B7
+								End
+							End
+							ColSpan=14
+						End
+					End
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox108'
+					ForeColor=Red
+					Left=1.61396
+					Width=2.19604
+					Height=0.79375
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					GetDisplayTextScript='switch(Sender.DisplayText){\r\n    case "0":\r\n        Sender.DisplayText='新开';\r\n        break; \r\n    case "1":\r\n        Sender.DisplayText='短驳';\r\n        break; \r\n    case "2":\r\n        Sender.DisplayText='短驳接收';\r\n        break; \r\n    case "3":\r\n        Sender.DisplayText='再短驳';\r\n        break; \r\n    case "4":\r\n        Sender.DisplayText='再短驳接收';\r\n        break; \r\n    case "5":\r\n        Sender.DisplayText='发车';\r\n        break; \r\n    case "6":\r\n        Sender.DisplayText='又发';\r\n        break; \r\n    case "7":\r\n        Sender.DisplayText='到货';\r\n        break; \r\n    case "8":\r\n        Sender.DisplayText='又到';\r\n        break;  \r\n    case "9":\r\n        Sender.DisplayText='中转';\r\n        break;   \r\n    case "10":\r\n        Sender.DisplayText='转送到网点';\r\n        break; \r\n    case "11":\r\n        Sender.DisplayText='转送接收';\r\n        break; \r\n    case "12":\r\n        Sender.DisplayText='又转送到网点';\r\n        break; \r\n    case "13":\r\n        Sender.DisplayText='又转送接收';\r\n        break;  \r\n    case "14":\r\n        Sender.DisplayText='送货';\r\n        break;  \r\n    case "15":\r\n        Sender.DisplayText='送货退回';\r\n        break; \r\n    case "16":\r\n        Sender.DisplayText='已签收';\r\n        break; \r\n    case "17":\r\n        Sender.DisplayText='分拨干线';\r\n        break; \r\n    case "18":\r\n        Sender.DisplayText='干线接收';\r\n        break; \r\n case "19":\r\n        Sender.DisplayText='分拨终端';\r\n        break;\r\n case "20":\r\n        Sender.DisplayText='终端接收';\r\n        break;\r\n    case "99":\r\n        Sender.DisplayText='退货';\r\n        break; \r\n    case "100":\r\n        Sender.DisplayText='作废';\r\n        break; \r\n    default: \r\n        Sender.DisplayText='';\r\n        break;\r\n}  \r\n '
+					DataField='运单状态'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox3'
+					Left=0.0264583
+					Top=0.211667
+					Width=1.5875
+					Height=0.396875
+					Text='运单状态：'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox4'
+					Left=20.5581
+					Top=0.211667
+					Width=1.40229
+					Height=0.396875
+					Text='运单号：'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox109'
+					ForeColor=Red
+					Left=21.9869
+					Width=3.62479
+					Height=0.608542
+					Object Font
+						Name='新宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=BottomLeft
+					DataField='运单号'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox5'
+					Left=7.17021
+					Top=0.211667
+					Width=1.40229
+					Height=0.396875
+					Text='开单日期：'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox110'
+					ForeColor=Red
+					Left=8.75771
+					Width=4.60375
+					Height=0.79375
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					DataField='开单日期'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox10'
+					Left=13.4938
+					Top=0.211667
+					Width=1.61396
+					Height=0.396875
+					Text='交接方式：'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox139'
+					ForeColor=Red
+					Left=15.0019
+					Top=0.079375
+					Width=2.48708
+					Height=0.608542
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					DataField='交接方式'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox11'
+					Left=17.5154
+					Top=0.211667
+					Width=1.24354
+					Height=0.396875
+					Text='中转地：'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox140'
+					ForeColor=Red
+					Left=18.759
+					Top=0.0264583
+					Width=1.77271
+					Height=0.582083
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=BottomLeft
+					DataField='中转地'
+				End
+				Item
+					Type=FreeGrid
+					Name='FreeGrid2'
+					Left=0.15875
+					Top=12.5942
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+						Object Pen
+							Color=00ADBF88
+						End
+					End
+					ColumnCount=18
+					Items FreeGridColumn
+						Item[1]
+							Width=0.635
+						End
+						Item[2]
+							Width=1.40229
+						End
+						Item[4]
+							Width=0
+						End
+						Item[5]
+							Width=1.56104
+						End
+						Item[6]
+							Width=2.5
+						End
+						Item[7]
+							Width=0.582083
+						End
+						Item[8]
+							Width=1.29646
+						End
+						Item[9]
+							Width=1.87854
+						End
+						Item[10]
+							Width=1.53458
+						End
+						Item[11]
+							Width=1
+						End
+						Item[12]
+							Width=0.291042
+						End
+						Item[13]
+							Width=1.56104
+						End
+						Item[14]
+							Width=1.03188
+						End
+						Item[15]
+							Width=0.926042
+						End
+						Item[16]
+							Width=1.87854
+						End
+						Item[17]
+							Width=1.48
+						End
+						Item[18]
+							Width=3.96875
+						End
+					End
+					Items FreeGridRow
+					End
+					Items FreeGridCell
+						Item[1,1]
+							BackColor=00FD7440
+							Object Font
+								Name='新宋体'
+								Size=105000,0
+								Weight=400
+								Charset=134
+							End
+							TextAlign=MiddleCenter
+							Text='中\r\n\r\n转\r\n\r\n情\r\n\r\n况'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=5
+						End
+						Item[1,2]
+							BackColor=00E0E0E0
+							Text='中转日期'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,3]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox75'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[1,5]
+							BackColor=00E0E0E0
+							Text='承运单位'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,6]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox76'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转承运公司'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[1,8]
+							BackColor=00FD7440
+							Object Font
+								Name='新宋体'
+								Size=105000,0
+								Weight=400
+								Charset=134
+							End
+							TextAlign=MiddleCenter
+							Text='签\r\n\r\n收\r\n\r\n情\r\n\r\n况'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							RowSpan=5
+						End
+						Item[1,9]
+							BackColor=00E0E0E0
+							Text='签收人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,10]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox77'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='收款人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[1,13]
+							BackColor=00E0E0E0
+							Text='身份证'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,14]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox78'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收人身份证'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[1,17]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							Text='接货时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[1,18]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox147'
+									BackColor=White
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='出车时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,2]
+							BackColor=00E0E0E0
+							Text='联系电话'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,3]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox79'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='中转发站电话'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[2,5]
+							BackColor=00E0E0E0
+							Text='到站电话'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,6]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox80'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='中转到站电话'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[2,9]
+							BackColor=00E0E0E0
+							Text='代理人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,10]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox81'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收代理人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[2,13]
+							BackColor=00E0E0E0
+							Text='身份证'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,14]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox82'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='代理人身份证'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[2,17]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							Text='短驳时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[2,18]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox148'
+									BackColor=White
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='短驳时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,2]
+							BackColor=00E0E0E0
+							Text='中转货号'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,3]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox83'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='中转单号'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[3,5]
+							BackColor=00E0E0E0
+							Text='经办人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,6]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox84'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='中转经办人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[3,9]
+							BackColor=00E0E0E0
+							Text='经办人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,10]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox85'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收经办人'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[3,13]
+							BackColor=00E0E0E0
+							Text='签收日期'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,14]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox86'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[3,17]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							Text='配载时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[3,18]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox149'
+									BackColor=White
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='配载时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,2]
+							BackColor=00E0E0E0
+							Text='中转费'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,3]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox87'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转费'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[4,5]
+							BackColor=00E0E0E0
+							Text='中转批次'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,6]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox88'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转批次'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[4,9]
+							BackColor=00E0E0E0
+							Text='签收类型'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,10]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox89'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收类型'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[4,13]
+							BackColor=00E0E0E0
+							Text='签收备注'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,14]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox90'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='签收备注'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[4,17]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							Text='到货时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[4,18]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox151'
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='到货时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,2]
+							BackColor=00E0E0E0
+							Text='中转备注'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,3]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox91'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转备注'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[5,5]
+							BackColor=00E0E0E0
+							Text='提货地址'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,6]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox92'
+									ForeColor=Blue
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Weight=400
+										Charset=134
+									End
+									DataField='中转提货地址'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=2
+						End
+						Item[5,9]
+							BackColor=00E0E0E0
+							Text='上传人'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,10]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox93'
+									ForeColor=Blue
+									Dock=Fill
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[5,13]
+							BackColor=00E0E0E0
+							Text='上传时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,14]
+							BackColor=White
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox94'
+									ForeColor=Blue
+									Dock=Fill
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+							ColSpan=3
+						End
+						Item[5,17]
+							BackColor=00E0E0E0
+							Object Font
+								Name='新宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='送货时间'
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+						Item[5,18]
+							FreeCell=T
+							Items Control
+								Item
+									Type=FieldBox
+									Name='FieldBox150'
+									BackColor=White
+									ForeColor=Red
+									Dock=Fill
+									Object Font
+										Name='新宋体'
+										Size=105000,0
+										Bold=T
+										Charset=134
+									End
+									DataField='送货时间'
+								End
+							End
+							BorderCustom=T
+							Object Border
+								Object Pen
+									Color=00ADBF88
+								End
+							End
+						End
+					End
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox157'
+					ForeColor=Red
+					Left=3.65125
+					Width=1.46
+					Height=0.79
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					GetDisplayTextScript='switch(Sender.DisplayText){\r\n    case "POS":\r\n        Sender.DisplayText='(POS机:';\r\n        break; \r\n    case "WX":\r\n        Sender.DisplayText='(微信:';\r\n        break; \r\n    default: \r\n        Sender.DisplayText='';\r\n        break;\r\n}  '
+					DataField='支付类型'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox158'
+					ForeColor=Red
+					Left=5.23875
+					Width=1.9
+					Height=0.79
+					Object Font
+						Name='新宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					GetDisplayTextScript='    if(Sender.DisplayText>0)\r\n      Sender.DisplayText=Sender.DisplayText + ')';'
+					DataField='支付金额'
+				End
+			End
+			RepeatOnPage=T
+		End
+	End
+End

@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84931105-5589-4DD5-B8F3-2879C3AF10E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZQTMS.UI</RootNamespace>
+    <AssemblyName>ZQTMS.UI.ReceiptManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单上传\fmFileShow.resx">
+      <DependentUpon>fmFileShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单上传\fmFileUploadClone.resx">
+      <DependentUpon>fmFileUploadClone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单上传\fmFileUploadYDSC.resx">
+      <DependentUpon>fmFileUploadYDSC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单上传\frmFoujue.resx">
+      <DependentUpon>frmFoujue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单上传\frmHuiDanQueRen.resx">
+      <DependentUpon>frmHuiDanQueRen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单取消\frmReceiptCancel.resx">
+      <DependentUpon>frmReceiptCancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单寄出\frmReceiptDD.resx">
+      <DependentUpon>frmReceiptDD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单寄出\frmReceiptQZDD.resx">
+      <DependentUpon>frmReceiptQZDD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单寄出\frmReceiptSend.resx">
+      <DependentUpon>frmReceiptSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单寄出\frmReceiptSendNEW.resx">
+      <DependentUpon>frmReceiptSendNEW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单总账\SelectReceipt.resx">
+      <DependentUpon>SelectReceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单管理\frmReturnStock.resx">
+      <DependentUpon>frmReturnStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单管理\Receiptdell.resx">
+      <DependentUpon>Receiptdell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单返厂\frmReceiptToFactory.resx">
+      <DependentUpon>frmReceiptToFactory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回单返回\frmReceiptBack.resx">
+      <DependentUpon>frmReceiptBack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户取单\frmReceiptGet.resx">
+      <DependentUpon>frmReceiptGet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="签单上传\fmFileUpload.resx">
+      <DependentUpon>fmFileUpload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="签单上传\fmReceiptImgManage.resx">
+      <DependentUpon>fmReceiptImgManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="签单上传\fmReceiptImgManageNew.resx">
+      <DependentUpon>fmReceiptImgManageNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="回单上传\fmFileShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单上传\fmFileShow.Designer.cs">
+      <DependentUpon>fmFileShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单上传\fmFileUploadClone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单上传\fmFileUploadClone.designer.cs">
+      <DependentUpon>fmFileUploadClone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单上传\fmFileUploadYDSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单上传\fmFileUploadYDSC.designer.cs">
+      <DependentUpon>fmFileUploadYDSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单上传\frmFoujue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单上传\frmFoujue.Designer.cs">
+      <DependentUpon>frmFoujue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单上传\frmHuiDanQueRen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单上传\frmHuiDanQueRen.Designer.cs">
+      <DependentUpon>frmHuiDanQueRen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单取消\frmReceiptCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单取消\frmReceiptCancel.Designer.cs">
+      <DependentUpon>frmReceiptCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptDD.designer.cs">
+      <DependentUpon>frmReceiptDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptQZDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptQZDD.designer.cs">
+      <DependentUpon>frmReceiptQZDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptSend.designer.cs">
+      <DependentUpon>frmReceiptSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptSendNEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单寄出\frmReceiptSendNEW.designer.cs">
+      <DependentUpon>frmReceiptSendNEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单总账\SelectReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单总账\SelectReceipt.Designer.cs">
+      <DependentUpon>SelectReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单管理\frmReturnStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单管理\frmReturnStock.Designer.cs">
+      <DependentUpon>frmReturnStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单管理\Receiptdell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单管理\Receiptdell.Designer.cs">
+      <DependentUpon>Receiptdell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单返厂\frmReceiptToFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单返厂\frmReceiptToFactory.designer.cs">
+      <DependentUpon>frmReceiptToFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回单返回\frmReceiptBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回单返回\frmReceiptBack.designer.cs">
+      <DependentUpon>frmReceiptBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户取单\frmReceiptGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="客户取单\frmReceiptGet.designer.cs">
+      <DependentUpon>frmReceiptGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="签单上传\fmFileUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="签单上传\fmFileUpload.designer.cs">
+      <DependentUpon>fmFileUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="签单上传\fmReceiptImgManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="签单上传\fmReceiptImgManage.designer.cs">
+      <DependentUpon>fmReceiptImgManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="签单上传\fmReceiptImgManageNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="签单上传\fmReceiptImgManageNew.designer.cs">
+      <DependentUpon>fmReceiptImgManageNew.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZQTMS.Common\ZQTMS.Common.csproj">
+      <Project>{4E8CC77B-5F91-4085-998A-15FA9F8C5EAF}</Project>
+      <Name>ZQTMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Lib\ZQTMS.Lib.csproj">
+      <Project>{6B4EE677-B3A5-47E3-9BD4-A6C6226A9D33}</Project>
+      <Name>ZQTMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZQTMS.Tool\ZQTMS.Tool.csproj">
+      <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
+      <Name>ZQTMS.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "$(SolutionDir)\ZQTMS.UI\bin\x86\Release\Plugin\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

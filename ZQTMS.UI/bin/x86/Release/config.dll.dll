@@ -1,0 +1,17 @@
+[RuiLangPrint]
+printWayBill=
+printLabel=TSC TTP-244 Pro
+PrintEnvelope=
+PrintDelivery=
+PrintShortConn=
+PrintDeparture=
+PrintSendGoods=
+PrintSign=
+PrintVouchers=
+[frmBillSearchControl]
+c1=
+g1=
+c2=
+g2=
+c3=
+g3=
